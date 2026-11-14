@@ -64,9 +64,11 @@ Contrast fet amb cerca web, **pendent de llegir cada font primària i de compara
 
 ---
 
-## E. Accés de xarxa pendent d'aprovar
+## E. Accés de xarxa
 
 | Amfitrió | Per a què | Estat |
 |---|---|---|
-| `geoserveis.icgc.cat` | Baixar els límits comarcals i municipals oficials (ICGC, CC BY 4.0) | Bloquejat per la xarxa de l'entorn |
-| `www.idescat.cat` | Llegir les xifres oficials de la comarca | Bloquejat per la xarxa de l'entorn |
+| `geoserveis.icgc.cat` | Baixar els límits comarcals i municipals oficials (ICGC, CC BY 4.0) | Afegit a la xarxa de l'entorn. La baixada ha quedat aturada pel control de permisos de la sessió: cal el vistiplau explícit |
+| `www.idescat.cat` | Llegir les xifres oficials de la comarca | Igual que l'anterior |
+
+Alternativa sense xarxa: pujar a `referencia/` el fitxer de límits administratius de l'ICGC (GeoJSON o SHP) i una captura o PDF de la fitxa comarcal de l'Idescat.
