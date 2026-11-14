@@ -1,0 +1,1686 @@
+@font-face{font-family:'GV Fraunces';src:url(data:font/woff2;base64,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) format('woff2');font-weight:600;font-style:normal;font-display:block}
+
+/* ===================== App (dins del mòbil) · estil iOS ===================== */
+/* Concepte: blanc i verd maragda, barres de vidre translúcid, títols grans que es contrauen,
+   fulles amb altures diferents i molles de 0,3–0,5 s. Tot el text escala amb --dt (text dinàmic). */
+.ios{
+  --dt:1; --dtL:min(var(--dt),1.3);
+  --t-lt:calc(34px*var(--dtL)); --t-t1:calc(28px*var(--dtL)); --t-t2:calc(22px*var(--dt)); --t-t3:calc(20px*var(--dt));
+  --t-hd:calc(17px*var(--dt)); --t-body:calc(17px*var(--dt)); --t-co:calc(16px*var(--dt)); --t-sh:calc(15px*var(--dt));
+  --t-fn:calc(13px*var(--dt)); --t-c1:calc(12px*var(--dt)); --t-c2:calc(11px*var(--dt));
+  --tint:#00A86B; --tint-tx:#00754A; --on-tint:#0B0D0C; --mascot:#0E8257;
+  --label:#0B0D0C; --label2:#636366; --label3:#6C6C70; --bg:#FFFFFF; --bg2:#F2F2F7; --fill:rgba(118,118,128,.12); --fill2:rgba(118,118,128,.20);
+  --sep:rgba(60,60,67,.29); --red:#D70015; --blue:#0A63D6; --warn:#B25000;
+  --glass:rgba(255,255,255,.74); --glass-dk:rgba(22,24,23,.62); --blur:saturate(180%) blur(22px);
+  --r-btn:8px; --r-card:12px; --r-sheet:16px; --r-field:8px;
+  --safe-t:59px; --safe-b:34px; --nav-h:44px; --tab-h:83px;
+  position:absolute; inset:0; overflow:hidden; background:var(--bg); color:var(--label);
+  font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','SF Pro Display','Inter',system-ui,sans-serif;
+  font-size:var(--t-body); line-height:1.29; letter-spacing:-.01em; -webkit-font-smoothing:antialiased;
+  -webkit-tap-highlight-color:transparent; user-select:none; -webkit-user-select:none; font-variant-numeric:tabular-nums;
+}
+.ios *{box-sizing:border-box}
+.ios button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;cursor:pointer;text-align:inherit;-webkit-tap-highlight-color:transparent}
+.ios input{font:inherit;color:inherit;border:0;background:none;outline:none;min-width:0;user-select:text;-webkit-user-select:text}
+.ios :focus{outline:none}
+.ios :focus-visible{outline:3px solid #0A63D6;outline-offset:2px;border-radius:10px}
+.ios svg{flex:none}
+@supports (corner-shape:squircle){ .ios .cc{corner-shape:squircle} }
+
+/* text */
+.lt{font-size:var(--t-lt);font-weight:700;letter-spacing:-.02em;line-height:1.2;margin:0}
+.t1{font-size:var(--t-t1);font-weight:700;letter-spacing:-.02em;line-height:1.18;margin:0}
+.t2{font-size:var(--t-t2);font-weight:700;letter-spacing:-.015em;line-height:1.24;margin:0}
+.t3{font-size:var(--t-t3);font-weight:600;letter-spacing:-.01em;line-height:1.25;margin:0}
+.hd{font-size:var(--t-hd);font-weight:600;line-height:1.29;margin:0}
+.bd{font-size:var(--t-body);line-height:1.35;margin:0}
+.co{font-size:var(--t-co);line-height:1.32;margin:0}
+.sh{font-size:var(--t-sh);line-height:1.33;margin:0}
+.fn{font-size:var(--t-fn);line-height:1.38;margin:0}
+.c1{font-size:var(--t-c1);line-height:1.33;margin:0}
+.mut{color:var(--label2)} .tintx{color:var(--tint-tx)} .redx{color:var(--red)}
+.num{font-weight:700;letter-spacing:-.02em}
+.row{display:flex;align-items:center;gap:12px}
+.col{display:flex;flex-direction:column}
+.wrap{flex-wrap:wrap}
+.f1{flex:1;min-width:0}
+.gap4{gap:4px}.gap8{gap:8px}.gap12{gap:12px}.gap16{gap:16px}
+.px{padding-left:16px;padding-right:16px}
+.sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* capes */
+.ios .scene{position:absolute;inset:0;overflow:hidden;background:var(--bg);transform-origin:50% 0}
+.ios .stack{position:absolute;inset:0;overflow:hidden}
+.ios .stack[hidden]{display:none}
+.ios .page{position:absolute;inset:0;background:var(--bg);overflow:hidden;will-change:transform}
+.ios .page.grouped{background:var(--bg2)}
+.ios .page.dark{background:#121212;color:#fff}
+.ios .page > .scroll{position:absolute;inset:0;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;scrollbar-width:none;padding-top:calc(var(--safe-t) + var(--nav-h));padding-bottom:calc(var(--tab-h) + 24px)}
+.ios .page.notab > .scroll{padding-bottom:calc(var(--safe-b) + 24px)}
+.ios .page.nonav > .scroll{padding-top:0}
+.ios .page > .scroll::-webkit-scrollbar{display:none}
+.ios .dimmer{position:absolute;inset:0;background:#000;opacity:0;pointer-events:none;z-index:5}
+
+/* barra de navegació */
+.ios .nav{position:absolute;left:0;right:0;top:0;z-index:20;height:calc(var(--safe-t) + var(--nav-h));padding-top:var(--safe-t);display:grid;grid-template-columns:minmax(88px,1fr) auto minmax(88px,1fr);align-items:center;pointer-events:none}
+.ios .nav::before{content:"";position:absolute;inset:0;background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);box-shadow:0 .5px 0 var(--sep);opacity:0;transition:opacity .18s linear}
+.ios .page.grouped .nav::before{background:rgba(242,242,247,.8)}
+.ios .nav.solid::before,.ios .nav.scrolled::before{opacity:1}
+.ios .nav > *{position:relative;pointer-events:auto}
+.ios .nav .nl{justify-self:start;display:flex;align-items:center;padding-left:4px;min-width:0}
+.ios .nav .nr{justify-self:end;display:flex;align-items:center;gap:0;padding-right:4px}
+.ios .nav .nt{font-size:min(var(--t-hd),19px);font-weight:600;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:220px;transition:opacity .15s linear}
+.ios .nav .nt .hd{font-size:min(var(--t-hd),19px)!important}.ios .nav .nt .c1{font-size:min(var(--t-c1),13px)}.ios .nav .nl .fn{font-size:min(var(--t-fn),15px)}
+.ios .nav.large .nt{opacity:0}
+.ios .nav.large.scrolled .nt{opacity:1}
+.ios .nav.on-photo:not(.scrolled){color:#fff}
+.ios .nav.on-photo:not(.scrolled) .nt{opacity:0}
+.ios .nav.on-photo:not(.scrolled) .navbtn .gl{background:var(--glass-dk);color:#fff}
+.ios .navbtn{min-width:44px;height:44px;display:inline-flex;align-items:center;justify-content:center;gap:2px;color:var(--tint-tx);font-size:min(var(--t-body),19px);border-radius:22px}
+.ios .navbtn .gl{width:36px;height:36px;border-radius:18px;display:grid;place-items:center;background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);box-shadow:0 1px 6px rgba(0,0,0,.12);color:var(--label)}
+.ios .navbtn.back{padding-right:8px;padding-left:2px;max-width:150px}
+.ios .navbtn.back span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ios .ltitle{padding:4px 16px 8px;transform-origin:16px 50%}
+.ios .page.dark .nav::before{background:rgba(18,18,18,.78)}
+
+/* barra de pestanyes */
+.ios .tabbar{position:absolute;left:0;right:0;bottom:0;height:var(--tab-h);padding-bottom:var(--safe-b);display:flex;z-index:40;background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);box-shadow:0 -.5px 0 var(--sep)}
+.ios .tabbar button{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:2px;padding-top:6px;height:49px;color:#6C6C70;font-size:10.5px;font-weight:600;letter-spacing:.01em}
+.ios .tabbar button[aria-selected="true"]{color:var(--tint-tx)}
+.ios .tabbar button .ti{display:grid;place-items:center;height:28px}
+.ios .tabbar button .tav{position:relative;width:28px;height:28px;border-radius:14px;background:var(--tint);display:grid;place-items:center;overflow:hidden}
+.ios .tabbar button[aria-selected="false"] .tav{background:#8E8E93}
+
+/* botons */
+.ios .btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;min-height:50px;padding:12px 18px;border-radius:var(--r-btn);background:var(--tint);color:var(--on-tint);font-size:var(--t-hd);font-weight:600;text-align:center;line-height:1.2}
+.ios .btn.gray{background:var(--fill);color:var(--label)}
+.ios .btn.dark{background:var(--label);color:#fff}
+.ios .btn.out{background:transparent;box-shadow:inset 0 0 0 1.5px currentColor;color:var(--label)}
+.ios .btn.red{background:var(--red);color:#fff}
+.ios .btn.sm{min-height:44px;padding:8px 14px;font-size:var(--t-sh);width:auto}
+.ios .btn.auto{width:auto}
+.ios .tbtn{min-height:44px;display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:0 10px;color:var(--tint-tx);font-size:var(--t-body);font-weight:500;border-radius:10px}
+.ios .tbtn.red{color:var(--red)}
+.ios .tbtn.mut{color:var(--label2)}
+.ios .press{transition:transform .12s cubic-bezier(.2,.8,.2,1),opacity .12s}
+.ios .press.down{transform:scale(.96);opacity:.88}
+.ios .iconbtn{width:44px;height:44px;flex:none;display:grid;place-items:center;border-radius:22px;color:var(--label)}
+.ios .iconbtn .gl{width:36px;height:36px;border-radius:18px;display:grid;place-items:center;background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);box-shadow:0 1px 6px rgba(0,0,0,.14)}
+.ios .iconbtn.dk .gl{background:var(--glass-dk);color:#fff;box-shadow:none}
+.ios .iconbtn.fill .gl{background:var(--fill);box-shadow:none;-webkit-backdrop-filter:none;backdrop-filter:none}
+
+/* llistes agrupades */
+.ios .gtitle{padding:22px 32px 7px;font-size:var(--t-fn);color:var(--label2);text-transform:uppercase;letter-spacing:.02em}
+.ios .glist{margin:0 16px;background:var(--bg);border-radius:12px;overflow:hidden}
+.ios .page:not(.grouped) .glist{background:var(--bg2)}
+.ios .grow{position:relative;display:flex;align-items:center;gap:12px;width:100%;min-height:44px;padding:10px 16px;text-align:left}
+.ios .grow + .grow::before{content:"";position:absolute;top:0;right:0;left:16px;height:.5px;background:var(--sep)}
+.ios .grow.ic + .grow.ic::before{left:58px}
+.ios .grow .gic{width:30px;height:30px;border-radius:7px;display:grid;place-items:center;flex:none;background:var(--tint);color:#fff}
+.ios .grow .gic.g{background:#8E8E93}.ios .grow .gic.b{background:#0A63D6}.ios .grow .gic.o{background:#C25400}.ios .grow .gic.r{background:#D70015}.ios .grow .gic.k{background:#1C1C1E}
+.ios .grow .gv{color:var(--label2);font-size:var(--t-body);text-align:right}
+.ios .grow .chev{color:#8E8E93}
+.ios .gfoot{padding:7px 32px 0;font-size:var(--t-fn);color:var(--label2)}
+
+/* interruptor (switch) amb àrea de toc de 51 × 44 */
+.ios .sw{position:relative;width:51px;height:44px;flex:none}
+.ios .sw::before{content:"";position:absolute;left:0;top:6.5px;width:51px;height:31px;border-radius:16px;background:#E9E9EA;transition:background-color .25s}
+.ios .sw::after{content:"";position:absolute;left:2px;top:8.5px;width:27px;height:27px;border-radius:14px;background:#fff;box-shadow:0 3px 8px rgba(0,0,0,.15),0 1px 1px rgba(0,0,0,.16);transition:transform .38s cubic-bezier(.3,1.6,.5,1)}
+.ios .sw[aria-checked="true"]::before{background:var(--tint)}
+.ios .sw[aria-checked="true"]::after{transform:translateX(20px)}
+.ios.rm .sw::after{transition:none}
+
+/* control segmentat */
+.ios .segc{display:flex;padding:0;border-radius:10px;background:var(--fill);position:relative;min-height:44px;align-items:stretch}
+.ios .segc button{flex:1;position:relative;z-index:1;min-height:44px;border-radius:8px;font-size:var(--t-fn);font-weight:500;color:var(--label);padding:4px 6px;text-align:center;line-height:1.2}
+.ios .segc button[aria-selected="true"]{font-weight:600}
+.ios .segc .knob{position:absolute;top:2px;bottom:2px;border-radius:8px;background:#fff;box-shadow:0 3px 8px rgba(0,0,0,.12),0 3px 1px rgba(0,0,0,.04);z-index:0}
+
+/* xips (àrea de 44 px, píndola visual de 34 px) */
+.ios .chips{display:flex;gap:6px;flex-wrap:wrap}
+.ios .chips.scrollx{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin:0 -16px;padding:0 16px}
+.ios .chips.scrollx::-webkit-scrollbar{display:none}
+.ios .chip{min-height:44px;display:inline-flex;align-items:center;flex:none}
+.ios .chip > span{display:inline-flex;align-items:center;gap:6px;min-height:34px;padding:6px 14px;border-radius:17px;background:var(--fill);font-size:var(--t-sh);font-weight:500;line-height:1.2;transition:background-color .15s}
+.ios .chip[aria-pressed="true"] > span,.ios .chip.on > span{background:var(--label);color:#fff}
+.ios .tag{display:inline-flex;align-items:center;gap:4px;min-height:24px;padding:3px 9px;border-radius:12px;background:var(--fill);font-size:var(--t-fn);font-weight:600;line-height:1.2}
+.ios .tag.eco{background:#DCF2E8;color:#00603D}
+.ios .tag.hard{background:#FBE1DE;color:#99140B}
+.ios .meta{font-size:var(--t-fn);color:var(--label2)}
+
+/* camp de cerca */
+.ios .search{display:flex;align-items:center;gap:6px;min-height:44px;padding:0 10px;border-radius:var(--r-field);background:var(--fill);color:var(--label3)}
+.ios .search input{flex:1;height:44px;font-size:var(--t-body);color:var(--label)}
+.ios .search input::placeholder{color:var(--label3)}
+
+/* targetes */
+.ios .card{border-radius:var(--r-card);overflow:hidden;background:var(--bg)}
+.ios .pimg{position:relative;overflow:hidden;background-color:#C9D2CC;background-position:50% 50%;background-size:cover;background-repeat:no-repeat}
+.ios .acard{display:block;width:100%;text-align:left}
+.ios .acard .pimg{height:210px;border-radius:var(--r-card)}
+.ios .acard .fav{position:absolute;top:8px;right:8px}
+.ios .surf{background:var(--bg2);border-radius:var(--r-card)}
+.ios .stat{background:var(--bg2);border-radius:14px;padding:10px 12px;flex:1 1 90px;min-width:0}
+.ios .stat b{display:block;font-size:var(--t-t3);font-weight:700;letter-spacing:-.02em;line-height:1.2}
+.ios .stat span{font-size:var(--t-fn);color:var(--label2)}
+.ios .bar{height:8px;border-radius:4px;background:rgba(255,255,255,.3);overflow:hidden}
+.ios .bar i{display:block;height:100%;background:#1FD08A;border-radius:4px}
+.ios .bar.lt{background:#E5E5EA}.ios .bar.lt i{background:var(--tint)}
+.ios .glass{background:rgba(18,20,19,.55);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);border:1px solid rgba(255,255,255,.18);border-radius:var(--r-card);color:#fff}
+.ios .glass .mut{color:rgba(255,255,255,.86)}
+.ios .info{display:flex;gap:10px;align-items:flex-start;padding:12px 14px;border-radius:14px;background:var(--bg2);font-size:var(--t-fn);line-height:1.38}
+.ios .pend{display:inline-flex;align-items:center;gap:4px;padding:2px 8px;border-radius:8px;background:#FFF1CC;color:#5C4300;font-size:var(--t-c2);font-weight:600}
+
+/* fulles (sheets) */
+.ios .layer{position:absolute;inset:0;z-index:60;pointer-events:none}
+.ios .layer > *{pointer-events:auto}
+.ios .backdrop{position:absolute;inset:0;background:#000;opacity:0}
+.ios .sheet{position:absolute;left:0;right:0;bottom:0;background:var(--bg);border-radius:var(--r-sheet) var(--r-sheet) 0 0;box-shadow:0 -8px 30px rgba(0,0,0,.18);display:flex;flex-direction:column;will-change:transform;overflow:hidden}
+.ios .sheet.dark{background:#121212;color:#fff}
+.ios .sheet .grab{flex:none;height:22px;display:grid;place-items:center;cursor:grab;touch-action:none}
+.ios .sheet .grab::before{content:"";width:36px;height:5px;border-radius:3px;background:#C7C7CC}
+.ios .sheet.dark .grab::before{background:#48484A}
+.ios .sheet .shead{flex:none;display:flex;align-items:center;justify-content:space-between;padding:0 8px 0 16px;min-height:44px;touch-action:none}
+.ios .sheet .sbody{flex:1;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:none;padding:0 16px calc(var(--safe-b) + 16px)}
+.ios .sheet .sbody::-webkit-scrollbar{display:none}
+.ios .sheet .sfoot{flex:none;padding:10px 16px calc(var(--safe-b) + 6px);background:linear-gradient(to top,var(--bg) 82%,transparent)}
+.ios .cover{position:absolute;inset:0;background:var(--bg);will-change:transform;overflow:hidden;display:flex;flex-direction:column}
+
+/* alertes i full d'accions */
+.ios .alert{position:absolute;left:50%;top:50%;width:270px;margin-left:-135px;transform:translateY(-50%);border-radius:14px;overflow:hidden;background:rgba(242,242,247,.86);-webkit-backdrop-filter:blur(30px) saturate(190%);backdrop-filter:blur(30px) saturate(190%);text-align:center;color:#000}
+.ios .alert .am{padding:19px 16px 15px}
+.ios .alert .am b{display:block;font-size:var(--t-hd);font-weight:600;line-height:1.29;margin-bottom:4px}
+.ios .alert .am p{margin:0;font-size:var(--t-fn);line-height:1.38}
+.ios .alert .ab{display:flex;border-top:.5px solid rgba(60,60,67,.36)}
+.ios .alert .ab button{flex:1;min-height:44px;padding:10px 6px;font-size:var(--t-body);color:var(--blue);line-height:1.2}
+.ios .alert .ab button + button{border-left:.5px solid rgba(60,60,67,.36)}
+.ios .alert .ab button.pref{font-weight:600}
+.ios .alert .ab button.red{color:var(--red)}
+.ios .alert.v .ab{display:block}
+.ios .alert.v .ab button{display:block;width:100%;border-left:0!important;border-top:.5px solid rgba(60,60,67,.36)}
+.ios .alert.v .ab button:first-child{border-top:0}
+.ios .asheet{position:absolute;left:8px;right:8px;bottom:calc(var(--safe-b) + 0px);display:flex;flex-direction:column;gap:8px}
+.ios .asheet .grp{border-radius:14px;overflow:hidden;background:rgba(242,242,247,.9);-webkit-backdrop-filter:blur(30px);backdrop-filter:blur(30px)}
+.ios .asheet .amsg{padding:14px 16px;text-align:center;font-size:var(--t-fn);color:var(--label2);border-bottom:.5px solid rgba(60,60,67,.36)}
+.ios .asheet .amsg b{display:block;color:var(--label2);font-weight:600;margin-bottom:2px}
+.ios .asheet button{display:block;width:100%;min-height:57px;font-size:20px;color:var(--blue);text-align:center}
+.ios .asheet button + button{border-top:.5px solid rgba(60,60,67,.36)}
+.ios .asheet .cancel{background:#fff;border-radius:14px;font-weight:600}
+.ios .toast{position:absolute;left:50%;top:calc(var(--safe-t) + 6px);transform:translateX(-50%);z-index:90;display:flex;align-items:center;gap:8px;padding:10px 16px;border-radius:22px;background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);box-shadow:0 6px 24px rgba(0,0,0,.16);font-size:var(--t-sh);font-weight:600;white-space:nowrap;pointer-events:none}
+
+/* teclat */
+.ios .kbd{position:absolute;left:0;right:0;bottom:0;height:calc(291px + var(--safe-b));padding:6px 3px var(--safe-b);background:rgba(209,212,217,.94);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);z-index:70;display:flex;flex-direction:column;gap:11px;will-change:transform}
+.ios .kbd .kr{display:flex;justify-content:center;gap:6px;padding:0 0}
+.ios .kbd button{height:44px;flex:1;max-width:34px;border-radius:5px;background:#fff;box-shadow:0 1px 0 rgba(0,0,0,.3);font-size:22px;font-family:-apple-system,BlinkMacSystemFont,'Inter',system-ui,sans-serif;color:#000;display:grid;place-items:center}
+.ios .kbd button.fn{background:#ABB0BA;max-width:none;flex:0 0 44px;font-size:16px}
+.ios .kbd button.sp{max-width:none;flex:1;font-size:16px}
+.ios .kbd button.go{max-width:none;flex:0 0 92px;font-size:16px;background:var(--blue);color:#fff;font-weight:600}
+.ios .kbd button:active{background:#C8CCD3}
+
+/* mascota */
+.ios .masc{display:inline-flex;align-items:flex-end;color:var(--mascot);line-height:0}
+.ios .masc svg{display:block}
+.ios .on-dark .masc,.ios .masc.white{color:#fff}
+.ios .mav{width:34px;height:34px;border-radius:17px;background:var(--tint);display:grid;place-items:center;overflow:hidden;flex:none;color:#fff}
+.ios .mav .masc{color:#fff}
+.ios .bubble{position:relative;padding:12px 14px;border-radius:18px;background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);box-shadow:0 6px 24px rgba(0,0,0,.14),0 0 0 .5px rgba(0,0,0,.06);font-size:var(--t-co);font-weight:500;line-height:1.3;color:var(--label);max-width:230px}
+.ios .peek{position:absolute;z-index:55;display:flex;align-items:flex-end;gap:6px;pointer-events:auto;touch-action:none}
+.ios .peek .pk-m{transform-origin:100% 100%}
+.ios .peek .pk-b{min-height:44px;padding-right:34px}
+.ios .peek .pk-xi{position:absolute;top:8px;right:8px;width:20px;height:20px;border-radius:10px;display:grid;place-items:center;background:rgba(120,120,128,.2);color:inherit;opacity:.8}
+
+/* xat */
+.ios .chat .msgs{display:flex;flex-direction:column;gap:6px;padding:8px 12px 12px}
+.ios .chat .mrow{display:flex;align-items:flex-end;gap:8px}
+.ios .chat .mrow.me{justify-content:flex-end}
+.ios .chat .mb{max-width:78%;padding:9px 13px;border-radius:19px;font-size:var(--t-body);line-height:1.32;white-space:pre-wrap}
+.ios .chat .me .mb{background:var(--tint);color:var(--on-tint);border-bottom-right-radius:6px}
+.ios .chat .ai .mb{background:var(--bg2);color:var(--label);border-bottom-left-radius:6px}
+.ios .chat .ai .mb.wide{max-width:86%;width:86%}
+.ios .chat .mav{margin-bottom:2px}
+.ios .chat .spacer{width:34px;flex:none}
+.ios .composer{position:absolute;left:0;right:0;bottom:var(--tab-h);z-index:30;padding:8px 12px;display:flex;align-items:flex-end;gap:8px;background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);box-shadow:0 -.5px 0 var(--sep);will-change:transform}
+.ios .composer .field{flex:1;display:flex;align-items:center;min-height:44px;border-radius:22px;background:var(--bg);box-shadow:inset 0 0 0 1px rgba(60,60,67,.22);padding:0 4px 0 16px}
+.ios .composer .field input{flex:1;height:44px;font-size:var(--t-body)}
+.ios .composer .send{width:44px;height:44px;border-radius:22px;background:var(--tint);color:var(--on-tint);display:grid;place-items:center;flex:none;transition:transform .2s,opacity .2s}
+.ios .composer .send[disabled]{opacity:.35}
+.ios .typing{display:inline-flex;align-items:center;gap:6px;padding:10px 14px;border-radius:19px;background:var(--bg2);border-bottom-left-radius:6px}
+
+/* estats de càrrega */
+.ios .sk{background:linear-gradient(90deg,#EEF0F1 0,#F8F9FA 50%,#EEF0F1 100%);background-size:200% 100%;animation:sk 1.4s linear infinite;border-radius:10px}
+@keyframes sk{to{background-position:-200% 0}}
+.ios.rm .sk{animation:none}
+.ios .loadrow{display:flex;align-items:center;gap:10px;padding:8px 0 4px;color:var(--label2);font-size:var(--t-fn)}
+
+/* mapa */
+.ios .map{position:absolute;inset:0}
+.ios .map > svg{width:100%;height:100%;display:block}
+
+/* «Reduir moviment»: cap transició de transformació a la interfície */
+.ios.rm .press.down{transform:none}
+
+/* text dinàmic gran: les files de xifres passen a columna */
+.ios.dt-ax .stats3{flex-direction:column}
+.ios.dt-ax .acts2{flex-direction:column}
+.ios.dt-ax .chat .mb{max-width:88%}
+.ios .alert:focus-visible,.ios .alert:focus{outline:none}
+/* Reduir moviment: cap transició de posició o escala; només fosos */
+.ios.rm *,.ios.rm *::before,.ios.rm *::after{transition-property:opacity,color,background-color,border-color,box-shadow!important}
+
+/* text AX: la fletxa enrere es queda sense etiqueta (com a iOS quan no hi cap) */
+.ios.dt-ax .navbtn.back span{display:none}
+
+/* ===================== App · peces de cada pantalla ===================== */
+.ios .statusbar{position:absolute;left:0;right:0;top:0;height:54px;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:6px 32px 0 48px;font-size:17px;font-weight:600;letter-spacing:-.01em;pointer-events:none;color:#0B0D0C;transition:color .2s}
+.ios .statusbar .sb-i{display:flex;gap:6px;align-items:center}
+.ios .island{position:absolute;left:50%;top:11px;width:124px;height:36px;margin-left:-62px;border-radius:18px;background:#000;z-index:101;pointer-events:none}
+.ios .homeind{position:absolute;left:50%;bottom:8px;width:134px;height:5px;margin-left:-67px;border-radius:3px;background:currentColor;z-index:101;pointer-events:none;color:#0B0D0C;opacity:.9}
+.ios .scene[hidden]{display:none}
+.ios .offpill{position:absolute;left:50%;top:56px;transform:translateX(-50%);z-index:99;display:flex;align-items:center;gap:6px;padding:4px 12px;border-radius:14px;background:#1C1C1E;color:#fff;font-size:var(--t-c1);font-weight:600;pointer-events:none}
+.ios .photo-mark{position:absolute;right:8px;bottom:8px;z-index:3;padding:2px 7px;border-radius:6px;background:rgba(34,64,122,.86);color:#fff;font-size:10px;font-weight:600;display:none}
+.ios.marks .photo-mark{display:block}
+
+/* càrrega */
+.ios .ld-bg{position:absolute;inset:-24px;background-size:cover;background-position:50% 45%}
+.ios .ld-veil{position:absolute;inset:0;background:radial-gradient(85% 42% at 50% 47%,rgba(10,20,14,.40),rgba(10,20,14,0) 100%),rgba(10,20,14,.42)}
+.ios .ld-mist{position:absolute;inset:0;background:radial-gradient(120% 55% at 50% 100%,rgba(247,249,247,.22),rgba(247,249,247,0) 62%)}
+.ios .ld-svg{position:absolute;inset:0;width:393px;height:852px;overflow:visible}
+.ios .ld-skip{position:absolute;right:12px;bottom:46px;min-height:44px;min-width:64px;padding:0 14px;border-radius:22px;color:#fff;font-size:var(--t-sh);font-weight:600;background:rgba(255,255,255,.14);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
+
+/* 2 · accés */
+.ios .acc .acc-car{position:absolute;inset:0;display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain}
+.ios .acc .acc-car::-webkit-scrollbar{display:none}
+.ios .acc .acc-sl{position:relative;flex:0 0 393px;height:var(--H,852px);scroll-snap-align:start;overflow:hidden}
+.ios .acc .acc-scrim{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(8,12,9,.62) 0,rgba(8,12,9,.34) 11%,rgba(8,12,9,0) 21%,rgba(8,12,9,0) 30%,rgba(8,12,9,.52) 44%,rgba(8,12,9,.80) 60%,rgba(8,12,9,.88) 100%)}
+.ios .acc .acc-dot{position:absolute;left:151.5px;width:90px;top:calc(var(--H,852px) - var(--panh,281px) + 11px);height:30px;background:#fff;border-radius:15px}
+.ios .acc .acc-tx{position:absolute;left:24px;right:24px;bottom:calc(var(--panh,281px) + 37px);color:#fff}
+.ios .acc .acc-tx h2{font-size:var(--t-t1);font-weight:700;letter-spacing:-.02em;line-height:1.1;margin:0 0 10px;text-shadow:0 1px 14px rgba(0,0,0,.35)}
+.ios .acc .acc-tx p{margin:0;font-size:var(--t-sh);line-height:1.45;color:rgba(255,255,255,.94);max-width:34ch}
+.ios .acc .acc-top{position:absolute;top:60px;left:0;right:0;display:flex;justify-content:center;align-items:center;gap:10px;z-index:8;filter:drop-shadow(0 1px 8px rgba(0,0,0,.35));pointer-events:none}
+.ios .acc .acc-logo{display:inline-flex}
+.ios .acc .acc-wm{font-family:'GV Fraunces',Georgia,serif;font-weight:600;font-size:36px;letter-spacing:-.01em;color:#fff;line-height:1}
+.ios .acc .acc-pan{position:absolute;left:0;right:0;bottom:0;min-height:281px;background:#121212;border-radius:16px 16px 0 0;z-index:9;-webkit-mask-size:100% 100%;mask-size:100% 100%;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat}
+.ios .acc .acc-in{position:relative;padding:52px 20px calc(var(--safe-b) + 14px);display:flex;flex-direction:column;gap:12px}
+.ios .acc .acc-in .btn{min-height:56px}
+.ios .acc .acc-in .acc-md{min-height:48px;color:#fff}
+.ios .acc .acc-in .tbtn{color:#A3A8A5;width:100%}
+
+/* fulles fosques (registre, inici de sessió, verificació) */
+.ios .page.dark{background:#121212;color:#fff}
+.ios .dk-body{position:absolute;left:24px;right:24px;top:47px;bottom:0;display:flex;flex-direction:column;justify-content:center;padding-bottom:20px}
+.ios .page.kb .dk-body{bottom:325px;padding-bottom:6px;justify-content:flex-end}
+.ios .dk-desc{color:#A3A8A5;margin:10px 0 26px;max-width:36ch}
+.ios .btn.soc{position:relative;min-height:56px;background:#fff;color:#0B0D0C;margin-bottom:12px}
+.ios .btn.soc svg{position:absolute;left:18px;top:50%;margin-top:-11px}
+.ios .dk-sep{display:flex;align-items:center;gap:14px;margin:8px 0 20px;color:#A3A8A5;font-size:var(--t-sh)}
+.ios .dk-sep i{flex:1;height:1px;background:#2E2E2E}
+.ios .dk-inp{display:flex;align-items:center;min-height:56px;background:#fff;border-radius:8px;padding:0 6px 0 16px;color:#0B0D0C;margin-bottom:12px;box-shadow:inset 0 0 0 1.5px #E4E6E8}
+.ios .dk-inp input{flex:1;height:54px;font-size:var(--t-sh);color:#0B0D0C}
+.ios .dk-inp input::placeholder{color:#6B726E}
+.ios .dk-inp:focus-within{box-shadow:inset 0 0 0 1.5px #1FD08A,0 0 0 3px rgba(31,208,138,.45)}
+.ios .dk-hint{color:#A3A8A5;margin:0}
+.ios .dk-ring{width:96px;height:96px;border-radius:48px;background:#1E1E1E;display:grid;place-items:center;margin-bottom:22px}
+.ios .otp{position:relative;display:flex;gap:8px;margin:0 0 22px}
+.ios .otp input{position:absolute;inset:0;opacity:0;font-size:16px}
+.ios .otp span{flex:1;height:60px;border-radius:10px;background:#fff;color:#0B0D0C;display:grid;place-items:center;font-size:var(--t-t3);font-weight:700;box-shadow:inset 0 0 0 1.5px #E4E6E8}
+.ios .otp span.f{box-shadow:inset 0 0 0 1.5px #1FD08A,0 0 0 3px rgba(31,208,138,.45)}
+
+/* barres inferiors fixes */
+.ios .bbar{position:absolute;left:0;right:0;bottom:var(--tab-h);z-index:25;padding:14px 16px 10px;background:linear-gradient(to top,var(--bg) 78%,rgba(255,255,255,0))}
+.ios .page.notab .bbar,.ios .page.onbpg .bbar{bottom:0;padding-bottom:calc(var(--safe-b) + 6px)}
+.ios .page:has(> .bbar) > .scroll{padding-bottom:calc(var(--tab-h) + 110px)}
+.ios .page.notab:has(> .bbar) > .scroll{padding-bottom:calc(var(--safe-b) + 120px)}
+.ios .page.grouped .bbar{background:linear-gradient(to top,var(--bg2) 78%,rgba(242,242,247,0))}
+.ios .page.dark .bbar{background:linear-gradient(to top,#121212 78%,rgba(18,18,18,0))}
+.ios .lnk{color:var(--tint-tx);font-weight:600;text-decoration:underline;text-underline-offset:2px}
+.ios .chk{width:44px;height:44px;flex:none;display:grid;place-items:center;margin:-2px 0 0 -10px}
+.ios .chk::before{content:"";position:absolute}
+.ios .chk svg{width:26px;height:26px;padding:4px;border-radius:7px;background:var(--tint);color:var(--on-tint);box-sizing:border-box}
+.ios .chk[aria-checked="false"] svg{background:#fff;color:transparent;box-shadow:inset 0 0 0 1.5px #8E8E93}
+.ios .perm-map{height:340px;border-radius:0 0 28px 28px;overflow:hidden}
+.ios .cnt{display:inline-grid;place-items:center;min-width:20px;height:20px;padding:0 6px;border-radius:10px;background:var(--tint);color:var(--on-tint);font-size:12px;font-weight:700}
+.ios .cnt[hidden]{display:none}
+
+/* xat */
+.ios .page.chat > .scroll{padding-bottom:calc(var(--tab-h) + 76px)}
+.ios .greet{display:flex;flex-direction:column;padding-top:4px}
+.ios .gm-row{display:flex;align-items:flex-end;gap:2px;margin-top:6px;min-height:128px}
+.ios .gm-b{margin-bottom:64px;max-width:200px;font-size:var(--t-body);font-weight:600}
+.ios .sug{display:flex;align-items:center;gap:12px;width:100%;min-height:52px;padding:12px 14px 12px 16px;border-radius:12px;background:var(--bg2);font-size:var(--t-body);font-weight:600;text-align:left}
+.ios .sug i{flex:none;width:32px;height:32px;border-radius:16px;background:#fff;display:grid;place-items:center}
+.ios .chatcard{margin-top:10px}
+.ios .bubble.dk{background:rgba(18,20,19,.62);color:#fff;box-shadow:0 6px 24px rgba(0,0,0,.25),0 0 0 .5px rgba(255,255,255,.12)}
+
+/* explorar */
+.ios .acard-hit{display:block;width:100%}
+.ios .empty-x{display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;padding:8px 0}
+.ios .ring-s{width:72px;height:72px;border-radius:36px;background:var(--bg2);display:grid;place-items:center}
+.ios .fhead{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;min-height:52px;padding:0 6px}
+.ios .fhead > :first-child{justify-self:start}.ios .fhead > :last-child{justify-self:end}
+.ios .page.fsheet > .scroll{padding-top:0}
+.ios .fsec{margin:22px 0 4px}
+.ios .rng{position:relative;height:44px;margin-top:2px}
+.ios .rng i{position:absolute;top:20px;height:4px;border-radius:2px}
+.ios .rng .h{position:absolute;top:8px;width:28px;height:28px;border-radius:14px;background:#fff;box-shadow:0 3px 8px rgba(0,0,0,.15),0 0 0 .5px rgba(0,0,0,.04)}
+.ios .mappg .nav::before{display:none}
+.ios .map-search{position:absolute;left:12px;right:60px;top:108px;z-index:12;background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);box-shadow:0 2px 12px rgba(0,0,0,.15)}
+.ios .page.detail > .scroll{padding-top:0}
+.ios .dhero{position:relative}
+.ios .dbody{position:relative;margin-top:-18px;background:var(--bg);border-radius:16px 16px 0 0;padding:18px 16px 0}
+.ios .dl{min-height:60px}
+.ios .dlm{display:inline-flex;width:22px;justify-content:center;overflow:visible}
+.ios .cond{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.ios .cond div{background:var(--bg2);border-radius:12px;padding:10px 6px;text-align:center}
+.ios .cond b{display:block;font-size:var(--t-sh);font-weight:700;margin-top:4px}
+.ios .cond span{font-size:var(--t-c1);color:var(--label2)}
+.ios .crowd{display:flex;gap:6px}.ios .crowd i{flex:1;height:8px;border-radius:4px;background:#E5E5EA}.ios .crowd i.on{background:var(--label)}
+.ios .hours{display:flex;align-items:flex-end;gap:5px;height:64px}.ios .hours span{flex:1;background:#E5E5EA;border-radius:5px 5px 2px 2px}.ios .hours span.now{background:var(--tint)}
+.ios .hlrow{display:flex;gap:12px;overflow-x:auto;scrollbar-width:none;margin-right:-16px;padding-right:16px}.ios .hlrow::-webkit-scrollbar{display:none}
+.ios .hl{flex:0 0 228px;border-radius:12px;overflow:hidden;background:var(--bg2)}
+
+/* ruta guiada */
+.ios .routepg .pill{position:absolute;left:50%;transform:translateX(-50%);z-index:12;display:flex;align-items:center;gap:8px;padding:8px 14px;border-radius:999px;background:var(--glass);-webkit-backdrop-filter:var(--blur);backdrop-filter:var(--blur);box-shadow:0 2px 10px rgba(0,0,0,.16);font-size:var(--t-fn);font-weight:600;white-space:nowrap}
+.ios .dot{width:10px;height:10px;border-radius:5px;background:var(--tint)}
+.ios .nextc{position:absolute;left:12px;right:12px;top:112px;z-index:12;display:flex;align-items:center;gap:12px;padding:10px 6px 10px 12px;box-shadow:0 4px 18px rgba(0,0,0,.18)}
+.ios .rpanel{position:absolute;left:0;right:0;bottom:0;z-index:20;background:var(--bg);border-radius:16px 16px 0 0;padding:0 16px calc(var(--safe-b) + 6px);box-shadow:0 -6px 24px rgba(0,0,0,.14)}
+.ios .rpanel .grab{height:18px;display:grid;place-items:center}.ios .rpanel .grab::before{content:"";width:36px;height:5px;border-radius:3px;background:#C7C7CC}
+.ios .bigbtn{width:76px;height:76px;border-radius:38px;background:var(--tint);display:grid;place-items:center;box-shadow:0 6px 16px rgba(0,168,107,.4)}
+.ios .alertk{position:absolute;left:12px;right:12px;top:62px;z-index:30;background:#0B0D0C;color:#fff;border-radius:16px;padding:16px;box-shadow:0 10px 30px rgba(0,0,0,.3)}
+.ios .ctc{width:44px;height:44px;border-radius:22px;display:grid;place-items:center;font-weight:700;background:#DCF2E8;flex:none}
+
+/* perfil i recompenses */
+.ios .page.profile > .scroll,.ios .page.rewards > .scroll{padding-top:0}
+.ios .phead{position:relative;color:#fff}
+.ios .phead-in{position:relative;display:flex;flex-direction:column;padding:104px 16px 16px}
+.ios .phead-in [data-pname]{margin-top:64px}
+.ios .phead-in .pcard{margin-top:14px}
+.ios .phead-sc{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(10,12,11,.6) 0,rgba(10,12,11,.15) 40%,rgba(10,12,11,.66) 100%)}
+.ios .pav{width:64px;height:64px;border-radius:32px;background:#fff;color:var(--label);display:grid;place-items:center;font-size:var(--t-t3);font-weight:700;flex:none}
+.ios .pcard{position:relative;padding:14px 16px}
+.ios .chart{display:flex;align-items:stretch;gap:10px;height:128px;margin-top:12px}
+.ios .chart .b{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:6px}
+.ios .chart .b i{display:block;width:100%;border-radius:8px 8px 4px 4px;background:#E5E5EA;min-height:4px}
+.ios .chart .b.on i{background:var(--tint)}
+.ios .chart .b span{font-size:var(--t-fn);font-weight:600;color:var(--label2)}
+.ios .impact,.ios .ugc,.ios .chal{position:relative;min-height:250px;border-radius:16px;overflow:hidden;color:#fff;display:flex;flex-direction:column;justify-content:flex-end;padding:10px}
+.ios .impact > .glass,.ios .ugc > .glass,.ios .chal > .glass{position:relative!important;left:auto!important;right:auto!important;bottom:auto!important}
+.ios.dt-ax .impact,.ios.dt-ax .ugc,.ios.dt-ax .chal{padding-top:56px}
+.ios .ugc-sc{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,12,11,.55),rgba(10,12,11,0) 62%)}
+.ios .ugc-own{position:absolute;left:12px;top:12px;background:rgba(18,20,19,.55);color:#fff;-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+.ios .ugc-g{padding:12px 14px}
+.ios .yearban{display:flex;align-items:center;gap:12px;width:100%;margin-top:28px;padding:12px 14px;border-radius:16px;background:#0B0D0C}
+.ios .mem{display:flex}.ios .mem span{width:28px;height:28px;border-radius:14px;border:2px solid rgba(11,13,12,.8);margin-left:-8px;display:grid;place-items:center;font-size:12px;font-weight:700;color:#0B0D0C;background:#DCF2E8}.ios .mem span:first-child{margin-left:0}
+.ios .story-sc{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(10,12,11,.55),rgba(10,12,11,.5) 45%,rgba(10,12,11,.86) 75%)}
+.ios .yr b{display:block;font-size:var(--t-t1);font-weight:700;letter-spacing:-.02em;line-height:1.1}
+.ios .yr span{font-size:var(--t-fn);color:rgba(255,255,255,.88)}
+.ios .tiles{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ios .tiles[hidden],.ios [data-sec][hidden]{display:none}
+.ios .tile{display:block;width:100%;background:var(--bg2);border-radius:16px;padding:16px;text-align:left}
+.ios .rwi{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:#fff;color:var(--label)}
+.ios .okring{width:88px;height:88px;border-radius:44px;background:var(--tint);display:grid;place-items:center;margin-bottom:20px}
+.ios .coupon{margin-top:16px;width:100%;padding:18px;border-radius:16px;border:1.5px dashed #C7C7CC;display:flex;flex-direction:column;align-items:center;gap:10px}
+.ios .dtsteps{position:relative;display:flex;justify-content:space-between;margin-top:6px}
+.ios .dtsteps::before{content:"";position:absolute;left:22px;right:22px;top:21px;height:2px;background:#E5E5EA}
+.ios .dtsteps button{position:relative;width:44px;height:44px;display:grid;place-items:center}
+.ios .dtsteps i{width:16px;height:16px;border-radius:8px;background:#fff;box-shadow:inset 0 0 0 2px #C7C7CC}
+.ios .dtsteps button[aria-checked="true"] i{width:26px;height:26px;border-radius:13px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,.2),inset 0 0 0 7px var(--tint)}
+.ios .faq-a{padding:0 16px 14px}
+.ios.dt-ax .tiles{grid-template-columns:1fr}
+.ios.dt-ax .cond{grid-template-columns:1fr 1fr}
+
+
+/* ===================== Valia · capa visual 2.0 =====================
+   Només aparença: colors, tipografia, espais, ombres, radis, il·lustracions i moviment.
+   No canvia cap text, element, ordre ni funció. Tot el moviment fa servir transform i opacity (150–450 ms)
+   i es desactiva amb «Reduir moviment» (classe .rm, que també s'activa amb prefers-reduced-motion). */
+
+/* ---------- 1 · Fitxes de disseny (tokens) ---------- */
+.ios{
+  /* base de marca (sense canvis) */
+  --tint:#00A86B; --tint-tx:#00754A; --on-tint:#0B0D0C; --mascot:#0E8257; --blue:#0A63D6;
+  /* escala maragda */
+  --em-50:#F1FBF6; --em-100:#E3F5EC; --em-200:#C4EBD8; --em-300:#5FD3A2; --em-400:#16C083; --em-500:#00A86B; --em-600:#008F5B; --em-700:#00754A; --em-800:#00603D; --em-900:#0B3D2A;
+  --tint-bg:var(--em-100);
+  /* blau elèctric de suport */
+  --blue-50:#EAF2FF; --blue-400:#3BA0FF; --blue-700:#0A55B8;
+  /* neutres càlids (lleugerament verds) */
+  --label2:#5E6361; --label3:#676D6A; --bg2:#F2F4F3; --bg3:#F7F9F8;
+  --fill:rgba(96,112,104,.11); --fill2:rgba(96,112,104,.18); --sep:rgba(40,56,48,.17); --hair:rgba(16,24,20,.06);
+  /* categories (text sobre fons: contrast ≥ 5,4:1) */
+  --cat-nat:#00603D; --cat-nat-bg:#E3F5EC;
+  --cat-cul:#5B3FD0; --cat-cul-bg:#EFEBFF;
+  --cat-his:#8A4A12; --cat-his-bg:#FBEFE3;
+  --cat-gas:#B0341C; --cat-gas-bg:#FFECE8;
+  --cat-act:#0B5CAD; --cat-act-bg:#E6F3FF;
+  /* estats */
+  --ok:#00603D; --ok-bg:#E3F5EC; --warn-tx:#7A4F00; --warn-bg:#FFF4D6; --err:#B00E1D; --err-bg:#FDECEE; --inf:#0A55B8; --inf-bg:#EAF2FF;
+  /* assoliments */
+  --gold:#F4B400; --gold-tx:#6B4E00; --gold-bg:#FFF6D6; --silver:#A7B1BA; --bronze:#C2793B;
+  /* degradats suaus */
+  --g-brand:linear-gradient(135deg,#1CC48A 0%,#00A86B 52%,#009662 100%);
+  --g-sky:linear-gradient(135deg,#3BA0FF 0%,#0A63D6 100%);
+  --g-sun:linear-gradient(135deg,#FFC94D 0%,#FF8A4C 100%);
+  --g-mint:linear-gradient(180deg,#F1FBF6 0%,rgba(255,255,255,0) 100%);
+  --g-scrim:linear-gradient(to bottom,rgba(8,14,11,.55) 0,rgba(8,14,11,.12) 38%,rgba(8,14,11,.70) 100%);
+  /* profunditat */
+  --e1:0 1px 2px rgba(16,24,20,.06),0 1px 1px rgba(16,24,20,.04);
+  --e2:0 6px 16px -4px rgba(16,24,20,.10),0 2px 4px rgba(16,24,20,.05);
+  --e3:0 18px 40px -12px rgba(16,24,20,.22),0 4px 10px rgba(16,24,20,.06);
+  --e-tint:0 8px 20px -6px rgba(0,150,98,.45),0 2px 4px rgba(0,120,80,.18);
+  /* radis */
+  --r-xs:8px; --r-btn:12px; --r-field:12px; --r-card:16px; --r-lg:20px; --r-sheet:22px; --r-pill:999px;
+  /* moviment */
+  --ease-out:cubic-bezier(.2,.8,.2,1); --ease-pop:cubic-bezier(.34,1.4,.64,1); --d-fast:150ms; --d-base:250ms; --d-slow:400ms;
+  /* tipografia de xifres: arrodonida a iPhone (SF Pro Rounded), Inter a la resta */
+  --f-num:ui-rounded,'SF Pro Rounded',-apple-system,BlinkMacSystemFont,'Inter',system-ui,sans-serif;
+}
+
+/* ---------- 2 · Tipografia ---------- */
+.ios .lt{letter-spacing:-.025em}
+.ios .t1{letter-spacing:-.022em}
+.ios .t2,.ios .t3{letter-spacing:-.015em}
+.ios .num,.ios .stat b,.ios .yr b,.ios .cond b,.ios [data-bal],.ios [data-hbal],.ios [data-pts],.ios [data-time]{font-family:var(--f-num);font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.ios .gtitle{font-weight:600;letter-spacing:.04em;font-size:calc(12.5px*var(--dt))}
+.ios .mut{color:var(--label2)}
+
+/* ---------- 3 · Botons ---------- */
+.ios .btn:not(.gray):not(.dark):not(.out):not(.red):not(.soc){background:var(--g-brand);box-shadow:var(--e-tint)}
+.ios .btn[disabled],.ios .btn[aria-disabled="true"]{box-shadow:none!important}
+.ios .btn.dark{background:linear-gradient(180deg,#1B1F1D,#0B0D0C);box-shadow:0 8px 18px -8px rgba(0,0,0,.45)}
+.ios .btn.red{background:linear-gradient(180deg,#E01A2C,#C01020);box-shadow:0 8px 18px -8px rgba(192,16,32,.5)}
+.ios .btn.gray{background:var(--fill)}
+.ios .btn.out{box-shadow:inset 0 0 0 1.5px currentColor}
+.ios .acc .btn:not(.out){box-shadow:0 10px 26px -8px rgba(0,190,120,.55)}
+.ios .bigbtn{background:var(--g-brand);box-shadow:var(--e-tint),0 0 0 8px rgba(0,168,107,.12)}
+.ios .navbtn .gl,.ios .iconbtn .gl{box-shadow:0 2px 10px rgba(16,24,20,.12),0 0 0 .5px var(--hair)}
+
+/* ---------- 4 · Superfícies, targetes i llistes ---------- */
+.ios .surf,.ios .stat,.ios .info,.ios .cond div{box-shadow:inset 0 0 0 .5px var(--hair)}
+.ios .tile{background:#fff;box-shadow:var(--e2),inset 0 0 0 .5px var(--hair);border-radius:var(--r-lg)}
+.ios .tile .rwi{background:var(--bg2);border-radius:14px}
+.ios .tile[data-cat="Mobilitat"] .rwi{background:var(--blue-50);color:var(--blue-700)}
+.ios .tile[data-cat="Comerç local"] .rwi{background:var(--cat-gas-bg);color:var(--cat-gas)}
+.ios .tile[data-cat="Cultura"] .rwi{background:var(--cat-cul-bg);color:var(--cat-cul)}
+.ios .tile[data-cat="Impacte"] .rwi{background:var(--em-100);color:var(--em-800)}
+.ios .acard .pimg{border-radius:var(--r-card);box-shadow:var(--e2)}
+.ios .hl{border-radius:var(--r-card);background:#fff;box-shadow:var(--e2),inset 0 0 0 .5px var(--hair)}
+.ios .impact,.ios .ugc,.ios .chal{border-radius:var(--r-lg);box-shadow:var(--e2)}
+.ios .page.grouped .glist{border-radius:14px;box-shadow:var(--e1)}
+.ios .glist{border-radius:14px}
+.ios .grow .gic{border-radius:8px;box-shadow:inset 0 -1px 0 rgba(0,0,0,.08)}
+.ios .grow .gic:not(.g):not(.b):not(.o):not(.r):not(.k){background:var(--g-brand)}
+.ios .grow .gic.b{background:var(--g-sky)}
+.ios .grow .gic.o{background:linear-gradient(135deg,#E07A1F,#B84D00)}
+.ios .grow .gic.r{background:linear-gradient(135deg,#F0364A,#C01020)}
+.ios .grow .gic.g{background:linear-gradient(135deg,#9AA19D,#7D8480)}
+.ios .info{background:var(--em-50);box-shadow:inset 0 0 0 1px var(--em-100)}
+.ios .ctc{background:var(--em-100);color:var(--em-800)}
+.ios .mem span{background:var(--em-100)}
+
+/* ---------- 5 · Xips i etiquetes (colors per categoria, dificultat i estat) ---------- */
+.ios .chip > span{transition:none}
+.ios .chip[aria-pressed="false"] > span{box-shadow:inset 0 0 0 .5px var(--hair)}
+.ios .chip[aria-pressed="true"] > span{box-shadow:0 4px 10px -4px rgba(11,13,12,.45)}
+.ios .tag{border-radius:var(--r-pill)}
+.ios .tag[data-cat="nat"]{background:var(--cat-nat-bg);color:var(--cat-nat)}
+.ios .tag[data-cat="cul"]{background:var(--cat-cul-bg);color:var(--cat-cul)}
+.ios .tag[data-cat="his"]{background:var(--cat-his-bg);color:var(--cat-his)}
+.ios .tag[data-cat="gas"]{background:var(--cat-gas-bg);color:var(--cat-gas)}
+.ios .tag[data-cat="act"]{background:var(--cat-act-bg);color:var(--cat-act)}
+.ios .tag[data-dif="1"],.ios .tag.eco{background:var(--ok-bg);color:var(--ok)}
+.ios .tag[data-dif="2"]{background:var(--warn-bg);color:var(--warn-tx)}
+.ios .tag[data-dif="3"],.ios .tag.hard{background:#FDE8E5;color:#9B1C10}
+.ios .stat[data-dif="1"] b{color:var(--ok)}
+.ios .stat[data-dif="2"] b{color:var(--warn-tx)}
+.ios .stat[data-dif="3"] b{color:#9B1C10}
+.ios .pend{background:var(--gold-bg);color:var(--gold-tx);border-radius:var(--r-pill)}
+.ios .cnt{background:var(--g-brand)}
+
+/* ---------- 6 · Camps ---------- */
+.ios .search{border-radius:var(--r-field)}
+.ios .statusbar{transition:none}
+.ios .search:focus-within{box-shadow:0 0 0 3px rgba(0,168,107,.22)}
+.ios .dk-inp{border-radius:var(--r-field)}
+.ios .composer .field:focus-within{box-shadow:inset 0 0 0 1.5px var(--tint),0 0 0 3px rgba(0,168,107,.16)}
+.ios .composer .send{background:var(--g-brand);box-shadow:var(--e-tint)}
+.ios .composer .send[disabled]{box-shadow:none}
+
+/* ---------- 7 · Interruptor: el color es fon amb opacity (sense animar colors) ---------- */
+.ios .sw::before{background:var(--tint)!important;opacity:0;transition:opacity var(--d-base) var(--ease-out)!important}
+.ios .sw{background:no-repeat 0 6.5px/51px 31px url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='51' height='31'%3E%3Crect width='51' height='31' rx='15.5' fill='%23E5E8E6'/%3E%3C/svg%3E")}
+.ios .sw[aria-checked="true"]::before{opacity:1}
+
+/* ---------- 8 · Xat ---------- */
+.ios .chat .me .mb{background:var(--g-brand);box-shadow:0 4px 12px -6px rgba(0,150,98,.55)}
+.ios .chat .ai .mb{background:var(--bg2);box-shadow:inset 0 0 0 .5px var(--hair)}
+.ios .sug{background:#fff;box-shadow:var(--e1),inset 0 0 0 1px rgba(16,24,20,.07);border-radius:14px}
+.ios .sug i{background:var(--em-50);color:var(--em-700);box-shadow:inset 0 0 0 .5px var(--em-200)}
+.ios .mav{background:var(--g-brand);box-shadow:0 0 0 2px #fff,0 0 0 3.5px var(--em-200)}
+.ios .bubble{border-radius:20px}
+.ios .typing{background:var(--bg2);box-shadow:inset 0 0 0 .5px var(--hair)}
+
+/* ---------- 9 · Capçaleres amb foto, vidre i perfil ---------- */
+.ios .phead-sc{background:var(--g-scrim)}
+.ios .glass{border:1px solid rgba(255,255,255,.22);box-shadow:0 10px 30px -10px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.12)}
+.ios .pav{box-shadow:0 0 0 3px rgba(255,255,255,.35),0 8px 20px -6px rgba(0,0,0,.35);background:linear-gradient(180deg,#fff,#EEF5F1)}
+.ios .dbody{border-radius:var(--r-lg) var(--r-lg) 0 0;margin-top:-20px}
+.ios .yearban{background:linear-gradient(135deg,#14201A,#0B0D0C);box-shadow:var(--e2)}
+
+/* ---------- 10 · Barres, gràfics i progrés (creixen en aparèixer) ---------- */
+.ios .bar i{background:linear-gradient(90deg,#1FD08A,#16C083);transform-origin:0 50%;animation:vgrow var(--d-slow) var(--ease-out) both}
+.ios .bar.lt i{background:var(--g-brand)}
+.ios .chart .b i{transform-origin:50% 100%;animation:vrise var(--d-slow) var(--ease-out) both}
+.ios .chart .b.on i{background:var(--g-brand);box-shadow:0 6px 14px -6px rgba(0,150,98,.6)}
+.ios .chart .b:nth-child(2) i{animation-delay:30ms}.ios .chart .b:nth-child(3) i{animation-delay:60ms}.ios .chart .b:nth-child(4) i{animation-delay:90ms}.ios .chart .b:nth-child(5) i{animation-delay:120ms}.ios .chart .b:nth-child(6) i{animation-delay:150ms}.ios .chart .b:nth-child(7) i{animation-delay:180ms}
+.ios .hours span{transform-origin:50% 100%;animation:vrise var(--d-slow) var(--ease-out) both}
+.ios .hours span.now{background:var(--g-brand)}
+.ios .crowd i.on{background:var(--g-brand)}
+@keyframes vgrow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes vrise{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+
+/* ---------- 11 · Esquelets de càrrega (lluentor amb transform) i entrada suau de fotos ---------- */
+.ios .sk{position:relative;overflow:hidden;background:#EDF1EE!important;animation:none!important}
+.ios .sk::after{content:"";position:absolute;inset:0;transform:translateX(-100%);background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.75),rgba(255,255,255,0));animation:skx 1.2s var(--ease-out) infinite}
+@keyframes skx{to{transform:translateX(100%)}}
+.ios .pimg[class*=" bg-"]::before{content:"";position:absolute;inset:0;z-index:0;background:#E3E9E5 linear-gradient(120deg,#E3E9E5 30%,#EFF3F0 50%,#E3E9E5 70%);transition:opacity var(--d-slow) var(--ease-out);pointer-events:none}
+.ios .pimg.hero-clone::before{display:none}
+
+/* ---------- 12 · Estats buits amb il·lustració ---------- */
+.ios .ring-s,.ios .col:has(> [data-goshop]) > .rwi{position:relative;background:radial-gradient(circle at 35% 30%,#fff 0,var(--em-50) 45%,var(--em-100) 100%)!important;box-shadow:0 0 0 10px rgba(0,168,107,.06),0 0 0 22px rgba(0,168,107,.035),var(--e1);color:var(--em-700)}
+.ios .col:has(> [data-goshop]) > .rwi{width:88px!important;height:88px!important;border-radius:44px!important;margin-top:18px}
+.ios .ring-s::before,.ios .ring-s::after,.ios .col:has(> [data-goshop]) > .rwi::before,.ios .col:has(> [data-goshop]) > .rwi::after{content:"";position:absolute;width:18px;height:18px;background:no-repeat center/contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 22C21 18 20 7 12 2 4 7 3 18 12 22Z' fill='%2316C083'/%3E%3Cpath d='M12 20V6' stroke='%23fff' stroke-opacity='.5' stroke-width='1.4' stroke-linecap='round'/%3E%3C/svg%3E");animation:leafin var(--d-slow) var(--ease-pop) both}
+.ios .ring-s::before,.ios .col:has(> [data-goshop]) > .rwi::before{left:-16px;top:6px;transform:rotate(-24deg)}
+.ios .ring-s::after,.ios .col:has(> [data-goshop]) > .rwi::after{right:-12px;bottom:2px;width:13px;height:13px;transform:rotate(30deg);animation-delay:120ms;filter:hue-rotate(-10deg)}
+@keyframes leafin{from{opacity:0;translate:0 8px;scale:.6}to{opacity:1;translate:0 0;scale:1}}
+.ios .empty-x h2,.ios .empty-x h3{margin-top:14px!important}
+
+/* ---------- 13 · Celebracions ---------- */
+.ios .okring{background:var(--g-brand);box-shadow:0 14px 30px -10px rgba(0,150,98,.65),0 0 0 10px rgba(0,168,107,.12)}
+.ios .coupon{border-color:var(--em-200);background:linear-gradient(180deg,var(--em-50),#fff 70%);box-shadow:var(--e1)}
+.ios .vfx{position:absolute;inset:0;pointer-events:none;z-index:95;overflow:hidden}
+.ios .vfx i{position:absolute;left:-5px;top:-7px;width:10px;height:14px;border-radius:3px;will-change:transform,opacity}
+.ios .vfx i.c{width:10px;height:10px;border-radius:50%}
+.ios .vfx i.s{width:9px;height:9px;border-radius:2px}
+
+/* ---------- 14 · Fulles, alertes i avisos ---------- */
+.ios .sheet{border-radius:var(--r-sheet) var(--r-sheet) 0 0;box-shadow:0 -10px 40px rgba(16,24,20,.16)}
+.ios .toast{box-shadow:var(--e3),0 0 0 .5px var(--hair)}
+.ios .toast svg{padding:3px;width:24px;height:24px;border-radius:12px;background:var(--em-100)}
+.ios .alert{border-radius:16px}
+.ios .rpanel{border-radius:var(--r-lg) var(--r-lg) 0 0;box-shadow:0 -10px 34px rgba(16,24,20,.14)}
+.ios .nextc{box-shadow:var(--e3)}
+.ios .routepg .pill,.ios .map-search{box-shadow:var(--e2),0 0 0 .5px var(--hair)}
+
+/* ---------- 15 · Accés, càrrega i permisos ---------- */
+.ios .acc .acc-pan{border-radius:24px 24px 0 0}
+.ios .perm-map{border-radius:0 0 32px 32px;box-shadow:var(--e2)}
+.ios .ring.cc{background:radial-gradient(circle at 35% 30%,#fff 0,var(--em-50) 45%,var(--em-100) 100%)!important;box-shadow:0 0 0 12px rgba(0,168,107,.06),0 0 0 26px rgba(0,168,107,.035)}
+
+/* ---------- 16 · Forats de foto (visibles amb ?fotos a l'adreça) ---------- */
+.ios.slots [data-slot]{outline:2px dashed rgba(255,255,255,.9);outline-offset:-6px}
+.ios.slots [data-slot]::after{content:attr(data-slot);position:absolute;left:8px;top:8px;z-index:6;padding:3px 8px;border-radius:8px;background:rgba(10,85,184,.92);color:#fff;font:600 11px/1.3 -apple-system,BlinkMacSystemFont,'Inter',system-ui,sans-serif;letter-spacing:0;white-space:nowrap;pointer-events:none}
+
+/* ---------- 17 · Reduir moviment: res es mou; només fosos ---------- */
+.ios.rm .bar i,.ios.rm .chart .b i,.ios.rm .hours span{animation:none}
+.ios.rm .sk::after{animation:none;opacity:0}
+.ios.rm .ring-s::before,.ios.rm .ring-s::after,.ios.rm .col:has(> [data-goshop]) > .rwi::before,.ios.rm .col:has(> [data-goshop]) > .rwi::after{animation:none}
+.ios.rm .vfx{display:none}
+@media (prefers-reduced-motion: reduce){ .ios .bar i,.ios .chart .b i,.ios .hours span,.ios .sk::after{animation:none} }
+
+/* ---------- 18 · Calidesa: rentat de color suau a dalt de les pantalles blanques ---------- */
+.ios .page:not(.dark):not(.grouped):not(.detail):not(.rewards):not(.profile):not(.mappg):not(.routepg){background:linear-gradient(180deg,#ECF7F1 0,#F6FBF8 140px,#FFFFFF 300px)}
+.ios .page.grouped{background:linear-gradient(180deg,#E6F2EC 0,var(--bg2) 260px)}
+.ios .sheet .page:not(.dark){background:#fff}
+.ios .gm-row .gm,.ios [data-gm]{position:relative;isolation:isolate}
+.ios .gm-row .gm::before{content:"";position:absolute;left:50%;bottom:6px;width:150px;height:150px;margin-left:-75px;border-radius:50%;background:radial-gradient(circle,rgba(0,168,107,.16) 0,rgba(0,168,107,.06) 45%,rgba(0,168,107,0) 70%);z-index:-1;pointer-events:none}
+
+/* ---------- 19 · Targetes d'Explorar elevades (estil targeta, mateix contingut i ordre) ---------- */
+.ios article.acard{background:#fff;border-radius:20px;padding:6px 6px 14px;box-shadow:var(--e2),inset 0 0 0 .5px var(--hair)}
+.ios article.acard .pimg{border-radius:15px!important;box-shadow:none}
+.ios article.acard > div:last-child{padding:10px 8px 0!important}
+.ios article.acard .fav{top:10px!important;right:10px!important}
+
+/* ---------- 20 · Barra de pestanyes: píndola de selecció (com iOS) ---------- */
+.ios .tabbar button .ti{position:relative;isolation:isolate}
+.ios .tabbar button[aria-selected="true"] .ti::before{content:"";position:absolute;top:-1px;bottom:-1px;left:-15px;right:-15px;border-radius:15px;background:var(--em-100);z-index:-1;animation:pillin var(--d-base) var(--ease-pop) both}
+@keyframes pillin{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}
+.ios.rm .tabbar button .ti::before{animation:none}
+
+/* ---------- 21 · Contrast i color en detalls ---------- */
+.ios .glass .tbtn{color:#7AF0BC}
+.ios [data-earn="1"] > .ctc{background:var(--em-100)!important;color:var(--em-800)}
+.ios [data-earn="0"] > .ctc{background:var(--cat-gas-bg)!important;color:var(--cat-gas)}
+.ios .fav[aria-pressed="true"] .gl{background:#fff}
+
+/* ===================== Valia · disseny 3.0: les fotos reals com a protagonistes =====================
+   Només aparença. Mateixos textos, elements, ordre i funcions. Moviment només amb transform i opacity. */
+
+.ios{
+  --r-card:18px; --r-lg:24px;
+  --g-photo:linear-gradient(180deg,rgba(6,12,9,0) 40%,rgba(6,12,9,.55) 100%);
+  --glass-dk2:rgba(14,18,16,.52);
+  /* barra de pestanyes flotant (vidre): l'espai reservat a sota es calcula amb la zona segura */
+  --tab-h:calc(max(8px, var(--safe-b) - 12px) + 70px);
+}
+
+/* ---------- Tipografia: títols més editorials ---------- */
+.ios .lt{font-size:calc(36px*var(--dtL));font-weight:800;letter-spacing:-.032em}
+.ios .t1{font-weight:800;letter-spacing:-.028em}
+.ios .phead .lt,.ios .acc .acc-tx h2{text-shadow:0 2px 18px rgba(0,0,0,.35)}
+.ios .acc .acc-tx h2{font-weight:800;letter-spacing:-.03em}
+
+/* ---------- Barra de pestanyes flotant de vidre (estil iOS) ---------- */
+.ios .tabbar{left:12px;right:12px;bottom:max(8px, calc(var(--safe-b) - 12px));height:62px;padding:0 4px;border-radius:31px;
+  background:rgba(255,255,255,.72);-webkit-backdrop-filter:saturate(190%) blur(24px);backdrop-filter:saturate(190%) blur(24px);
+  box-shadow:0 12px 32px -10px rgba(16,24,20,.28),0 2px 8px rgba(16,24,20,.08),inset 0 0 0 .5px rgba(255,255,255,.8),0 0 0 .5px rgba(16,24,20,.08)}
+.ios .tabbar button{height:62px;padding-top:9px;justify-content:flex-start}
+.ios .tabbar button[aria-selected="true"] .ti::before{left:-18px;right:-18px;top:-3px;bottom:-3px;border-radius:17px}
+.ios.kbd-on .tabbar{display:none}
+
+/* ---------- Accés: foto a sang i panell de vidre ---------- */
+.ios .acc .acc-pan{background:rgba(12,15,13,.74);-webkit-backdrop-filter:saturate(160%) blur(26px);backdrop-filter:saturate(160%) blur(26px);border-radius:28px 28px 0 0;box-shadow:inset 0 1px 0 rgba(255,255,255,.08)}
+.ios .acc .acc-scrim{background:linear-gradient(to bottom,rgba(6,10,8,.55) 0,rgba(6,10,8,.12) 18%,rgba(6,10,8,0) 32%,rgba(6,10,8,.42) 50%,rgba(6,10,8,.78) 68%,rgba(6,10,8,.9) 100%)}
+.ios .acc .acc-in .tbtn{color:#C9CECB}
+
+/* ---------- Explorar: targetes amb foto protagonista ---------- */
+.ios article.acard{border-radius:var(--r-lg);padding:6px 6px 16px}
+.ios article.acard .pimg{height:236px!important;border-radius:19px!important}
+.ios article.acard .acard-hit{position:relative;display:block;border-radius:19px;overflow:hidden}
+.ios article.acard .acard-hit::after{content:"";position:absolute;inset:0;border-radius:19px;background:var(--g-photo);pointer-events:none}
+.ios article.acard .acttag{position:absolute;left:14px;bottom:14px;z-index:2;min-height:28px;padding:4px 11px;background:var(--glass-dk2);color:#fff;-webkit-backdrop-filter:blur(14px) saturate(160%);backdrop-filter:blur(14px) saturate(160%);box-shadow:inset 0 0 0 .5px rgba(255,255,255,.28);pointer-events:none}
+.ios article.acard .acttag svg{color:#fff}
+.ios article.acard > div:last-child{padding:12px 10px 0!important}
+.ios article.acard h3.t3{font-size:calc(21px*var(--dt));font-weight:700;letter-spacing:-.02em}
+.ios .acard .fav .gl{background:rgba(255,255,255,.86)}
+
+/* xat: targetes d'activitat amb foto */
+.ios .chatcard{background:#fff;border-radius:20px;padding:6px;box-shadow:var(--e2),inset 0 0 0 .5px var(--hair)}
+.ios .chatcard .pimg{height:150px!important;border-radius:15px!important}
+.ios .chatcard > div:last-child{padding:10px 8px 6px!important}
+
+/* ---------- Fitxa: portada més alta, degradat i cos que hi puja a sobre ---------- */
+.ios .page.detail .dhero{height:380px!important;transform-origin:50% 100%;will-change:transform}
+.ios .page.detail .dhero.pimg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,10,8,.42) 0,rgba(6,10,8,0) 28%,rgba(6,10,8,0) 62%,rgba(6,10,8,.38) 100%);pointer-events:none;z-index:1}
+.ios .page.detail .dbody{margin-top:-30px;border-radius:28px 28px 0 0;box-shadow:0 -10px 30px -12px rgba(0,0,0,.25)}
+.ios .page.detail .dbody > .t1:first-child,.ios .page.detail .dbody h1.t1{font-size:calc(30px*var(--dtL))}
+
+/* ---------- Mapa: targeta flotant amb foto ---------- */
+.ios [data-mcard] > *{border-radius:22px!important;box-shadow:var(--e3)!important}
+.ios [data-mcard] .pimg{border-radius:16px!important}
+
+/* ---------- Comunitat i punts destacats: fotos grans ---------- */
+.ios .hl .pimg{height:132px!important}
+.ios .surf.cc:has(> .pimg){background:#fff;box-shadow:var(--e2),inset 0 0 0 .5px var(--hair);border-radius:var(--r-lg)}
+.ios .surf.cc:has(> .pimg) > .pimg{height:180px!important}
+
+/* ---------- Capçaleres de Perfil i Recompenses: foto a sang amb vidre ---------- */
+.ios .phead{overflow:hidden}
+.ios .phead > .pimg{transform:scale(1.04)}
+.ios .phead-sc{background:linear-gradient(180deg,rgba(6,10,8,.58) 0,rgba(6,10,8,.10) 34%,rgba(6,10,8,.25) 60%,rgba(6,10,8,.78) 100%)}
+.ios .phead .glass,.ios .impact .glass,.ios .chal .glass,.ios .ugc .glass{background:rgba(14,18,16,.46);-webkit-backdrop-filter:saturate(170%) blur(22px);backdrop-filter:saturate(170%) blur(22px);border-radius:20px}
+
+/* ---------- Recompenses: rajoles amb foto (la imatge de cada recompensa) ---------- */
+.ios .tile[data-rw]{position:relative;min-height:176px;display:flex;flex-direction:column;justify-content:flex-end;color:#fff;background-color:#2C3530;background-size:cover;background-position:50% 50%;overflow:hidden;box-shadow:var(--e2)}
+.ios .tile[data-rw] .rwi{position:absolute;top:12px;left:12px;width:40px;height:40px;border-radius:12px;background:rgba(255,255,255,.22)!important;color:#fff!important;-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:inset 0 0 0 .5px rgba(255,255,255,.35)}
+.ios .tile[data-rw] .hd{color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.35)}
+.ios .tile[data-rw] .row{color:#fff}
+.ios .tile[data-rw] .row svg{color:#7AF0BC!important;stroke:#7AF0BC}
+
+/* ---------- Canvi fet i resum: fons amb la foto desenfocada (vidre) ---------- */
+.ios .ambient{position:absolute;left:-40px;right:-40px;top:-40px;height:460px;background-size:cover;background-position:50% 50%;filter:blur(34px) saturate(150%);opacity:.32;pointer-events:none;z-index:0;-webkit-mask-image:linear-gradient(180deg,#000 35%,transparent 100%);mask-image:linear-gradient(180deg,#000 35%,transparent 100%)}
+.ios .ambient::before{display:none}
+.ios .page:has(> .ambient) > .scroll{z-index:1}
+
+/* ---------- Llistes amb miniatura de foto (perfil, mapes) ---------- */
+.ios .surf.row .pimg,.ios .row > .pimg{box-shadow:0 4px 12px -6px rgba(0,0,0,.35)}
+
+/* ---------- Detalls de vidre i profunditat ---------- */
+.ios .navbtn .gl,.ios .iconbtn .gl{-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px)}
+.ios .nav.on-photo:not(.scrolled) .navbtn .gl{background:rgba(14,18,16,.42);box-shadow:inset 0 0 0 .5px rgba(255,255,255,.25)}
+.ios .bbar{background:linear-gradient(to top,rgba(255,255,255,.98) 70%,rgba(255,255,255,0))}
+
+/* ---------- Reduir moviment ---------- */
+.ios.rm .page.detail .dhero{transform:none!important}
+
+/* ===================== Assistent · selector «Xat | Ruta a mida» i pestanya «Ruta a mida» =====================
+   Fa servir les mateixes fitxes de disseny (colors, radis, ombres, xips, vidre, moviment) que la resta de l'app. */
+
+/* capçalera de l'assistent: una segona fila amb el selector segmentat (el títol queda igual) */
+.ios .page.chat{--aiseg-h:54px}
+.ios .page.chat > .nav{height:calc(var(--safe-t) + var(--nav-h) + var(--aiseg-h));grid-template-rows:var(--nav-h);align-content:start}
+.ios .page.chat > .scroll,.ios .aiscroll{padding-top:calc(var(--safe-t) + var(--nav-h) + var(--aiseg-h))}
+.ios .nav > .aiseg{position:absolute;left:16px;right:16px;bottom:8px}
+.ios .aiseg .segc{box-shadow:inset 0 0 0 .5px var(--hair)}
+.ios .aiseg .segc button{font-size:var(--t-sh)}
+.ios .aiseg .segc button[aria-selected="true"]{color:var(--label)}
+/* botons de la dreta: «Conversa nova» al xat, «Esborrar les opcions» a «Ruta a mida» */
+.ios .page.chat[data-ai="xat"] [data-rreset],.ios .page.chat[data-ai="ruta"] [data-new]{display:none}
+/* el xat queda sota quan es mostra l'altra pestanya */
+.ios .page.chat[data-ai="ruta"] > .composer{pointer-events:none}
+
+/* pestanya «Ruta a mida» */
+.ios .aipane{position:absolute;inset:0;z-index:10}
+.ios .aiscroll{position:absolute;inset:0;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;scrollbar-width:none;padding-bottom:240px}
+.ios .aiscroll::-webkit-scrollbar{display:none}
+.ios .aigm{min-height:108px;margin-top:4px}
+.ios .aigm .gm-b{margin-bottom:50px;max-width:210px}
+.ios .aiintro{margin:8px 0 0}
+
+/* missatge en preparació: targeta blanca sobre la barra inferior */
+.ios .aibar{padding-top:10px;background:linear-gradient(to top,#fff 70%,rgba(255,255,255,0))}   /* opac: no es transparenten els xips de sota */
+/* franja blanca sota la barra: la barra de pestanyes flotant queda sobre un fons net */
+.ios .aibar::after{content:"";position:absolute;left:0;right:0;top:calc(100% - 1px);height:calc(var(--tab-h) + 1px);background:#fff;pointer-events:none;z-index:-1}   /* 1 px de solapament: cap línia fina entre la barra i la franja */
+.ios .aiprev{position:relative;margin-bottom:10px;padding:6px 14px 12px;border-radius:18px;background:#fff;box-shadow:var(--e2),inset 0 0 0 .5px var(--hair)}
+.ios .aiprev-h{display:flex;align-items:center;gap:8px;min-height:44px;white-space:nowrap}
+.ios .aiprev-l{font-weight:600;color:var(--label2)}
+.ios .aiprev-c{display:flex;align-items:flex-start;gap:5px;margin:8px 0 0;font-size:var(--t-fn);line-height:1.3;font-weight:600;color:var(--tint-tx)}
+.ios .aiprev-c svg{flex:none;margin-top:1px}
+.ios .aiprev-c.warn{color:var(--warn-tx)}
+.ios .aiedit{min-height:44px;margin-right:-8px;padding:0 8px;font-size:var(--t-sh);font-weight:600}
+.ios .aiprev-t{font-size:var(--t-co);line-height:1.42;color:var(--label);max-height:calc(1.42em * 5);overflow-y:auto;scrollbar-width:none;user-select:text;-webkit-user-select:text}
+.ios .aiprev-t::-webkit-scrollbar{display:none}
+.ios .aiprev-t mark{background:var(--em-100);color:var(--em-800);font-weight:600;border-radius:6px;padding:0 3px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.ios .aiprev-t mark.new{animation:aimk var(--d-base) var(--ease-out) both}
+@keyframes aimk{from{opacity:0}to{opacity:1}}
+.ios .aiprev-i{display:block;width:100%;min-height:88px;max-height:168px;padding:10px 12px;border:0;border-radius:12px;background:var(--bg2);color:var(--label);font:inherit;font-size:var(--t-co);line-height:1.42;resize:none;outline:none;user-select:text;-webkit-user-select:text;box-shadow:inset 0 0 0 1.5px var(--tint),0 0 0 3px rgba(0,168,107,.16)}
+.ios .aiprev-i[hidden],.ios .aiprev-t[hidden],.ios .aiprev-hint[hidden]{display:none}
+.ios .aiprev-hint{display:flex;align-items:center;flex-wrap:wrap;gap:0 6px;margin-top:2px}
+.ios .aiprev-hint .tbtn{padding:0 6px;margin-left:-6px;font-size:var(--t-sh);font-weight:600}
+.ios .aibar .btn[disabled]{opacity:.45}
+
+/* el missatge que «vola» de la targeta a la conversa */
+.ios .aighost{position:absolute;top:0;z-index:58;pointer-events:none;transform-origin:100% 50%;will-change:transform,opacity}
+
+/* «Reduir moviment»: cap desplaçament, només fosos */
+.ios.rm .aiprev-t mark.new{animation:none}
+.ios .aimav{width:28px;height:28px;box-shadow:0 0 0 2px #fff,0 0 0 3.5px var(--em-200)}
+
+/* ===================== Valia v5 · «Bosc viu» =====================
+   Paper càlid, Fraunces als títols, un accent per secció, botons amb relleu, barra de pestanyes fosca
+   amb indicador, graelles bento, fotos a sang i moviment amb molles (només transform i opacity). */
+
+/* ---------- 1. Fitxes de disseny ---------- */
+.ios{
+  --f-d:'GV Fraunces','Iowan Old Style',Georgia,serif;
+  --paper:#F4F3EC; --card:#FFFFFF; --ink:#0F1B15;
+  --bg:var(--paper); --bg2:#EBEAE1; --label:var(--ink); --label2:#525E58; --label3:#56625C;
+  --fill:rgba(15,27,21,.07); --fill2:rgba(15,27,21,.12); --hair:rgba(15,27,21,.10); --sep:rgba(15,27,21,.14);
+  --tint:#00A86B; --tint-tx:#00704A; --tint-bg:#DDF5EA; --on-tint:#0F1B15;
+  --acc:#00A86B; --acc-tx:#00704A; --acc-soft:#DDF5EA; --acc-lip:#00804F;
+  --glass:rgba(244,243,236,.80);
+  --sh1:0 1px 0 rgba(15,27,21,.04),0 12px 28px -16px rgba(15,27,21,.28);
+  --sh2:0 2px 0 rgba(15,27,21,.05),0 24px 48px -20px rgba(15,27,21,.38);
+  --r-card:24px; --r-lg:28px; --r-btn:18px; --r-field:18px; --r-sheet:30px;
+  --g-alba:linear-gradient(140deg,#00A86B 0%,#2FBF7E 50%,#9BDD6A 100%);
+  --g-ia:var(--ia-btn-g);
+  --g-sol:linear-gradient(155deg,#FFE08A 0%,#FFC23A 45%,#FF9A4C 100%);
+  --g-riu:linear-gradient(155deg,#8CD0FF 0%,#4FAEF5 55%,#2E86E0 100%);
+  --g-corall:linear-gradient(155deg,#FFC2AE 0%,#FF8F70 55%,#FF6A47 100%);
+  --spring:cubic-bezier(.34,1.56,.64,1); --out:cubic-bezier(.22,1,.36,1);
+  background:var(--bg);
+}
+/* accent per secció */
+.ios .stack[data-tab="inici"]{--acc:#00A86B;--acc-tx:#00704A;--acc-soft:#DDF5EA;--acc-lip:#00804F;--wash:#CDEFDD}
+.ios .stack[data-tab="xat"]{--acc:var(--ia-icon);--acc-tx:var(--ia-tx);--acc-soft:var(--ia-soft);--acc-lip:var(--ia-lip);--wash:var(--ia-wash)}
+.ios .stack[data-tab="explorar"]{--acc:#2E9BF0;--acc-tx:#0B5FA8;--acc-soft:#E1F0FD;--acc-lip:#1A6FD0;--wash:#D6EBFC}
+.ios .stack[data-tab="recompenses"]{--acc:#FFB21A;--acc-tx:#7A4A00;--acc-soft:#FFF0CC;--acc-lip:#D98E00;--wash:#FFE7B0}
+.ios .stack[data-tab="perfil"]{--acc:#FF7452;--acc-tx:#B0391C;--acc-soft:#FFE5DC;--acc-lip:#D9532F;--wash:#FFD9CC}
+.ios .page.cfg5{--acc:#5C6B73;--acc-tx:#3F4D55;--acc-soft:#E3E9EC;--acc-lip:#3F4D55;--wash:#E1E6E8}
+
+/* ---------- 2. Base, tipografia i fons ---------- */
+.ios .scene,.ios .page{background:var(--bg)}
+.ios .page > .scroll{background:linear-gradient(180deg,var(--wash,transparent) 0,var(--bg) 380px) no-repeat local}
+.ios .lt,.ios .ltitle{font-family:var(--f-d);font-weight:600;letter-spacing:-.025em;font-size:calc(38px*var(--dtL));line-height:1.08}
+.ios .t1{font-family:var(--f-d);font-weight:600;letter-spacing:-.02em}
+.ios .t2{font-family:var(--f-d);font-weight:600;letter-spacing:-.015em;font-size:calc(24px*var(--dtL))}
+.ios .num{font-family:var(--f-d);font-weight:600;letter-spacing:-.02em}
+.ios .mut{color:var(--label2)}
+.ios .tintx,.ios .tbtn{color:var(--acc-tx)}
+.ios .tbtn{font-weight:650}
+
+/* barra de navegació: vidre de paper */
+.ios .nav::before{background:var(--glass)!important;box-shadow:0 .5px 0 var(--sep)!important}
+.ios .nav .nt{font-weight:700;letter-spacing:-.01em}
+.ios .navbtn .gl{border-radius:16px}
+.ios .nav:not(.on-photo) .navbtn{color:var(--acc-tx)}
+.ios .nav:not(.on-photo):not(.scrolled) .navbtn .gl{background:var(--card);box-shadow:var(--sh1)}
+
+/* ---------- 3. Botons ---------- */
+.ios .btn{border-radius:var(--r-btn);min-height:54px;font-weight:700;letter-spacing:-.01em;position:relative;transition:transform .14s var(--spring),box-shadow .14s ease,filter .14s ease}
+.ios .btn:not(.gray):not(.dark):not(.out):not(.red):not(.soc):not(.ghost5){background:linear-gradient(180deg,#1BC283 0%,#00A86B 100%)!important;color:#0F1B15!important;box-shadow:0 4px 0 #00804F,0 14px 24px -12px rgba(0,128,79,.6)!important}
+.ios .btn.dark{background:linear-gradient(180deg,#24302A,#0F1B15)!important;color:#fff!important;box-shadow:0 4px 0 #000,0 14px 24px -14px rgba(0,0,0,.6)!important}
+.ios .btn.out{background:var(--card)!important;color:var(--ink)!important;box-shadow:inset 0 0 0 1.5px var(--hair),0 3px 0 rgba(15,27,21,.10)!important}
+.ios .btn.gray{background:var(--acc-soft)!important;color:var(--acc-tx)!important;box-shadow:0 3px 0 color-mix(in srgb,var(--acc) 35%,transparent)!important}
+.ios .btn.red{background:linear-gradient(180deg,#E8303F,#C8102E)!important;color:#fff!important;box-shadow:0 4px 0 #8E0A20,0 14px 24px -14px rgba(200,16,46,.55)!important}
+.ios .btn.ghost5{background:rgba(255,255,255,.18)!important;color:#fff!important;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.55)!important}
+.ios .btn:active:not([disabled]):not([aria-disabled="true"]){transform:translateY(3px) scale(.985)}
+.ios .btn:not(.out):not(.ghost5):active:not([disabled]){box-shadow:0 1px 0 rgba(0,0,0,.25),0 6px 12px -8px rgba(0,0,0,.4)!important}
+.ios .btn[disabled],.ios .btn[aria-disabled="true"]{background:#DEDFD7!important;color:#6B736E!important;box-shadow:0 3px 0 #C9CBC1!important;opacity:1}
+.ios .btn.is-busy,.ios .btn[aria-busy="true"]{color:transparent!important;pointer-events:none}
+.ios .btn.is-busy::after,.ios .btn[aria-busy="true"]::after{content:"";position:absolute;left:50%;top:50%;width:20px;height:20px;margin:-10px 0 0 -10px;border-radius:50%;border:2.5px solid rgba(15,27,21,.25);border-top-color:#0F1B15;animation:spin5 .8s linear infinite}
+@keyframes spin5{to{transform:rotate(360deg)}}
+.ios .btn.sm{min-height:46px;border-radius:15px}
+.ios .iconbtn .gl,.ios .navbtn .gl{transition:transform .14s var(--spring)}
+.ios .iconbtn:active .gl,.ios .navbtn:active .gl{transform:scale(.88)}
+.ios .press{transition:transform .16s var(--spring)}
+.ios .press:active{transform:scale(.97)}
+
+/* xips i control segmentat */
+.ios .chip > span{min-height:38px;padding:7px 16px;border-radius:999px;background:var(--card);color:var(--ink);font-weight:600;box-shadow:inset 0 0 0 1.5px var(--hair)!important;transition:transform .16s var(--spring),background-color .2s,color .2s}
+.ios .chip[aria-pressed="true"] > span,.ios .chip.on > span{background:var(--acc-soft)!important;color:var(--acc-tx)!important;box-shadow:inset 0 0 0 2px var(--acc)!important}
+.ios .chip:active > span{transform:scale(.93)}
+.ios .segc{border-radius:999px;background:var(--card);box-shadow:inset 0 0 0 1.5px var(--hair);padding:3px}
+.ios .segc button{border-radius:999px;color:var(--label2);font-weight:600}
+.ios .segc button[aria-selected="true"]{color:#fff}
+.ios .segc .knob{top:3px;bottom:3px;border-radius:999px;background:var(--acc-tx);box-shadow:0 4px 10px -4px color-mix(in srgb,var(--acc-tx) 70%,transparent)}
+.ios .aiseg .segc button[aria-selected="true"]{color:#fff}
+
+/* camps i cerca */
+.ios .search{background:var(--card);border-radius:999px;box-shadow:var(--sh1),inset 0 0 0 1px var(--hair);padding:0 16px;min-height:50px;color:var(--label3)}
+.ios .search input{height:50px}
+.ios .search:focus-within{box-shadow:0 0 0 3px color-mix(in srgb,var(--acc) 30%,transparent),inset 0 0 0 1.5px var(--acc)}
+
+/* superfícies */
+.ios .surf,.ios .stat,.ios .info{background:var(--card);border-radius:22px;box-shadow:var(--sh1)!important}
+.ios .glist{background:var(--card);border-radius:22px;box-shadow:var(--sh1)}
+.ios .gtitle{font-family:var(--f-d);font-weight:600;font-size:19px;letter-spacing:-.01em;text-transform:none;color:var(--ink)}
+.ios .gic{border-radius:11px}
+.ios .tag{border-radius:999px;font-weight:650}
+.ios .bar{height:10px;border-radius:5px;background:var(--fill2)}
+.ios .bar i{border-radius:5px;background:var(--acc)}
+.tag5{display:inline-flex;align-items:center;gap:5px;min-height:28px;padding:4px 11px;border-radius:999px;background:var(--acc-soft);color:var(--acc-tx);font-size:13px;font-weight:650}
+.bar5{display:block;height:10px;border-radius:5px;background:rgba(15,27,21,.10);overflow:hidden}
+.bar5 i{display:block;height:100%;border-radius:5px;background:var(--acc);transform-origin:0 50%;animation:grow5 .9s var(--out) .15s both}
+@keyframes grow5{from{transform:scaleX(0)}}
+
+/* ---------- 4. Barra de pestanyes: píndola fosca amb indicador ---------- */
+.ios .tabbar{left:14px!important;right:14px!important;height:66px!important;border-radius:33px!important;padding:0 6px!important;background:rgba(15,27,21,.92)!important;-webkit-backdrop-filter:saturate(160%) blur(20px)!important;backdrop-filter:saturate(160%) blur(20px)!important;box-shadow:0 20px 40px -14px rgba(0,0,0,.55),inset 0 0 0 1px rgba(255,255,255,.07)!important}
+.ios .tabbar button{height:66px!important;padding-top:9px!important;color:rgba(255,255,255,.66)!important;position:relative;z-index:1;font-size:10.5px;gap:3px;transition:color .2s}
+.ios .tabbar button[aria-selected="true"]{color:#fff!important}
+.ios .tabbar button[aria-selected="true"] .ti{color:var(--tacc,#00A86B)}
+.ios .tabbar button .ti::before{display:none!important}
+.ios .tabbar button .tav{background:#5E6A63!important}
+.ios .tabbar button[aria-selected="true"] .tav{background:var(--ia-tab)!important}
+.ios .tabbar .tb5-ind{position:absolute;left:0;top:7px;height:52px;border-radius:26px;background:rgba(255,255,255,.11);box-shadow:inset 0 0 0 1px rgba(255,255,255,.07);pointer-events:none;z-index:0;will-change:transform}
+.ios .tabbar .tb5-ind::after{content:"";position:absolute;left:50%;top:-2px;width:20px;height:3px;margin-left:-10px;border-radius:2px;background:var(--tacc,#00A86B);box-shadow:0 0 12px var(--tacc,#00A86B)}
+
+/* ---------- 5. Inici (bento) ---------- */
+.ios .page.home5 > .scroll{background:linear-gradient(180deg,#CDEFDD 0,var(--bg) 420px) no-repeat local}
+.ios .h5nav:not(.scrolled) .nt{opacity:0}
+.h5{padding:calc(var(--safe-t) + 52px) 16px 0}
+.h5-top{margin:0 4px 16px}
+.h5-date{margin:0;font-size:13px;font-weight:650;color:var(--acc-tx);letter-spacing:.02em}
+.h5-hi{margin:4px 0 0;font-family:var(--f-d);font-weight:600;font-size:40px;line-height:1.02;letter-spacing:-.03em;color:var(--ink)}
+.h5-name{color:var(--acc-tx)}
+.h5-hero{position:relative;display:flex;align-items:flex-end;gap:6px;min-height:200px;padding:18px 16px 16px 8px;border-radius:30px;background:var(--g-alba);box-shadow:var(--sh2);overflow:hidden;color:#0F1B15}
+.h5-hero::before{content:"";position:absolute;right:-60px;top:-70px;width:220px;height:220px;border-radius:50%;background:rgba(255,255,255,.18)}
+.h5-hero::after{content:"";position:absolute;left:-40px;bottom:-90px;width:180px;height:180px;border-radius:50%;background:rgba(15,27,21,.08)}
+.h5-mas{position:relative;z-index:1;flex:none;width:112px;height:128px}
+.h5-say{position:relative;z-index:1;flex:1;min-width:0}
+.h5-bub{position:relative;margin:0 0 12px;padding:12px 14px;border-radius:18px 18px 18px 6px;background:#fff;font-size:15px;font-weight:600;line-height:1.3;box-shadow:0 10px 20px -12px rgba(0,0,0,.35)}
+.h5-acts{display:flex;flex-wrap:wrap;gap:8px}
+.h5-acts .btn{width:auto;flex:1 1 auto;padding:8px 12px;font-size:14px}
+.h5-acts .btn:not(.ghost5){background:#0F1B15!important;color:#fff!important;box-shadow:0 4px 0 #000,0 10px 18px -10px rgba(0,0,0,.6)!important}
+.h5-acts .btn.ghost5{color:#0F1B15!important;background:rgba(255,255,255,.55)!important;box-shadow:inset 0 0 0 1.5px rgba(15,27,21,.18),0 3px 0 rgba(15,27,21,.18)!important}
+.h5-sh{display:flex;align-items:baseline;justify-content:space-between;margin:26px 4px 10px}
+.h5-sec{margin:0;font-family:var(--f-d);font-weight:600;font-size:24px;letter-spacing:-.015em}
+.h5-feat{position:relative;height:340px;border-radius:30px;overflow:hidden;background:#1E2924;box-shadow:var(--sh2)}
+.h5-feat-hit{position:absolute;inset:0;width:100%;overflow:hidden;border-radius:30px}
+.h5-feat-hit .pimg{border-radius:0!important;will-change:transform}
+.h5-feat-tx{position:absolute;left:0;right:0;bottom:0;padding:70px 18px 18px;background:linear-gradient(180deg,rgba(6,12,9,0),rgba(6,12,9,.78));color:#fff;pointer-events:none}
+.h5-feat-tx .tag5{background:rgba(6,12,9,.45);color:#fff}
+.h5-feat-t{margin:8px 0 2px;font-family:var(--f-d);font-weight:600;font-size:28px;line-height:1.05;letter-spacing:-.02em}
+.h5-feat-s,.h5-feat-m{margin:0;font-size:14px;color:rgba(255,255,255,.88)}
+.h5-feat-m{margin-top:4px;font-weight:600}
+.bento5{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.bt5{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:2px;min-height:156px;padding:16px;border-radius:26px;text-align:left;overflow:hidden;box-shadow:var(--sh1);color:#0F1B15}
+.bt5-k{font-size:13px;font-weight:700;letter-spacing:.01em;opacity:.85;position:relative}
+.bt5-v{font-family:var(--f-d);font-weight:600;font-size:40px;line-height:1;letter-spacing:-.03em;margin-top:auto;position:relative}
+.bt5-v2{font-size:24px;margin-top:6px}
+.bt5-s{font-size:13px;font-weight:600;opacity:.82;position:relative}
+.bt5-ic{width:40px;height:40px;border-radius:14px;display:grid;place-items:center;background:rgba(255,255,255,.55);margin-bottom:8px}
+.bt5-pts{background:var(--g-sol)}
+.bt5-pts .bt5-ring{position:absolute;right:12px;top:12px}
+.bt5-streak{background:var(--g-corall)}
+.dots5{display:flex;gap:4px;margin-top:8px;position:relative}
+.dots5 i{width:14px;height:14px;border-radius:5px;background:rgba(15,27,21,.14)}
+.dots5 i.on{background:#0F1B15}
+.bt5-co2{background:#D7F2E3}
+.bt5-co2 .bt5-ic{background:#00A86B;color:#0F1B15}
+.bt5-lvl{background:#fff;grid-column:auto}
+.bt5-lvl .bar5{width:100%;margin:10px 0 6px}
+.bdg5{display:flex;gap:4px;margin-top:8px}
+.bt5 .bdg5 span{width:24px;height:24px;border-radius:8px;display:grid;place-items:center;background:var(--fill);color:#7B857F}
+.bt5 .bdg5 span.ok{background:#DDF5EA;color:#00704A}
+.bt5-chal{grid-column:1/-1;min-height:170px;color:#fff;background:#1E2924}
+.bt5-chal .pimg{border-radius:0!important}
+.bt5-sc{position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,12,9,.15),rgba(6,12,9,.8))}
+.bt5-chal .bar5{width:100%;margin:8px 0 6px;position:relative;background:rgba(255,255,255,.25)}
+.bt5-chal .bar5 i{background:#7AF0BC}
+.h5-near{display:flex;gap:12px;overflow-x:auto;scrollbar-width:none;margin:0 -16px;padding:2px 16px 8px;scroll-snap-type:x mandatory}
+.h5-near::-webkit-scrollbar{display:none}
+.h5-nc{flex:none;width:168px;scroll-snap-align:start}
+.h5-nc-hit{position:relative;display:flex;flex-direction:column;justify-content:flex-end;width:100%;height:220px;padding:12px;border-radius:24px;overflow:hidden;text-align:left;color:#fff;box-shadow:var(--sh1);background:#1E2924}
+.h5-nc-hit .pimg{border-radius:0!important}
+.h5-nc-sc{position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,12,9,0) 40%,rgba(6,12,9,.82))}
+.h5-nc-t{position:relative;font-family:var(--f-d);font-weight:600;font-size:18px;line-height:1.1}
+.h5-nc-s{position:relative;font-size:12px;font-weight:600;color:rgba(255,255,255,.88);margin-top:4px}
+.h5-foot{margin:18px 4px calc(var(--tab-h) + 30px)}
+
+/* ---------- 6. Explorar: graella bento de fotos ---------- */
+.ios .stack[data-tab="explorar"] [data-res]{display:grid!important;grid-template-columns:1fr 1fr;gap:12px!important}
+.ios .stack[data-tab="explorar"] [data-res] > div[aria-hidden]{grid-column:1/-1}
+.ios article.acard{position:relative;padding:0!important;border-radius:26px!important;overflow:hidden;background:#1E2924!important;box-shadow:var(--sh1)!important;min-height:250px}
+.ios article.acard > div:first-child,.ios article.acard .acard-hit{position:absolute!important;inset:0;border-radius:0!important}
+.ios article.acard .pimg{height:100%!important;border-radius:0!important}
+.ios article.acard .acard-hit::after{border-radius:0!important;background:linear-gradient(180deg,rgba(6,12,9,.10) 0,rgba(6,12,9,0) 30%,rgba(6,12,9,.82) 100%)!important}
+.ios article.acard > div:last-child{position:absolute;left:0;right:0;bottom:0;padding:12px 12px 13px!important;pointer-events:none;color:#fff}
+.ios article.acard h3{color:#fff;font-family:var(--f-d);font-weight:600;font-size:18px;line-height:1.1;letter-spacing:-.01em}
+.ios article.acard p.fn{color:rgba(255,255,255,.86)!important;margin:3px 0 0!important;font-size:12px}
+.ios article.acard > div:last-child > .row{display:none!important}
+.ios article.acard:first-child{grid-column:1/-1;min-height:380px}
+.ios article.acard:first-child h3{font-size:28px;letter-spacing:-.02em}
+.ios article.acard:first-child p.fn{font-size:14px}
+.ios article.acard:first-child > div:last-child{padding:18px!important}
+.ios article.acard:first-child > div:last-child > .row{display:flex!important;margin-top:8px;color:#fff}
+.ios article.acard:first-child > div:last-child > .row .fn,.ios article.acard:first-child > div:last-child > .row span{color:#fff}
+.ios article.acard:first-child .tag{background:rgba(6,12,9,.45)!important;color:#fff!important}
+.ios article.acard:nth-child(3n+3):not(:first-child){min-height:300px}
+.ios article.acard .acttag{top:10px!important;left:10px!important;bottom:auto!important;background:rgba(6,12,9,.45)!important;color:#fff!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+.ios article.acard .fav{top:6px!important;right:6px!important}
+.ios .stack[data-tab="explorar"] .page:first-child .btn.dark.sm{border-radius:999px;min-height:50px;padding:0 18px}
+
+/* ---------- 7. Detall: foto a sang gran i full que puja ---------- */
+.ios .dhero{height:470px!important}
+.ios .page.detail .dhero + *,.ios .page.detail .dhero ~ .px:first-of-type{position:relative;z-index:1}
+.ios .page.detail .scroll > .px,.ios .page.detail .scroll > .dbody{position:relative;margin-top:-34px;padding-top:22px;border-radius:32px 32px 0 0;background:var(--bg);box-shadow:0 -10px 30px -18px rgba(0,0,0,.35)}
+.ios .page.detail .scroll > .px ~ .px,.ios .page.detail .scroll > .dbody ~ .px{margin-top:0;border-radius:0;box-shadow:none;padding-top:0}
+.ios .page.detail h1.t1{font-size:calc(32px*var(--dtL));line-height:1.06}
+.ios .bbar{background:linear-gradient(to top,var(--bg) 72%,color-mix(in srgb,var(--bg) 0%,transparent))!important}
+
+/* ---------- 8. Recompenses ---------- */
+.ios .page.rewards > .scroll{background:linear-gradient(180deg,#FFE7B0 0,var(--bg) 520px) no-repeat local}
+.r5-hero{position:relative;padding:calc(var(--safe-t) + 50px) 16px 6px;text-align:center}
+.r5-title{text-align:left;margin:0 0 6px}
+.r5-medal{position:relative;width:196px;height:196px;margin:8px auto 0;border-radius:50%;background:var(--g-sol);box-shadow:0 26px 50px -24px rgba(217,142,0,.85),inset 0 -6px 0 rgba(0,0,0,.08)}
+.r5-ring{position:absolute;inset:0}
+.r5-in{position:absolute;inset:14px;border-radius:50%;background:#FFF8E6;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0;color:#0F1B15;box-shadow:inset 0 2px 8px rgba(0,0,0,.06)}
+.r5-in svg{color:#D98E00}
+.r5-in b{font-size:46px;line-height:1.05}
+.r5-in span{font-size:12px;font-weight:700;color:#5C4A1E}
+.r5-mas{position:absolute;right:10px;top:calc(var(--safe-t) + 112px);width:84px;height:96px}
+.r5-chips{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:14px}
+.r5-goal{margin-top:14px;padding:4px 16px 12px;border-radius:24px;background:var(--card);box-shadow:var(--sh1);text-align:left;color:var(--ink)}
+.r5-goal [data-pickgoal]{color:var(--acc-tx)!important}
+.r5-goal svg{stroke:currentColor}
+.r5-goal .mut{color:var(--label2)}
+.r5-body .grow.surf{border-radius:22px!important}
+.ios .tiles{gap:12px}
+.ios .tile[data-rw]{min-height:200px;border-radius:26px!important}
+.ios .tiles .tile[data-rw]:nth-child(5n+1){grid-column:1/-1;min-height:220px}
+.ios .tile[data-rw] .hd{font-family:var(--f-d);font-weight:600;font-size:19px;line-height:1.1}
+
+/* ---------- 9. Perfil ---------- */
+.p5-cover{position:relative;height:250px;overflow:hidden;background:#2B3A33}
+.p5-cover .pimg{border-radius:0!important;will-change:transform}
+.p5-sc{position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,12,9,.45) 0,rgba(6,12,9,0) 45%,rgba(6,12,9,.35) 100%)}
+.p5-title{position:absolute;left:16px;top:calc(var(--safe-t) + 46px);color:#fff;text-shadow:0 2px 18px rgba(0,0,0,.4)}
+.p5-id{position:relative;margin:-64px 16px 0;padding:62px 18px 18px;border-radius:30px;background:var(--card);box-shadow:var(--sh2);text-align:center}
+.p5-av{position:absolute;left:50%;top:-52px;width:104px;height:104px;margin-left:-52px;display:grid;place-items:center;border-radius:50%;background:var(--card)}
+.p5-ring{position:absolute;inset:0}
+.p5-av .pav{width:82px!important;height:82px!important;border-radius:50%!important;font-family:var(--f-d);font-size:38px!important;background:var(--g-corall)!important;color:#0F1B15!important;display:grid;place-items:center;font-weight:600}
+.p5-mas{position:absolute;right:8px;top:6px;width:72px;height:82px}
+.p5-nm{margin:0;font-family:var(--f-d);font-weight:600;font-size:26px;letter-spacing:-.02em}
+.p5-lvl{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:12px 0 12px}
+.p5-lvl .st{background:#FFF0CC;color:#7A4A00}
+.p5-id .bar5 i{background:var(--g-corall)}
+.p5-sec{margin-top:18px}
+.p5-h{display:flex;align-items:baseline;justify-content:space-between;margin:8px 0 10px}
+.p5-row .pcard{position:relative;margin:0!important;padding:16px!important;border-radius:26px!important;background:var(--g-sol)!important;color:#0F1B15!important;box-shadow:var(--sh1)!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+.p5-row .pcard *{color:#0F1B15!important}
+.p5-row .pcard .mut{opacity:.8}
+.p5-row .pcard svg{stroke:#0F1B15}
+.p5-row .pcard .bar{background:rgba(15,27,21,.14)}
+.p5-row .pcard .bar i{background:#0F1B15}
+.bdgs5{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.bdg5{display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center}
+.bdg5-i{width:62px;height:62px;border-radius:22px;display:grid;place-items:center;background:var(--card);color:#8A938E;box-shadow:inset 0 0 0 1.5px var(--hair)}
+.bdg5.ok .bdg5-i{background:var(--g-corall);color:#0F1B15;box-shadow:0 4px 0 #D9532F,0 12px 20px -12px rgba(217,83,47,.7)}
+.bdg5-t{font-size:11.5px;font-weight:650;line-height:1.2;color:var(--label2)}
+.bdg5.ok .bdg5-t{color:var(--ink)}
+.ios .page.profile #p-stats,.ios .page.profile #p-impact,.ios .page.profile #p-routes{margin-top:8px}
+.ios .page.profile .chart .b i{background:var(--fill2)!important;border-radius:8px!important}
+.ios .page.profile .chart .b.on i{background:var(--g-corall)!important}
+.ios .page.profile .stat{border-radius:20px}
+.ios .page.profile .stat b{font-family:var(--f-d);font-weight:600;font-size:24px}
+.ios .yearban{border-radius:26px!important;background:linear-gradient(140deg,#0F1B15,#24443A)!important;box-shadow:var(--sh2)!important}
+
+/* ---------- 10. Assistent (IA) ---------- */
+.ios .page.chat > .scroll{background:linear-gradient(180deg,var(--ia-wash) 0,var(--bg) 360px) no-repeat local}
+.ios .chat .mrow.me .mb,.ios .chat .me .mb{background:var(--ia-bub)!important;color:var(--ia-bub-tx)!important;border-radius:22px 22px 6px 22px!important;box-shadow:0 10px 22px -14px var(--ia-glow)!important}
+.ios .chat .mrow:not(.me) .mb{background:var(--card)!important;color:var(--ink);border-radius:22px 22px 22px 6px!important;box-shadow:var(--sh1)}
+.ios .composer{left:12px!important;right:12px!important;bottom:calc(var(--tab-h) + 6px)!important;border-radius:28px;background:var(--card)!important;box-shadow:var(--sh2)!important;padding:6px 6px 6px 6px!important}
+.ios .composer .field{background:transparent!important;box-shadow:none!important}
+.ios .composer .send{background:var(--g-ia)!important;color:var(--ia-on-btn)!important;box-shadow:0 3px 0 var(--ia-lip)!important;border-radius:22px}
+.ios .composer .send svg{stroke:var(--ia-on-btn)}
+.ios .aiprev{border-radius:24px!important}
+.ios .aiprev-t mark{background:var(--ia-soft)!important;color:var(--ia-soft-tx)!important}
+.ios .aibar .btn:not(.gray):not(.dark):not(.out):not(.red):not(.soc):not(.ghost5){background:var(--g-ia)!important;color:var(--ia-on-btn)!important;box-shadow:0 4px 0 var(--ia-lip),0 14px 24px -12px var(--ia-glow)!important}
+.ios .aibar .btn svg{stroke:var(--ia-on-btn)}
+.ios .bubble.gm-b,.ios .chat .bubble{border-radius:20px 20px 20px 6px!important;box-shadow:var(--sh1)!important}
+.ios .sug,.ios .chatcard{border-radius:22px!important}
+
+/* ---------- 11. Accés i incorporació ---------- */
+.ios .acc .acc-pan{background:var(--paper)!important;color:var(--ink)!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important;border-radius:34px 34px 0 0!important;box-shadow:0 -14px 40px -10px rgba(0,0,0,.35)!important}
+.ios .acc .acc-pan *{color:inherit}
+.ios .acc .acc-pan .mut,.ios .acc .acc-pan p{color:var(--label2)!important}
+.ios .acc .acc-tx h2{font-family:var(--f-d)!important;font-weight:600!important;font-size:34px!important;line-height:1.04!important;letter-spacing:-.025em!important;text-shadow:0 2px 20px rgba(0,0,0,.45)!important}
+.ios .acc .acc-in .tbtn{color:var(--acc-tx)!important}
+.ios .acc .btn.out{background:var(--card)!important;color:var(--ink)!important}
+.ios .page.onbpg .lt,.ios .page.onbpg h1{font-family:var(--f-d);font-weight:600;letter-spacing:-.025em}
+.ios .sheet.dark,.ios .page.dark{--card:#1A2420}
+.ios .page.dark .lt,.ios .page.dark .t1{font-family:var(--f-d)}
+
+/* ---------- 12. Fulles, alertes i càrrega ---------- */
+.ios .sheet{border-radius:var(--r-sheet) var(--r-sheet) 0 0!important}
+.ios .sheet .page:not(.dark){background:var(--bg)!important}
+.ios .sheet .grab::before{width:42px;background:rgba(15,27,21,.22)}
+.ios .alert .alertk,.ios .alert > div{border-radius:26px}
+.ios .ld-veil{background:linear-gradient(180deg,rgba(0,40,26,.55),rgba(0,112,74,.72))!important}
+.ios .sk{background:linear-gradient(90deg,var(--fill) 0%,var(--fill2) 40%,var(--fill) 80%)!important;background-size:240% 100%!important;animation:sk5 1.2s linear infinite!important;border-radius:14px}
+@keyframes sk5{from{background-position:120% 0}to{background-position:-120% 0}}
+.ios .toast{border-radius:999px!important;background:#0F1B15!important;color:#fff!important}
+
+/* ---------- 13. Mode fosc ---------- */
+.ios.th-dark{
+  --paper:#0D1210; --card:#18201C; --ink:#ECF2EE;
+  --bg:#0D1210; --bg2:#141B18; --label:#ECF2EE; --label2:#A9B4AE; --label3:#9AA59F;
+  --fill:rgba(236,242,238,.08); --fill2:rgba(236,242,238,.14); --hair:rgba(236,242,238,.12); --sep:rgba(236,242,238,.14);
+  --tint-tx:#3DDC97; --tint-bg:#123326; --glass:rgba(13,18,16,.78);
+  --sh1:0 1px 0 rgba(0,0,0,.4),0 12px 28px -16px rgba(0,0,0,.7); --sh2:0 2px 0 rgba(0,0,0,.4),0 24px 48px -20px rgba(0,0,0,.8);
+  color-scheme:dark;
+}
+.ios.th-dark .stack[data-tab="inici"]{--acc-tx:#3DDC97;--acc-soft:#123326;--wash:#0F2A1F}
+.ios.th-dark .stack[data-tab="xat"]{--acc-tx:var(--ia-tx);--acc-soft:var(--ia-soft);--wash:var(--ia-wash)}
+.ios.th-dark .stack[data-tab="explorar"]{--acc-tx:#7CC3FF;--acc-soft:#10283D;--wash:#0E2233}
+.ios.th-dark .stack[data-tab="recompenses"]{--acc-tx:#FFC85C;--acc-soft:#3A2A08;--wash:#2A2008}
+.ios.th-dark .stack[data-tab="perfil"]{--acc-tx:#FF9C82;--acc-soft:#3D1D14;--wash:#2C1710}
+.ios.th-dark .page.cfg5{--acc-tx:#A9BAC3;--acc-soft:#1F282D;--wash:#151C1F}
+.ios.th-dark .page.home5 > .scroll{background:linear-gradient(180deg,#0F2A1F 0,var(--bg) 420px) no-repeat local}
+.ios.th-dark .page.rewards > .scroll{background:linear-gradient(180deg,#2A2008 0,var(--bg) 520px) no-repeat local}
+.ios.th-dark .page.chat > .scroll{background:linear-gradient(180deg,var(--ia-wash) 0,var(--bg) 360px) no-repeat local}
+.ios.th-dark .h5-bub{background:#18201C;color:var(--ink)}
+.ios.th-dark .bt5-lvl{background:var(--card);color:var(--ink)}
+.ios.th-dark .bt5-co2{background:#123326;color:var(--ink)}
+.ios.th-dark .r5-in{background:#221A08;color:var(--ink)}
+.ios.th-dark .r5-in span{color:#E8D7AE}
+.ios.th-dark .chip > span{color:var(--ink)}
+.ios.th-dark .segc button[aria-selected="true"]{color:#0D1210}
+.ios.th-dark .btn[disabled]{background:#2A322E!important;color:#8E9993!important;box-shadow:0 3px 0 #1E2522!important}
+.ios.th-dark .sheet .page:not(.dark),.ios.th-dark .sheet{background:var(--bg)!important}
+.ios.th-dark .tile{background:var(--card)}
+.ios.th-dark .glist .grow,.ios.th-dark .glist *{border-color:var(--sep)}
+.ios.th-dark input{color:var(--ink)}
+.ios.th-dark .nav.on-photo:not(.scrolled){color:#fff}
+.ios.th-dark .statusbar{color:#fff!important}
+
+/* ---------- 14. Reduir moviment ---------- */
+.ios.rm *,.ios.rm *::before,.ios.rm *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+@media (prefers-reduced-motion:reduce){.ios *,.ios *::before,.ios *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+/* ---------- 15. Ajustos de la primera revisió ---------- */
+.ios .r5nav:not(.scrolled) .nt{opacity:0}
+.ios .h5-acts .btn:not(.gray):not(.dark):not(.out):not(.red):not(.soc):not(.ghost5){background:#0F1B15!important;color:#fff!important;box-shadow:0 4px 0 #000,0 10px 18px -10px rgba(0,0,0,.6)!important}
+.ios .h5-acts .btn svg{stroke:currentColor}
+.ios .composer{overflow:hidden}
+.ios .acc .btn.out{background:#0F1B15!important;color:#fff!important;box-shadow:0 4px 0 #000,0 14px 24px -14px rgba(0,0,0,.6)!important}
+.ios .acc .acc-in .tbtn.mut{color:var(--acc-tx)!important;font-weight:700}
+/* fulles fosques (registre, inici de sessió) */
+.ios .page.dark,.ios .sheet.dark{--label:#F2F5F3;--label2:#B9C3BE;--label3:#AEB8B2;--ink:#F2F5F3;--card:#1C2621;--hair:rgba(255,255,255,.16);--fill:rgba(255,255,255,.09);--fill2:rgba(255,255,255,.15);--acc-tx:#3DDC97;--acc-soft:#123326}
+.ios .page.dark .btn.out,.ios .sheet.dark .btn.out{background:#1C2621!important;color:#fff!important;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.22),0 3px 0 rgba(0,0,0,.5)!important}
+.ios .page.dark .mut,.ios .sheet.dark .mut{color:#B9C3BE}
+/* fitxes de detall (activitat, punt, recompensa): full que puja sobre la foto */
+.ios .page .dhero + .dbody,.ios .page .dhero ~ .dbody{position:relative;margin-top:-34px;padding-top:24px;border-radius:32px 32px 0 0;background:var(--bg);box-shadow:0 -10px 30px -18px rgba(0,0,0,.35)}
+.ios .page .dhero{height:440px!important}
+/* «Canvi fet!»: fons de sol */
+.ios .page.cover:has(.okring),.ios .page:has(> .scroll .okring){background:linear-gradient(180deg,#FFE7B0 0,var(--bg) 60%)!important}
+.ios .page.dark{background:radial-gradient(120% 70% at 50% 0%,#17352A 0,#0F1512 60%)!important}
+.ios .page.dark > .scroll{background:none!important}
+.ios .page.dark .t1{color:#fff}
+/* mode fosc: superfícies que tenien el blanc fixat */
+.ios.th-dark .asheet .cancel,.ios.th-dark .hl,.ios.th-dark .sug,.ios.th-dark .chatcard,.ios.th-dark .surf.cc:has(> .pimg),.ios.th-dark .aiprev,.ios.th-dark .rwi,.ios.th-dark .otp span{background:var(--card)!important;color:var(--ink)}
+.ios.th-dark .aibar::after{background:var(--bg)!important}
+.ios.th-dark .aibar{background:linear-gradient(to top,var(--bg) 70%,rgba(13,18,16,0))!important}
+.ios.th-dark .aipane,.ios.th-dark .aiscroll{background:var(--bg)}
+.ios.th-dark .aiprev-t,.ios.th-dark .aiprev-i{color:var(--ink)}
+.ios.th-dark .aiprev-t mark{background:var(--ia-soft)!important;color:var(--ia-soft-tx)!important}
+.ios.th-dark .fsec,.ios.th-dark .hd,.ios.th-dark h2,.ios.th-dark h3{color:var(--ink)}
+.ios.th-dark .segc .knob{background:var(--acc-tx)}
+.ios.th-dark .sw::after{background:#fff}
+.ios .lnk{padding:13px 0;margin:-13px 0}
+
+/* ---------- 16. Segona revisió: composicions noves a les pantalles que canviaven poc ---------- */
+/* permisos i incorporació */
+.ios .page.onb5 > .scroll{background:linear-gradient(180deg,#CDEFDD 0,var(--bg) 58%) no-repeat local}
+.ios .page.onb5 .t1{font-size:calc(34px*var(--dtL));line-height:1.04}
+.ios .page.onb5 .tag{background:#0F1B15;color:#fff;padding:4px 12px}
+.ios .page.onb5 .ring{position:relative;width:208px!important;height:208px!important;border-radius:50%!important;background:var(--g-alba)!important;box-shadow:0 30px 60px -28px rgba(0,128,79,.85),0 0 0 16px rgba(0,168,107,.10),0 0 0 34px rgba(0,168,107,.05)!important}
+.ios .page.onb5 .ring > svg{position:absolute;right:6px;top:8px;width:52px;height:52px;padding:12px;border-radius:50%;background:#fff;stroke:#00704A;box-shadow:var(--sh1);z-index:2}
+.ios .page.onb5 .ring .m5host{width:118px;height:136px;margin-top:22px}
+.ios .perm-map{position:relative;margin:calc(var(--safe-t) + 10px) 12px 0;border-radius:34px!important;overflow:hidden;box-shadow:var(--sh2)}
+.ios .perm-map .m5host{position:absolute;left:14px;bottom:8px;width:86px;height:98px}
+.ios .page.onb5.grouped .glist .gic{width:36px;height:36px;border-radius:12px}
+.ios .page.onb5.grouped .glist{border-radius:26px}
+/* «Canvi fet!» */
+.ios .page.ok5{background:linear-gradient(180deg,#FFE08A 0,#FFF3D1 38%,var(--bg) 72%)!important}
+.ios .page.ok5 > .scroll{background:none!important}
+.ios .page.ok5 h1,.ios .page.ok5 .t1{font-family:var(--f-d);font-weight:600;font-size:calc(40px*var(--dtL));letter-spacing:-.03em}
+.ios .page.ok5 .okring{transform:scale(1.18)}
+.ios .page.ok5 .card,.ios .page.ok5 .surf{border-radius:30px!important;box-shadow:0 30px 60px -30px rgba(217,142,0,.6),var(--sh1)!important;border-top:2px dashed rgba(15,27,21,.14)}
+/* El teu any: tessel·les de colors */
+.ios .page.story h1.t1{font-family:var(--f-d);font-size:calc(44px*var(--dtL));line-height:1.02}
+.ios .page.story .yr{background:none!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important;padding:0!important;gap:10px!important;box-shadow:none!important}
+.ios .page.story .yr > div{display:flex;flex-direction:column;padding:14px 16px;border-radius:24px;box-shadow:0 14px 30px -18px rgba(0,0,0,.6)}
+.ios .page.story .yr > div:nth-child(1){background:var(--g-alba)}
+.ios .page.story .yr > div:nth-child(2){background:var(--g-sol)}
+.ios .page.story .yr > div:nth-child(3){background:var(--g-corall)}
+.ios .page.story .yr > div:nth-child(4){background:linear-gradient(155deg,#CDB9FF,#9C86FF)}
+.ios .page.story .yr b{font-family:var(--f-d);font-weight:600;font-size:34px!important;line-height:1;color:#0F1B15!important;text-shadow:none!important}
+.ios .page.story .yr span{color:#0F1B15!important;font-weight:650;text-shadow:none!important;margin-top:4px}
+/* ruta en curs: panell fosc flotant */
+.ios .rpanel{background:#0F1B15!important;color:#fff!important;border-radius:36px 36px 0 0!important;box-shadow:0 -20px 50px -20px rgba(0,0,0,.6)!important}
+.ios .rpanel .mut,.ios .rpanel .fn{color:#AEB8B2!important}
+.ios .rpanel .num{font-family:var(--f-d);font-weight:600;font-size:64px!important;color:#fff!important;letter-spacing:-.03em}
+.ios .rpanel .t3,.ios .rpanel b{color:#fff!important}
+.ios .rpanel .grab::before{background:rgba(255,255,255,.3)!important}
+.ios .rpanel .iconbtn .gl,.ios .rpanel .iconbtn.fill .gl{background:rgba(255,255,255,.1)!important;color:#fff!important}
+.ios .rpanel .bigbtn{box-shadow:0 5px 0 #00804F,0 18px 30px -12px rgba(0,168,107,.7)!important}
+.ios .run5 .pill{background:#0F1B15!important;color:#fff!important}
+.ios .nextc{border-radius:24px!important;box-shadow:var(--sh2)!important}
+.ios .page.sum5 .stat{background:var(--card)}
+/* comunitat: postals amb el text sobre la foto */
+.ios .page.com5 article.surf.cc{position:relative;min-height:300px;background:#1E2924!important;border-radius:28px!important}
+.ios .page.com5 article.surf.cc > .pimg{position:absolute!important;inset:0;height:100%!important;border-radius:0!important}
+.ios .page.com5 article.surf.cc > div:not(.pimg){position:absolute;left:10px;right:10px;bottom:10px;padding:12px 14px 14px!important;border-radius:22px;background:rgba(15,27,21,.78);color:#fff}
+.ios .page.com5 article.surf.cc .hd{font-family:var(--f-d);font-weight:600;font-size:20px;color:#fff}
+.ios .page.com5 article.surf.cc .co{color:#fff}
+.ios .page.com5 article.surf.cc .mut{color:rgba(255,255,255,.85)!important}
+.ios .page.com5 article.surf.cc .iconbtn{color:#fff}
+/* condicions: tessel·les de cel i barres d'afluència */
+.ios .page.cond5 .cond div{background:linear-gradient(160deg,#E1F0FD,#C9E3FA)!important;border-radius:22px!important;box-shadow:none!important;color:#0F1B15}
+.ios .page.cond5 .cond div svg{stroke:#0B5FA8}
+.ios .page.cond5 .hours i,.ios .page.cond5 .hours span i{background:#9BCBF2!important;border-radius:6px!important}
+.ios .page.cond5 .hours .on i,.ios .page.cond5 .hours i.on{background:#2E9BF0!important}
+.ios .page.cond5 .t2,.ios .page.cond5 h2{font-family:var(--f-d)}
+/* filtres: cada grup a la seva targeta */
+.ios .page.filt5 .fsec{font-family:var(--f-d);font-weight:600;font-size:20px;margin-top:18px}
+.ios .page.filt5 .chips{background:var(--card);border-radius:22px;padding:10px 12px;box-shadow:var(--sh1)}
+.ios .page.filt5 .chips .chip > span{background:var(--bg)}
+
+/* ---------- 17. Tercera revisió ---------- */
+/* càrrega: maragda intensa, l'excursionista sobre un sol de llum */
+.ios .ld-veil{background:radial-gradient(60% 34% at 50% 40%,rgba(155,221,106,.35),rgba(155,221,106,0) 70%),linear-gradient(170deg,rgba(0,168,107,.92) 0%,rgba(0,112,74,.94) 55%,rgba(8,48,32,.97) 100%)!important}
+.ios .ld-mist{background:radial-gradient(130% 40% at 50% 104%,rgba(244,243,236,.32),rgba(244,243,236,0) 60%)!important}
+/* registre i inici de sessió: camps de vidre fosc i títol editorial */
+.ios .page.dark .dk-inp{background:rgba(255,255,255,.07)!important;border-radius:18px!important;color:#fff!important;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.16)!important}
+.ios .page.dark .dk-inp input{color:#fff!important}
+.ios .page.dark .dk-inp input::placeholder{color:#9FAAA4!important}
+.ios .page.dark .dk-inp:focus-within{box-shadow:inset 0 0 0 2px #3DDC97,0 0 0 4px rgba(61,220,151,.18)!important}
+.ios .page.dark .dk-inp svg{stroke:#C9D2CD}
+.ios .page.dark .dk-body .t1{font-size:calc(36px*var(--dtL));line-height:1.04}
+.ios .page.dark .m5dk{width:76px;height:86px;margin:0 0 6px -6px}
+.ios .page.dark .dk-desc{color:#B9C3BE!important}
+/* interessos: cada grup en una targeta */
+.ios .page.onb5 .chips:not(.scrollx){background:var(--card);border-radius:22px;padding:10px 12px;box-shadow:var(--sh1)}
+.ios .page.onb5 .chips .chip > span{background:var(--bg)}
+.ios .page.onb5 .segc{box-shadow:var(--sh1),inset 0 0 0 1.5px var(--hair)}
+/* privacitat: capçalera amb la mascota */
+.onb5-hero{position:relative;display:flex;align-items:flex-end;justify-content:space-between;height:170px;margin:4px 16px 16px;padding:16px 18px;border-radius:30px;background:var(--g-alba);overflow:hidden;box-shadow:var(--sh2)}
+.onb5-hero .m5host{width:104px;height:120px;color:#fff}
+.onb5-hero .oh-ic{width:72px;height:72px;border-radius:24px;display:grid;place-items:center;background:rgba(255,255,255,.9);color:#00704A;align-self:center;box-shadow:0 10px 24px -12px rgba(0,0,0,.4)}
+.onb5-hero::before{content:"";position:absolute;right:-50px;top:-60px;width:200px;height:200px;border-radius:50%;background:rgba(255,255,255,.18)}
+/* fitxes amb el títol sobre la foto */
+.ios .page.detail .dhero,.ios .page .dhero.dh5-on{height:520px!important}
+.ios .dh5{position:absolute;left:0;right:0;bottom:30px;padding:110px 18px 22px;background:linear-gradient(180deg,rgba(6,12,9,0) 0,rgba(6,12,9,.55) 40%,rgba(6,12,9,.85) 100%);z-index:2;text-align:left}
+.ios .dh5 h1,.ios .dh5 .t1{color:#fff!important;font-family:var(--f-d);font-weight:600;font-size:calc(36px*var(--dtL))!important;line-height:1.02!important;letter-spacing:-.025em;text-shadow:0 2px 18px rgba(0,0,0,.35);margin:0}
+.ios .dh5 *{color:#fff!important}
+.ios .dh5 svg{stroke:#fff}
+.ios .dh5 > :not(h1){margin-top:8px!important}
+.ios .dh5 .tag{background:rgba(255,255,255,.2)!important}
+.ios .dhero.dh5-on > .glass{bottom:auto!important;top:calc(var(--safe-t) + 54px)}
+/* condicions: cel més viu */
+.ios .page.cond5 .cond div{background:linear-gradient(160deg,#CDE7FC,#93CBF6)!important}
+/* botó flotant */
+.ios .fab5{position:absolute;right:18px;bottom:calc(var(--tab-h) + 18px);z-index:30;display:flex;align-items:center;gap:8px;height:56px;padding:0 20px 0 16px;border-radius:28px;background:#0F1B15;color:#fff;font-weight:700;box-shadow:0 4px 0 #000,0 16px 30px -12px rgba(0,0,0,.6);transition:transform .14s var(--spring)}
+.ios .fab5 svg{stroke:#7CC3FF}
+.ios .fab5:active{transform:translateY(3px) scale(.97);box-shadow:0 1px 0 #000,0 8px 16px -10px rgba(0,0,0,.6)}
+.ios.kbd-on .fab5{display:none}
+
+/* ===================== Valia v5.1 · retocs de qualitat =====================
+   1 títols en majúscules · 2 foto difuminada a Recompenses · 3 Configuració ampliada
+   4 Inici sense fallades · 5 sense zona blanca en arribar al límit · 7 correccions de l'auditoria */
+
+/* ---------- 5 · sense rebot ni zona blanca ---------- */
+html,body{overscroll-behavior:none}
+:root.device,:root.device body{background:#F4F3EC}
+:root.device.th-dark,:root.device.th-dark body{background:#0D1210}
+:root.framed.th-dark,:root.framed.th-dark body{background:#1A1F1C}
+.ios{background:var(--bg)}
+.ios .page > .scroll,.ios .sheet .sbody,.ios .aiscroll,.ios .dk-scroll,.ios .chat .scroll{overscroll-behavior:none}
+.ios .scrollx,.ios .acc .acc-car,.ios .chips,.ios .h5-near{overscroll-behavior-x:none}
+
+/* ---------- 1 · títols principals en majúscules (mida fluida, mai tallats) ---------- */
+.ios .page{container-type:inline-size}
+.ios .lt,.ios .ltitle,.ios .page.dark .t1,.ios .page.onbpg h1.t1,.ios .page.onb5 h1.t1,.ios .page.ok5 h1,.ios .acc .acc-tx h2,.ios .h5-hi,.ios .p5-cover h1,.ios .dh5 h1,.ios .page.grouped > .scroll > .px > h1.t1,.ios .page > .scroll > .px > h1.t1:first-child{
+  text-transform:uppercase;letter-spacing:.035em!important;line-height:1.04!important;overflow-wrap:break-word;hyphens:manual;text-wrap:balance}
+.ios .lt,.ios .ltitle{font-size:calc(clamp(28px,9cqi,36px)*var(--dtL,1))!important}
+.ios .page.onbpg h1.t1,.ios .page.onb5 h1.t1,.ios .page > .scroll > .px > h1.t1:first-child{font-size:calc(clamp(26px,8.4cqi,33px)*var(--dtL,1))!important}
+/* inici de sessió i registre: els més grans */
+.ios .page.dark .t1{font-size:calc(clamp(30px,10cqi,40px)*var(--dtL,1))!important;letter-spacing:.03em!important;margin-top:4px}
+.ios .acc .acc-tx h2{font-size:clamp(25px,8cqi,31px)!important}
+.ios .page.ok5 h1{font-size:calc(clamp(28px,9cqi,36px)*var(--dtL,1))!important}
+.ios .h5-hi{font-size:clamp(28px,9cqi,36px)}
+.ios .p5-cover h1{font-size:calc(clamp(26px,8.4cqi,34px)*var(--dtL,1))!important}
+.ios .dh5 h1{font-size:calc(clamp(24px,8cqi,32px)*var(--dtL,1))!important}
+/* títol que no hi cap ni partint per paraules: el JS (v51.js) el redueix fins que hi cap */
+.ios .fit51{white-space:normal}
+
+/* ---------- 2 · Recompenses: foto real difuminada dins el cercle de punts ---------- */
+.r5-in{overflow:hidden;isolation:isolate}
+.r5-in .r5-ph{position:absolute;inset:-14px;z-index:-2;background-size:cover;filter:blur(5px) saturate(1.15);transform:scale(1.12)}
+.r5-in::before{content:"";position:absolute;inset:0;z-index:-1;border-radius:50%;background:radial-gradient(circle at 50% 45%,rgba(255,248,230,.72) 0,rgba(255,248,230,.64) 60%,rgba(255,244,220,.54) 100%)}
+.r5-in{background:#FFF8E6}
+.ios.th-dark .r5-in::before{background:radial-gradient(circle at 50% 45%,rgba(20,15,4,.64) 0,rgba(20,15,4,.56) 60%,rgba(20,15,4,.48) 100%)}
+.ios.th-dark .r5-in svg{color:#FFC85C}
+.ios .r5-in span:not(.pimg){color:#4A3A12}
+.ios.th-dark .r5-in span:not(.pimg){color:#F3E6C4}
+
+/* ---------- 3 · Configuració ---------- */
+.ios .set51 .gtitle{margin-top:26px}
+.ios .set51 .gtitle:first-of-type{margin-top:8px}
+.ios .set51 .grow .gv{color:var(--label2);font-size:15px;max-width:42%;text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:none}
+.ios .set51 .grow .gl51{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+.ios .set51 .grow .gl51 .bd{overflow-wrap:anywhere}
+.ios .set51 .grow .gl51 .fn{color:var(--label2);line-height:1.3}
+.ios .set51 .grow.red51 .bd{color:#D92D20}
+.ios.th-dark .set51 .grow.red51 .bd{color:#FF8A80}
+.ios .set51 .prof51{display:flex;align-items:center;gap:14px;padding:14px 16px}
+.ios .set51 .prof51 .av51{width:56px;height:56px;border-radius:50%;flex:none;display:grid;place-items:center;font-family:var(--f-d);font-weight:600;font-size:24px;color:#0F1B15;background:var(--g-corall)}
+.ios .set51 .prof51 .f1{min-width:0}
+.ios .set51 .prof51 .hd,.ios .set51 .prof51 .fn{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ios .set51 .gfoot{line-height:1.4}
+.ios .opt51{display:flex;flex-direction:column;gap:0}
+.ios .opt51 button{display:flex;align-items:center;gap:12px;min-height:52px;padding:10px 16px;text-align:left;font:inherit;color:var(--label);background:none;border:0;border-bottom:1px solid var(--sep)}
+.ios .opt51 button:last-child{border-bottom:0}
+.ios .opt51 button .f1{flex:1;min-width:0}
+.ios .opt51 button .ck{color:var(--tint-tx);opacity:0}
+.ios .opt51 button[aria-checked="true"] .ck{opacity:1}
+.ios .form51{display:flex;flex-direction:column;gap:12px}
+.ios .form51 label{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:var(--label2)}
+.ios .form51 input{height:52px;border-radius:16px;border:1px solid var(--hair);background:var(--card);color:var(--label);padding:0 14px;font:inherit;font-size:17px}
+.ios .form51 .err51{color:#D92D20;font-size:13px;min-height:18px;margin:0}
+.ios.th-dark .form51 .err51{color:#FF8A80}
+.ios .about51 .row{justify-content:space-between;gap:12px}
+.ios .about51 dl{margin:0}
+.ios .about51 dt{font-weight:600;margin-top:12px}
+.ios .about51 dd{margin:2px 0 0;color:var(--label2);line-height:1.4}
+/* tutorial */
+.ios .tut51{position:absolute;inset:0;display:flex;flex-direction:column;padding:calc(var(--safe-t) + 12px) 24px calc(var(--safe-b) + 18px);background:radial-gradient(120% 70% at 50% 0,#163B2B 0,#0D1210 70%);color:#fff}
+.ios .tut51 .tut-top{display:flex;justify-content:space-between;align-items:center;min-height:44px}
+.ios .tut51 .tut-dots{display:flex;gap:6px}
+.ios .tut51 .tut-dots i{width:8px;height:8px;border-radius:4px;background:rgba(255,255,255,.3);transition:width .3s,background .3s}
+.ios .tut51 .tut-dots i.on{width:22px;background:#3DDC97}
+.ios .tut51 .tut-skip{min-height:44px;padding:0 12px;border:0;background:none;color:rgba(255,255,255,.78);font:inherit;font-weight:600}
+.ios .tut51 .tut-mas{width:150px;height:170px;margin:18px auto 6px}
+.ios .tut51 .tut-ic{width:56px;height:56px;border-radius:18px;display:grid;place-items:center;margin:0 auto 14px;background:rgba(255,255,255,.1)}
+.ios .tut51 h2{font-family:var(--f-d);font-weight:600;text-transform:uppercase;letter-spacing:.035em;font-size:clamp(22px,7.4cqi,28px);line-height:1.08;text-align:center;margin:0;text-wrap:balance}
+.ios .tut51 p{margin:12px 0 0;text-align:center;font-size:17px;line-height:1.45;color:rgba(255,255,255,.86)}
+.ios .tut51 .tut-body{flex:1;display:flex;flex-direction:column;justify-content:center}
+.ios .tut51 .btn{width:100%}
+
+/* ---------- 4 · Inici: recuadres sòlids en els 4 idiomes ----------
+   Els recuadres són <button>: el reinici «.ios button» els treia el fons, el farcit i el color.
+   Aquí es tornen a declarar amb prou especificitat; alçada mínima en lloc d'alçada fixa. */
+.ios .bento5{grid-auto-rows:minmax(160px,auto);align-items:stretch}
+.ios .bento5 .bt5{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:4px;min-height:160px;height:auto;padding:16px;border-radius:26px;text-align:left;color:#0F1B15;overflow:hidden;box-sizing:border-box;box-shadow:var(--sh1)}
+.ios .bento5 .bt5 > *{min-width:0;max-width:100%}
+.ios .bento5 .bt5-pts{background:var(--g-sol)}
+.ios .bento5 .bt5-pts .bt5-k{padding-right:70px}
+.ios .bento5 .bt5-pts .bt5-v{white-space:nowrap;overflow-wrap:normal;font-size:38px}
+.ios .bento5 .bt5-pts .bt5-ring{position:absolute;right:14px;top:14px;max-width:none}
+.ios .bento5 .bt5-streak{background:var(--g-corall)}
+.ios .bento5 .bt5-co2{background:#D7F2E3}
+.ios .bento5 .bt5-lvl{background:#fff}
+.ios .bento5 .bt5-chal{grid-column:1/-1;min-height:176px;color:#fff;background:#1E2924;justify-content:flex-end}
+.ios.th-dark .bento5 .bt5-lvl{background:var(--card);color:var(--ink)}
+.ios.th-dark .bento5 .bt5-co2{background:#123326;color:var(--ink)}
+.ios .bento5 .bt5-k{display:flex;align-items:center;gap:6px;line-height:1.25;font-size:13px;font-weight:700;overflow-wrap:anywhere}
+.ios .bento5 .bt5-v{margin-top:auto;overflow-wrap:anywhere;line-height:1.02}
+.ios .bento5 .bt5-v2{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;font-size:24px;line-height:1.08;padding-bottom:2px}
+.ios .bento5 .bt5-s{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;line-height:1.3}
+.ios .bento5 .bt5-ic{margin-bottom:6px}
+.ios .bento5 .dots5{margin-top:8px}
+.ios .bento5 .bdg5{flex-direction:row;flex-wrap:wrap;align-items:center;text-align:left;gap:4px;margin-top:8px}
+.ios .bento5 .bt5-lvl .bar5{width:100%;margin:8px 0 4px}
+.ios .bento5 .bt5-chal .bar5{width:100%}
+.ios .h5-feat-t{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden;padding-bottom:3px}
+.ios .h5-near .h5-nc-hit{display:flex;flex-direction:column;justify-content:flex-end;padding:12px;color:#fff;background:#1E2924;text-align:left;border-radius:24px}
+.ios .h5-nc-t{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden;padding-bottom:2px}
+.ios .h5-bub{overflow-wrap:break-word}
+.ios .h5-acts .btn{min-width:0;white-space:normal;text-align:center;line-height:1.15}
+
+/* ---------- Preferències que funcionen ---------- */
+.ios.hc51{--label2:var(--ink);--label3:var(--label);--hair:rgba(0,0,0,.35);--sep:rgba(0,0,0,.3)}
+.ios.th-dark.hc51{--hair:rgba(255,255,255,.4);--sep:rgba(255,255,255,.35)}
+.ios.mapdk51 .map > svg{filter:invert(.9) hue-rotate(180deg) saturate(.75) brightness(.95)}
+.ios .nw51{white-space:nowrap}
+.ios p .lnk{display:inline;text-align:left}
+/* ---------- 7 · correccions de l'auditoria ---------- */
+/* xat: targetes de ruta sense franges buides (el botó centrava el contingut) */
+.ios .chatcard{display:flex;flex-direction:column;align-items:stretch;justify-content:flex-start;text-align:left;height:auto}
+.ios .chatcard > .pimg{flex:none;height:150px!important}
+/* xat: el botó d'enviar quedava tallat a la dreta */
+.ios .composer .field{flex:1 1 auto;min-width:0;width:auto}
+.ios .composer [data-send]{flex:none}
+/* ruta en curs: el botó no aixafa el text del proper check-in */
+.ios .nextc .f1{min-width:0}
+.ios .nextc [data-nn]{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ios .nextc .btn{flex:0 1 auto;max-width:48%;white-space:normal;line-height:1.15;text-align:center}
+/* barra de navegació: el text del botó enrere i el títol mai no es trepitgen */
+.ios .navbtn.back{max-width:104px}
+.ios .nav .nt{max-width:184px}
+/* títols amb límit de línies: interlineat suficient perquè no es retallin els accents ni les majúscules */
+.ios .h5-feat-t{line-height:1.14;padding-top:2px}
+.ios .bento5 .bt5-v2{line-height:1.14;padding-top:2px}
+.ios .h5-nc-t{line-height:1.16;padding-top:2px}
+/* mode fosc: les pantalles de benvinguda (interessos, ubicació, avisos, privacitat) tenien la franja superior clara */
+.ios.th-dark .page.onb5 > .scroll{background:linear-gradient(180deg,#0F2A1F 0,var(--bg) 58%) no-repeat local}
+.ios.th-dark{--acc-tx:#3DDC97;--acc-soft:#123326}
+
+/* ===================== Valia · tutorial de benvinguda (mascota + boira + focus) ===================== */
+.ios .tour{position:absolute;inset:0;z-index:80;color:#fff;outline:none;overflow:hidden;touch-action:none;-webkit-user-select:none;user-select:none}
+.ios .tour-fog{position:absolute;inset:0;-webkit-backdrop-filter:blur(11px) saturate(.8);backdrop-filter:blur(11px) saturate(.8);will-change:opacity}
+.ios .tour-tint{position:absolute;left:0;top:0;pointer-events:none}
+.ios .tour-tint path{fill:rgba(9,22,16,.70)}
+.ios.th-dark .tour-tint path{fill:rgba(0,0,0,.74)}
+.ios .tour-ringsvg{position:absolute;left:0;top:0;pointer-events:none;transition:opacity .22s ease}
+.ios .tour-ring{fill:none;stroke:#3DDC97;stroke-width:2.5}
+.ios .tour-glow{fill:none;stroke:#3DDC97;stroke-width:12;stroke-opacity:.30}
+.ios .tour-pulse{animation:tourPulse 1.9s ease-in-out infinite}
+@keyframes tourPulse{0%,100%{opacity:.5}50%{opacity:1}}
+.ios.rm .tour-pulse,.ios .rm .tour-pulse{animation:none}
+.ios .tour-scrim{position:absolute;left:0;right:0;top:0;height:calc(var(--safe-t) + 96px);background:linear-gradient(rgba(0,0,0,.42),rgba(0,0,0,0));pointer-events:none}
+.ios .tour-halo{position:absolute;left:0;top:0;width:340px;height:340px;background:radial-gradient(circle,rgba(61,220,151,.26) 0,rgba(61,220,151,0) 62%);pointer-events:none;transition:transform .6s cubic-bezier(.22,1,.36,1)}
+.ios.rm .tour-halo{transition:none}
+.ios .tour-mas{position:absolute;left:0;top:0;transform-origin:0 0;will-change:transform;pointer-events:none}
+.ios .tour-mas .masc{color:#6FE8B6}
+/* bombolla */
+.ios .tour-bub{position:absolute;left:0;top:0;box-sizing:border-box;padding:12px 16px 14px;border-radius:22px;background:#fff;color:#0B0D0C;box-shadow:0 16px 40px rgba(0,0,0,.42);will-change:transform,opacity;pointer-events:none}
+.ios.th-dark .tour-bub{background:#1B2520;color:#ECF2EE;box-shadow:0 16px 40px rgba(0,0,0,.6),inset 0 0 0 1px rgba(236,242,238,.16)}
+.ios .tour-k{display:block;font-size:11.5px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:#00704A}
+.ios.th-dark .tour-k{color:#3DDC97}
+.ios .tour-k[hidden]{display:none}
+.ios .tour-t{margin:3px 0 0;font-size:var(--t-co);line-height:1.36;font-weight:500;text-wrap:pretty}
+.ios .tour-n{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.ios .tour-bub::after{content:"";position:absolute;width:16px;height:16px;background:inherit;border-radius:3px}
+.ios .tour-bub[data-tail="b"]::after{bottom:-7px;left:calc(var(--tl,40px) - 8px);transform:rotate(45deg)}
+.ios .tour-bub[data-tail="t"]::after{top:-7px;left:calc(var(--tl,40px) - 8px);transform:rotate(45deg)}
+.ios .tour-bub[data-tail="l"]::after{left:-7px;top:calc(var(--tl,40px) - 8px);transform:rotate(45deg)}
+/* botons i progrés */
+.ios .tour-top{position:absolute;left:0;right:0;top:0;z-index:3;padding:calc(var(--safe-t) + 8px) 12px 0 6px;transition:opacity .2s}
+.ios .tour-top.gone{opacity:0;pointer-events:none}
+.ios .tour-bar{display:flex;justify-content:space-between;align-items:center;min-height:44px}
+.ios .tour .tour-skip{min-height:44px;min-width:44px;padding:0 10px;border:0;background:none;color:rgba(255,255,255,.88);font:inherit;font-size:13px;font-weight:500;text-align:left;border-radius:10px}
+.ios .tour .tour-next{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:104px;padding:0 22px;border:0;border-radius:22px;background:#3DDC97;color:#04271A;font:inherit;font-size:16px;font-weight:700;box-shadow:0 8px 22px rgba(61,220,151,.38);white-space:nowrap}
+.ios .tour .tour-next:active{transform:scale(.96)}
+.ios .tour button{outline:none}
+.ios .tour.kb button:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.ios .tour-dots{display:flex;gap:6px;justify-content:center;align-items:center;height:16px;margin-top:2px}
+.ios .tour-dots i{display:block;width:7px;height:7px;border-radius:4px;background:rgba(255,255,255,.38);transition:width .3s,background .3s}
+.ios .tour-dots i.done{background:rgba(255,255,255,.85)}
+.ios .tour-dots i.on{width:20px;background:#3DDC97}
+/* final */
+.ios .tour-fin{position:absolute;left:0;right:0;top:0;display:flex;justify-content:center;opacity:0;pointer-events:none}
+.ios .tour-logo{display:flex;flex-direction:column;align-items:center;gap:2px}
+.ios .tour-logo svg{display:block;filter:drop-shadow(0 8px 20px rgba(0,0,0,.35))}
+.ios .tour-wm{font-family:var(--f-d);font-weight:600;font-size:30px;letter-spacing:.02em;color:#fff;line-height:1.1}
+.ios .tour-conf{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.ios .tour-conf>*{position:absolute;left:-11px;top:-11px;display:block;will-change:transform,opacity}
+.ios .tour-conf>i{width:9px;height:14px;border-radius:2px;left:-4px;top:-7px}
+/* sense desenfocament en viu (dispositius lents o «reduir transparència»): boira més opaca */
+.ios .tour.lite .tour-fog{-webkit-backdrop-filter:none;backdrop-filter:none}
+.ios .tour.lite .tour-tint path{fill:rgba(9,22,16,.86)}
+.ios.th-dark .tour.lite .tour-tint path{fill:rgba(0,0,0,.88)}
+@media (prefers-reduced-transparency:reduce){.ios .tour .tour-fog{-webkit-backdrop-filter:none;backdrop-filter:none}.ios .tour .tour-tint path{fill:rgba(9,22,16,.86)}.ios.th-dark .tour .tour-tint path{fill:rgba(0,0,0,.88)}}
+
+/* ===================== Valia · secció IA (Xat + Ruta a mida) en verds de la marca =====================
+   Escala de verds a partir del maragda de Valia (#00A86B), del to bosc al to menta, i papers assignats.
+   Regla de contrast: el text blanc només va sobre els verds foscos (≥ 800 / 700). En mode fosc, cada paper
+   té la seva versió (verds més lluminosos i menys saturats) i els botons porten text fosc.
+   Errors i avisos mantenen els seus colors; l'èxit es distingeix amb icona (check) i sense fons ple. */
+.ios{
+  /* escala: bosc → maragda → menta */
+  --ia-900:#0B3D2A; --ia-850:#004D31; --ia-800:#00603D; --ia-700:#00704A; --ia-600:#008F5B;
+  --ia-500:#00A86B; --ia-400:#16C083; --ia-300:#5FD3A2; --ia-200:#C4EBD8; --ia-150:#D6F3E5; --ia-100:#E3F5EC; --ia-50:#F1FBF6;
+  /* papers */
+  --ia-btn:var(--ia-800);                 /* botó principal (text blanc 7,66:1) */
+  --ia-btn-g:linear-gradient(140deg,#00754A 0%,var(--ia-800) 55%,var(--ia-850) 100%);   /* brillantor del botó (blanc ≥ 5,76:1) */
+  --ia-btn-press:var(--ia-850);           /* premut */
+  --ia-on-btn:#FFFFFF;
+  --ia-lip:#003D27;                       /* vora inferior «3D» dels botons */
+  --ia-glow:rgba(0,77,49,.55);            /* ombra/brillantor verda */
+  --ia-dis-bg:#DCEFE5; --ia-dis-fg:#4E7A66;   /* desactivat */
+  --ia-acc:var(--ia-500);                 /* accent: indicador, brillantors */
+  --ia-icon:var(--ia-600);                /* icones i anells (≥ 3,5:1 sobre blanc i menta) */
+  --ia-tx:var(--ia-700);                  /* textos destacats i enllaços (6,15:1 sobre blanc) */
+  --ia-soft:var(--ia-100);                /* fons de xips, etiquetes i marques */
+  --ia-soft-tx:var(--ia-800);             /* text sobre menta (6,76:1) */
+  --ia-bub:var(--ia-150); --ia-bub-tx:#06321F;   /* bombolla de l'usuari (12:1) */
+  --ia-focus:var(--ia-600);               /* anell de focus */
+  --ia-wash:#DCF3E8;                      /* degradat de capçalera */
+  --ia-tab:var(--ia-600);                 /* avatar de la pestanya Xat */
+}
+.ios.th-dark{
+  --ia-btn:#5ECF9E;
+  --ia-btn-g:linear-gradient(140deg,#74D9AC 0%,#5ECF9E 55%,#47BD8B 100%);
+  --ia-btn-press:#47BD8B;
+  --ia-on-btn:#062A1C;                    /* text fosc sobre verd lluminós (≥ 6,6:1) */
+  --ia-lip:#2E8F66;
+  --ia-glow:rgba(94,207,158,.32);
+  --ia-dis-bg:#1E3229; --ia-dis-fg:#8FB5A3;
+  --ia-acc:#5FD3A2; --ia-icon:#6FDAAD; --ia-tx:#7FE0B5;
+  --ia-soft:#143226; --ia-soft-tx:#BFF0D8;
+  --ia-bub:#1A3D2D; --ia-bub-tx:#E6F6EE;
+  --ia-focus:#7FE0B5; --ia-wash:#10291E; --ia-tab:#2A9D70;
+}
+
+/* focus de teclat dins la IA (abans blau #0A63D6) */
+.ios .stack[data-tab="xat"] :focus-visible,.ios .tabbar button[data-tab="xat"]:focus-visible{outline-color:var(--ia-focus)}
+
+/* botons: estats premut i desactivat */
+.ios .composer .send.down,.ios .composer .send:active,
+.ios .aibar .btn:not(.gray):not(.dark):not(.out):not(.red):not(.soc):not(.ghost5).down,
+.ios .aibar .btn:not(.gray):not(.dark):not(.out):not(.red):not(.soc):not(.ghost5):active{background:var(--ia-btn-press)!important}
+.ios .composer .send[disabled]{background:var(--ia-dis-bg)!important;color:var(--ia-dis-fg)!important;box-shadow:none!important;opacity:1}
+.ios .composer .send[disabled] svg{stroke:var(--ia-dis-fg)}
+.ios .aibar .btn[disabled]{background:var(--ia-dis-bg)!important;color:var(--ia-dis-fg)!important;box-shadow:none!important}
+.ios .aibar .btn[disabled] svg{stroke:var(--ia-dis-fg)}
+
+/* ===================== «Ruta a mida» · Opcions avançades (segon nivell) ===================== */
+.ios .adv{margin-top:22px}
+/* botó del desplegable: fila de targeta, ben visible */
+.ios .adv .advbtn{display:flex;align-items:center;gap:12px;width:100%;min-height:56px;padding:8px 14px 8px 10px;border-radius:18px;background:var(--card);box-shadow:inset 0 0 0 1.5px var(--hair),var(--sh1);color:var(--ink);text-align:left}
+.ios .adv.open .advbtn{box-shadow:inset 0 0 0 1.5px var(--ia-icon),var(--sh1)}
+.ios .adv .advic{width:36px;height:36px;border-radius:12px;display:grid;place-items:center;flex:none;background:var(--ia-soft);color:var(--ia-icon)}
+.ios .adv .advbt{flex:1;min-width:0;font-weight:650;font-size:var(--t-hd);line-height:1.25}
+.ios .adv .advn,.ios .adv .advgn{display:inline-grid;place-items:center;min-width:24px;height:24px;padding:0 7px;border-radius:12px;background:var(--ia-btn);color:var(--ia-on-btn);font-size:13px;font-weight:750;line-height:1;flex:none;font-variant-numeric:tabular-nums}
+.ios .adv .advn[hidden],.ios .adv .advgn[hidden]{display:none}
+.ios .adv .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.ios .adv .advchev{display:grid;place-items:center;width:24px;height:24px;flex:none;color:var(--label2);transition:transform .38s var(--spring)}
+.ios .adv .advchev svg{transition:none}
+.ios .adv.open > .advbtn .advchev,.ios .adv .advg.open > .advgh .advchev{transform:rotate(180deg)}
+.ios.rm .adv .advchev{transition:none}
+/* panell */
+.ios .adv .advp{will-change:height,opacity}
+.ios .adv .advin{padding-top:12px}
+.ios .adv .advtop{display:flex;align-items:center;gap:10px}
+.ios .adv .advtop p{flex:1;min-width:0;margin:0;line-height:1.35}
+.ios .adv .advrst{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 8px;font-weight:650;color:var(--ia-tx);flex:none;border-radius:12px}
+.ios .adv .advrst[disabled]{color:var(--label3);opacity:.7}
+/* suggeriments de la mascota */
+.ios .adv .advsug{margin-top:10px;padding:10px 12px 4px;border-radius:16px;background:var(--ia-soft)}
+.ios .adv .advsug[hidden]{display:none}
+.ios .adv .advsug-l{display:flex;align-items:center;gap:8px;color:var(--ia-soft-tx);font-weight:650}
+.ios .adv .advsug-m{width:24px;height:24px;border-radius:12px;background:var(--ia-tab);display:grid;place-items:center;overflow:hidden;flex:none}
+.ios .adv .advsug .chips{margin-top:2px}
+.ios .adv .chip.advs > span{background:var(--card)!important;color:var(--ia-soft-tx)!important;box-shadow:inset 0 0 0 1.5px color-mix(in srgb,var(--ia-icon) 55%,transparent)!important}
+/* grups (acordions) */
+.ios .adv .advgs{margin-top:12px;border-radius:18px;background:var(--card);box-shadow:inset 0 0 0 1px var(--hair),var(--sh1);overflow:hidden}
+.ios .adv .advg + .advg{box-shadow:inset 0 .5px 0 var(--sep)}
+.ios .adv .advgh{display:flex;align-items:center;gap:12px;width:100%;min-height:54px;padding:8px 14px 8px 12px;color:var(--ink);text-align:left}
+.ios .adv .advgi{width:32px;height:32px;border-radius:10px;display:grid;place-items:center;flex:none;background:var(--ia-soft);color:var(--ia-icon)}
+.ios .adv .advgt{flex:1;min-width:0;font-weight:600;font-size:var(--t-body);line-height:1.25}
+.ios .adv .advgbi{padding:2px 14px 14px}
+.ios .adv .advit{padding-top:10px}
+.ios .adv .advit + .advit{margin-top:2px}
+.ios .adv .advl{display:block;font-size:var(--t-fn,13px);font-weight:650;color:var(--label2);letter-spacing:.01em;margin-bottom:2px}
+.ios .adv .advnote{margin:2px 0 0}
+.ios .adv .advit .chips{flex-wrap:wrap}
+/* interruptors */
+.ios .adv .advrow{display:flex;align-items:center;gap:12px;min-height:56px;padding:6px 0;cursor:pointer}
+.ios .adv .advit + .advrow,.ios .adv .advrow + .advrow{box-shadow:inset 0 .5px 0 var(--sep)}
+.ios .adv .advrow-t{flex:1;min-width:0;display:flex;flex-direction:column;gap:1px}
+.ios .adv .advrow-t .bd{font-size:var(--t-body);line-height:1.3;font-weight:500;color:var(--ink)}
+.ios .adv .advrow-t .fn{line-height:1.3}
+/* lliscadors de rang (dues manetes, accessibles amb teclat i lector de pantalla) */
+.ios .adv .advlrow{display:flex;align-items:baseline;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.ios .adv .advlrow .advl{margin:0}
+.ios .adv .advval{font-weight:700;font-size:var(--t-sh);color:var(--label2);font-variant-numeric:tabular-nums}
+.ios .adv .advrange.on .advval{color:var(--ia-tx)}
+.ios .adv .rng{position:relative;height:44px;margin:0 2px;touch-action:none}
+.ios .adv .rng-t{position:absolute;left:14px;right:14px;top:50%;height:6px;margin-top:-3px;border-radius:3px;background:var(--fill2)}
+.ios .adv .rng-f{position:absolute;top:0;bottom:0;left:var(--a);right:calc(100% - var(--b));border-radius:3px;background:var(--ia-icon)}
+.ios .adv .rng input{position:absolute;inset:0;width:100%;height:44px;margin:0;background:none;-webkit-appearance:none;appearance:none;pointer-events:none;outline:none}
+.ios .adv .rng input::-webkit-slider-runnable-track{height:44px;background:none;border:0}
+.ios .adv .rng input::-moz-range-track{height:44px;background:none;border:0}
+.ios .adv .rng input::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;pointer-events:auto;width:28px;height:28px;margin-top:8px;border-radius:50%;background:#fff;border:0;box-shadow:0 0 0 2px var(--ia-icon),0 3px 8px rgba(0,0,0,.18);cursor:grab}
+.ios .adv .rng input::-moz-range-thumb{pointer-events:auto;width:28px;height:28px;border-radius:50%;background:#fff;border:0;box-shadow:0 0 0 2px var(--ia-icon),0 3px 8px rgba(0,0,0,.18);cursor:grab}
+.ios .adv .rng input:focus-visible::-webkit-slider-thumb{box-shadow:0 0 0 2px var(--ia-icon),0 0 0 6px color-mix(in srgb,var(--ia-focus) 45%,transparent)}
+.ios .adv .rng input:focus-visible::-moz-range-thumb{box-shadow:0 0 0 2px var(--ia-icon),0 0 0 6px color-mix(in srgb,var(--ia-focus) 45%,transparent)}
+.ios.th-dark .adv .rng input::-webkit-slider-thumb{background:#ECF2EE}
+.ios.th-dark .adv .rng input::-moz-range-thumb{background:#ECF2EE}
+/* data */
+.ios .adv .advdate{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:4px}
+.ios .adv .advdate input{flex:1 1 170px;min-width:0;min-height:44px;padding:0 12px;border:0;border-radius:12px;background:var(--fill);color:var(--ink);font:inherit;font-size:var(--t-body);color-scheme:light}
+.ios.th-dark .adv .advdate input{color-scheme:dark}
+.ios .adv .advclr{display:inline-flex;align-items:center;gap:4px;min-height:44px;padding:0 8px;color:var(--ia-tx);font-weight:600}
+.ios .adv .advclr[hidden]{display:none}
+/* resposta del xat: detall de cada ruta i notes */
+.ios .chat .aidet{display:block;margin-top:8px;line-height:1.3}
+.ios .chat .aidet > span{display:block;color:var(--label2);font-size:var(--t-sh);margin-top:2px}
+.ios .chat .aidet .aidet-tp{display:flex;align-items:center;gap:6px;color:var(--ia-tx);font-weight:600}
+.ios .chat .aidet .aidet-tp svg{flex:none}
+.ios .chat .aiex{margin:8px 0 0}
+.ios .adv .chip > span{min-width:48px;justify-content:center}
+
+.ios .tile[data-rw="bus"]{background-image:linear-gradient(180deg,rgba(6,10,8,.30) 0,rgba(6,10,8,.20) 35%,rgba(6,10,8,.86) 100%),url("img/placa-esglesia-escultura.webp");background-position:50% 50%,40% 78%}
+.ios .tile[data-rw="bici"]{background-image:linear-gradient(180deg,rgba(6,10,8,.30) 0,rgba(6,10,8,.20) 35%,rgba(6,10,8,.86) 100%),url("img/btt-torre-cim.webp");background-position:50% 50%,58% 68%}
+.ios .tile[data-rw="esmorzar"]{background-image:linear-gradient(180deg,rgba(6,10,8,.30) 0,rgba(6,10,8,.20) 35%,rgba(6,10,8,.86) 100%),url("img/restaurant.webp");background-position:50% 50%,38% 50%}
+.ios .tile[data-rw="mercat"]{background-image:linear-gradient(180deg,rgba(6,10,8,.30) 0,rgba(6,10,8,.20) 35%,rgba(6,10,8,.86) 100%),url("img/poble-horts.webp");background-position:50% 50%,35% 70%}
+.ios .tile[data-rw="museu"]{background-image:linear-gradient(180deg,rgba(6,10,8,.30) 0,rgba(6,10,8,.20) 35%,rgba(6,10,8,.86) 100%),url("img/esglesia-turo.webp");background-position:50% 50%,55% 35%}
+.ios .tile[data-rw="arbre"]{background-image:linear-gradient(180deg,rgba(6,10,8,.30) 0,rgba(6,10,8,.20) 35%,rgba(6,10,8,.86) 100%),url("img/excursionista-muntanya.webp");background-position:50% 50%,30% 55%}
+.ios .bg-acces-1{background-position:70% 50%!important}.ios .bg-acces-1::before{background:url("data:image/webp;base64,UklGRrABAABXRUJQVlA4IKQBAAAwCACdASocABwAPsVSoEunpKMht/VYAPAYiWwAnS921gNspds28t2YIfOnA3ANKazOGX/Yj6asd0e3bOL41//PHyQtTs39eM1iAAD+80YixUmfvDi3pQKXTq3ltDWUfrW0eC8KGPIaSLYfvLY2bvU+YISvD63k8PuotPMkIrSN8eOq9V51ojUcPVHRIaLgxXr6k7UoAYsv9aaoCCASMXqvubCZ+dO9rahA1hIW+W3153ljw5Ken1tNwfHm++SZ6blekys2fr/Ene1yO+osDJ6uoHjBYb1v20/4T9UsGsil2EhcDDVtUmptrL5nUgZkBZvy3Sk0H9PaSe7FfUzp6vs2dH3GGECcJ9uMkjH48CgFgsCz6LJDZfvOi+T+EnQurifexR9+nr6e5QAXOWXdMuvXnzAX/oAQi4OFsetrup8yLqbJXeY54m4o9oh8Pf7/7h3YydkmqT7Ckhr1YaIys+KpVYSSECaDiedJWFrGuUzPVOq3oPSyu52/F/V3WP97M3xoNWOksQoAV1V3PGKzpXJUrBoFt9cXowRpCWB7nK/ZyV7kAAA=") 70% 50%/cover no-repeat!important}
+.ios .bg-acces-2{background-position:55% 55%!important}.ios .bg-acces-2::before{background:url("data:image/webp;base64,UklGRr4AAABXRUJQVlA4ILIAAACQBQCdASocABMAPtFepE6oJSMiKAqpABoJZgCsM1XBw4G5oP+lGVMdnd6fyWTFgG+ABVKBwAD9tLC850wCSN6gZa0AqqpVGXYF6N43FifAGGGfSpMFZ7HuX2bQ2VOkNALH0GLcu96+wgYBNERF0f64GCwvxrrEIZwsd6xgvM7xg3ZG7RK4si39bHEJ5FMgR3wefuZEkxmdh/qoEwLhM058G5lIb7jJ6DDVZxHsuuj6c4AA") 55% 55%/cover no-repeat!important}
+.ios .bg-acces-3{background-position:30% 60%!important}.ios .bg-acces-3::before{background:url("data:image/webp;base64,UklGRuQAAABXRUJQVlA4INgAAABwBQCdASocABMAPtFUpk2oJCOiMBgIAQAaCUAWo3I+SYMl0SWrKpnXJ+FmySIQb9YlBjlgAPxmhcjPJ8CGuo3Qx+N3WENj5y4UhyxpNHVRuN2nt1l+viMgwX6Nh3MQclE6XlpWHGnvPcOSKDFKEOckS+aFxKJGLHxxHxHGn59LO2w+WshybRW4x5vDKZSAEw9GflByZCwARsXgvYMMoEDa0rvBZPdPqRImUIWsbURduM1PjWLmyYAgHtFE8efVsaLJkF7d9zeHmxDkxSOLAb/8zhB5jK98QAA=") 30% 60%/cover no-repeat!important}
+.ios .bg-ruta-caldes{background-position:62% 62%!important}.ios .bg-ruta-caldes::before{background:url("data:image/webp;base64,UklGRrABAABXRUJQVlA4IKQBAAAwCACdASocABwAPsVSoEunpKMht/VYAPAYiWwAnS921gNspds28t2YIfOnA3ANKazOGX/Yj6asd0e3bOL41//PHyQtTs39eM1iAAD+80YixUmfvDi3pQKXTq3ltDWUfrW0eC8KGPIaSLYfvLY2bvU+YISvD63k8PuotPMkIrSN8eOq9V51ojUcPVHRIaLgxXr6k7UoAYsv9aaoCCASMXqvubCZ+dO9rahA1hIW+W3153ljw5Ken1tNwfHm++SZ6blekys2fr/Ene1yO+osDJ6uoHjBYb1v20/4T9UsGsil2EhcDDVtUmptrL5nUgZkBZvy3Sk0H9PaSe7FfUzp6vs2dH3GGECcJ9uMkjH48CgFgsCz6LJDZfvOi+T+EnQurifexR9+nr6e5QAXOWXdMuvXnzAX/oAQi4OFsetrup8yLqbJXeY54m4o9oh8Pf7/7h3YydkmqT7Ckhr1YaIys+KpVYSSECaDiedJWFrGuUzPVOq3oPSyu52/F/V3WP97M3xoNWOksQoAV1V3PGKzpXJUrBoFt9cXowRpCWB7nK/ZyV7kAAA=") 62% 62%/cover no-repeat!important}
+.ios .bg-ruta-fai{background-position:50% 42%!important}.ios .bg-ruta-fai::before{background:url("data:image/webp;base64,UklGRmgBAABXRUJQVlA4IFwBAADQBgCdASocABwAPtFapE0oJSMiKA1RABoJYgCsIO8YBM9DWE4CVe9t4tvE2xjox1fjhjfKJVm6FN27vX51qFAA/rxaj//lGHLqnpL13Vt0+GipGuFC52lgPR93i9zSl4R8EgIJEbrDqOQ4eDiDiabL//Wy4JF5+Slyf0m/GYtVVMHiNe2CN07e8syvM/XZsfHaf+krNVV5StMVPCJwVNu/kFFMQrdrVypHkgy7abo1ZQGEjJEL3cKgjHe8i5sJBnQ+qHPdDemdeCAU+OPBZL1zSKHH7nWnSVZSkcVuRfIyi6CJzIcTaV9hZRO+dw1D/IWWk00xfbAWgyOxgNvOq9KyplfdPWn/vrpD7flF7KlHOaj1+l760DS2erThhCzj4VWuP6dVdbr1YKcGhcDcI5vuTiT2keB0L9QRGdsoBj6yirzLNcs+OiUp8eurW+4DLDbzufAZ0/Y9flQAAAA=") 50% 42%/cover no-repeat!important}
+.ios .bg-ruta-gallecs{background-position:38% 68%!important}.ios .bg-ruta-gallecs::before{background:url("data:image/webp;base64,UklGRuQAAABXRUJQVlA4INgAAABwBQCdASocABMAPtFUpk2oJCOiMBgIAQAaCUAWo3I+SYMl0SWrKpnXJ+FmySIQb9YlBjlgAPxmhcjPJ8CGuo3Qx+N3WENj5y4UhyxpNHVRuN2nt1l+viMgwX6Nh3MQclE6XlpWHGnvPcOSKDFKEOckS+aFxKJGLHxxHxHGn59LO2w+WshybRW4x5vDKZSAEw9GflByZCwARsXgvYMMoEDa0rvBZPdPqRImUIWsbURduM1PjWLmyYAgHtFE8efVsaLJkF7d9zeHmxDkxSOLAb/8zhB5jK98QAA=") 38% 68%/cover no-repeat!important}
+.ios .bg-ruta-fageda{background-position:50% 55%!important}.ios .bg-ruta-fageda::before{background:url("data:image/webp;base64,UklGRmABAABXRUJQVlA4IFQBAAAQBwCdASocABwAPtFgqU+oJSOiKAgBABoJZACsM2h6TSAjgVwErFbuiIrm370PDuSDBs46srSPF3ZxT3G9x3FDgAD+3OW5aHYnkpkTYGyOMLYv3h/rmRQr/899oHGnVQlNOVDVps5l6HhwjXx6J0rUK/zkXgeRC0AFB7mnrx9W5tB+lZKBExH2qlH8YuhDDScEeujF6UFvc9mg0Pt0Hxizz4ltAN8ctnXJhAmt5yIXv37hTxxBzc04pNv0hH9oNhW/O5BqyC+zJYXIl8kwbf4z2JJw44IKf4wFm6RA/funOH7uGWRIHhSYySuMqaXqyErrvrxvyeKRdVuTJ1wqCHPivr1mLxgVsS3W7AiCLw7H2TohX9iiti5lrhmJDs8AiCw64Vd6AEXLN5jK6paIdyWTSFNscKEZh2UdjwOwWU96WXjOz5gOlAJx6OPSvOyCf6SGgAAA") 50% 55%/cover no-repeat!important}
+.ios .bg-ruta-turo{background-position:55% 50%!important}.ios .bg-ruta-turo::before{background:url("data:image/webp;base64,UklGRsIAAABXRUJQVlA4ILYAAABQBQCdASocABMAPtFgqE+oJSOiKAgBABoJZACdMw6Bqbu6X3Efiv9O74k3nQYNKclDTAAA/tSc31yC7DLXvESvp6rH+qXzQRLAQZp3+DF+pWHZ5Ii1Lag5qI60Tm+81t01p/KaJgF3jAT73LpBinipGxsxXwRuTQnO+m9ZQUPUTqPy9rpmjMZenjYhO6mxxKOO3bLZNP6G3O0CkYFfeJfwPAN9Ct0DpNxLZBl4RN5DIL8n+EAAAA==") 55% 50%/cover no-repeat!important}
+.ios .bg-ruta-calma{background-position:52% 30%!important}.ios .bg-ruta-calma::before{background:url("data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAABQBQCdASocABUAPtFcpE0oJSOiMBgIAQAaCWUAwNwQ79n/qX0NZqAr0BTDUGeqtZo2KAAA/u4fGbbxhi0q7Efg1ZlTK0eYetgiKzMWInA3N9bGn/N6Idrq2UQX4L+K7+10egY+Lwl+pJH9WmjTf+puwwYsGLWNUxVvkcx+EVn97newW65AzACiaG0Qt/tvkzqzYNYsY93sT0U9roaGqSE4OWU0GkQNZZgUAAAA") 52% 30%/cover no-repeat!important}
+.ios .bg-ruta-porxada{background-position:70% 40%!important}.ios .bg-ruta-porxada::before{background:url("data:image/webp;base64,UklGRsQAAABXRUJQVlA4ILgAAACQBQCdASocABMAPtFcpEyoJSOiMBgIAQAaCUAVhmrI3sJouNlxVE1mhR5oLiKZ35mZXxTzIAD+kCzXH8opq0Ty7XzO/2iGFXoW+8Zbv14/VhjRCWvOEPHXLITXLZBF3kEDp1E6Y/fC74pKOeSWnBA7S7WsIMI/g2ypFE4o2nGVJ3KD4PzBZZNus4+Qb57q1u4Mm3SIyrry9AbLPAQai2tVpdbkHLH2BZ30k5BZXCnEwygySoIoreAA") 70% 40%/cover no-repeat!important}
+.ios .bg-ruta-congost{background-position:62% 55%!important}.ios .bg-ruta-congost::before{background:url("data:image/webp;base64,UklGRuQAAABXRUJQVlA4INgAAABwBQCdASocABMAPtFUpk2oJCOiMBgIAQAaCUAWo3I+SYMl0SWrKpnXJ+FmySIQb9YlBjlgAPxmhcjPJ8CGuo3Qx+N3WENj5y4UhyxpNHVRuN2nt1l+viMgwX6Nh3MQclE6XlpWHGnvPcOSKDFKEOckS+aFxKJGLHxxHxHGn59LO2w+WshybRW4x5vDKZSAEw9GflByZCwARsXgvYMMoEDa0rvBZPdPqRImUIWsbURduM1PjWLmyYAgHtFE8efVsaLJkF7d9zeHmxDkxSOLAb/8zhB5jK98QAA=") 62% 55%/cover no-repeat!important}
+.ios .bg-ruta-cardedeu{background-position:82% 48%!important}.ios .bg-ruta-cardedeu::before{background:url("data:image/webp;base64,UklGRrABAABXRUJQVlA4IKQBAAAwCACdASocABwAPsVSoEunpKMht/VYAPAYiWwAnS921gNspds28t2YIfOnA3ANKazOGX/Yj6asd0e3bOL41//PHyQtTs39eM1iAAD+80YixUmfvDi3pQKXTq3ltDWUfrW0eC8KGPIaSLYfvLY2bvU+YISvD63k8PuotPMkIrSN8eOq9V51ojUcPVHRIaLgxXr6k7UoAYsv9aaoCCASMXqvubCZ+dO9rahA1hIW+W3153ljw5Ken1tNwfHm++SZ6blekys2fr/Ene1yO+osDJ6uoHjBYb1v20/4T9UsGsil2EhcDDVtUmptrL5nUgZkBZvy3Sk0H9PaSe7FfUzp6vs2dH3GGECcJ9uMkjH48CgFgsCz6LJDZfvOi+T+EnQurifexR9+nr6e5QAXOWXdMuvXnzAX/oAQi4OFsetrup8yLqbJXeY54m4o9oh8Pf7/7h3YydkmqT7Ckhr1YaIys+KpVYSSECaDiedJWFrGuUzPVOq3oPSyu52/F/V3WP97M3xoNWOksQoAV1V3PGKzpXJUrBoFt9cXowRpCWB7nK/ZyV7kAAA=") 82% 48%/cover no-repeat!important}
+.ios .bg-ruta-megalits{background-position:50% 42%!important}.ios .bg-ruta-megalits::before{background:url("data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAADQBQCdASocABUAPtFWpk0oJCOiMBgIAQAaCWMArAMsGGtGwFY+qEXNfVhidKn+31txoPoNWXCoAP7nKWCmW+K/wFEFaJcfLabj8xDSt96PhdqYuSdCCO8beuTmHgZzWUplDaugUuIP+wZXTfR/W4/cgWL4OypV9U8WE87E0fvteL4nUaO3aCGP2Hx3zKMARVRhKQ4IlzdyDB4BVX+AnRgYooaKA6AYV7mUPkNEEAA=") 50% 42%/cover no-repeat!important}
+.ios .bg-ruta-llinars{background-position:62% 40%!important}.ios .bg-ruta-llinars::before{background:url("data:image/webp;base64,UklGRjgBAABXRUJQVlA4ICwBAACwBgCdASocABUAPslQnkunpKKhsAwA8BkJbACdMoR5n7MnjPeXSJJEvJQYc3k00C/o58ghqRKgeBrGI/egQAD+2T6ENFj1rqGGUg809kJEnaCvDQntK3/jvmX/iUe6hEPAoateuuJh1sHH6Clmxm+pMsa0KP0+kckhVmJ93Kezagc6Gf6tXIpDtZBjVsSc2ceNYp6KDu+26bP5x5rVF3lK9fkb4NJPWavSvfGNQYl1HReLpYCsxLof+TkxTNOyoTHRdz/A3TcpEBsSs1fzAaXtQqTlvWJ9mLPepuU3Ce04Vmx+SfzbvdFpjr9bslHZk8e9u3BoIe9gQtR5a7zDVaTSIi6Y7AnKIbSVZ8Xf34VGxVFWe+3qheKsbRt92aPXzy/DpC4ACESuJEOgAAA=") 62% 40%/cover no-repeat!important}
+.ios .bg-ruta-puig{background-position:42% 62%!important}.ios .bg-ruta-puig::before{background:url("data:image/webp;base64,UklGRr4AAABXRUJQVlA4ILIAAACQBQCdASocABMAPtFepE6oJSMiKAqpABoJZgCsM1XBw4G5oP+lGVMdnd6fyWTFgG+ABVKBwAD9tLC850wCSN6gZa0AqqpVGXYF6N43FifAGGGfSpMFZ7HuX2bQ2VOkNALH0GLcu96+wgYBNERF0f64GCwvxrrEIZwsd6xgvM7xg3ZG7RK4si39bHEJ5FMgR3wefuZEkxmdh/qoEwLhM058G5lIb7jJ6DDVZxHsuuj6c4AA") 42% 62%/cover no-repeat!important}
+.ios .bg-punt-1{background-position:85% 30%!important}.ios .bg-punt-1::before{background:url("data:image/webp;base64,UklGRsQAAABXRUJQVlA4ILgAAACQBQCdASocABMAPtFcpEyoJSOiMBgIAQAaCUAVhmrI3sJouNlxVE1mhR5oLiKZ35mZXxTzIAD+kCzXH8opq0Ty7XzO/2iGFXoW+8Zbv14/VhjRCWvOEPHXLITXLZBF3kEDp1E6Y/fC74pKOeSWnBA7S7WsIMI/g2ypFE4o2nGVJ3KD4PzBZZNus4+Qb57q1u4Mm3SIyrry9AbLPAQai2tVpdbkHLH2BZ30k5BZXCnEwygySoIoreAA") 85% 30%/cover no-repeat!important}
+.ios .bg-punt-2{background-position:45% 65%!important}.ios .bg-punt-2::before{background:url("data:image/webp;base64,UklGRmABAABXRUJQVlA4IFQBAAAQBwCdASocABwAPtFgqU+oJSOiKAgBABoJZACsM2h6TSAjgVwErFbuiIrm370PDuSDBs46srSPF3ZxT3G9x3FDgAD+3OW5aHYnkpkTYGyOMLYv3h/rmRQr/899oHGnVQlNOVDVps5l6HhwjXx6J0rUK/zkXgeRC0AFB7mnrx9W5tB+lZKBExH2qlH8YuhDDScEeujF6UFvc9mg0Pt0Hxizz4ltAN8ctnXJhAmt5yIXv37hTxxBzc04pNv0hH9oNhW/O5BqyC+zJYXIl8kwbf4z2JJw44IKf4wFm6RA/funOH7uGWRIHhSYySuMqaXqyErrvrxvyeKRdVuTJ1wqCHPivr1mLxgVsS3W7AiCLw7H2TohX9iiti5lrhmJDs8AiCw64Vd6AEXLN5jK6paIdyWTSFNscKEZh2UdjwOwWU96WXjOz5gOlAJx6OPSvOyCf6SGgAAA") 45% 65%/cover no-repeat!important}
+.ios .bg-capcalera-botiga{background-position:55% 50%!important}.ios .bg-capcalera-botiga::before{background:url("data:image/webp;base64,UklGRsgAAABXRUJQVlA4ILwAAADQBACdASocABMAPtFWo0uoJKMhsAgBABoJbACdMxgCdbU7wK6j1cQVN2zOYJm6AAD9i7F12Y2837Qq6iH4boTUC6z+Oeo5qnBy+1w83eE5zqP5QoRuNGOqVB1UFn/RhddqyTrGGeovznHdLSUZm6yowzQrei3HmfEDQ9SkF0+TmJqvDvObDQjPzMsdZfz7W76MSTaydYrhf+3JZ0SPSfCBzqrja8Dh/bhyfiMJa7bLtgwUO1ELNJA5NQAAAA==") 55% 50%/cover no-repeat!important}
+.ios .bg-capcalera-perfil{background-position:60% 45%!important}.ios .bg-capcalera-perfil::before{background:url("data:image/webp;base64,UklGRtwAAABXRUJQVlA4INAAAAAQBQCdASocABEAPtFUpk2oJCOiMBgIAQAaCUAYUAI9BDOQqcwMmjAfaWmvnBBw8uqgAPzZewuLMy97jbk75FWJisrYF9Wtj0QIU632SU27dzfvs64yOT+plgJgWcHf3OxuM25jSZrpOAqV6IMQhHcByqzYbaQKm4P/sgIyxSQFUmYffZlhSU4ILTy8gfObKlDCFVYrqhSQiL8+jdCigldPse/XcG5iJXVwfltNHf10JX9IL6F6m4bK7SDZttMHVxau2MzIkOo8EudD2yIPAAAA") 60% 45%/cover no-repeat!important}
+.ios .bg-impacte{background-position:60% 40%!important}.ios .bg-impacte::before{background:url("data:image/webp;base64,UklGRsIAAABXRUJQVlA4ILYAAABQBQCdASocABMAPtFgqE+oJSOiKAgBABoJZACdMw6Bqbu6X3Efiv9O74k3nQYNKclDTAAA/tSc31yC7DLXvESvp6rH+qXzQRLAQZp3+DF+pWHZ5Ii1Lag5qI60Tm+81t01p/KaJgF3jAT73LpBinipGxsxXwRuTQnO+m9ZQUPUTqPy9rpmjMZenjYhO6mxxKOO3bLZNP6G3O0CkYFfeJfwPAN9Ct0DpNxLZBl4RN5DIL8n+EAAAA==") 60% 40%/cover no-repeat!important}
+.ios .bg-repte-1{background-position:52% 58%!important}.ios .bg-repte-1::before{background:url("data:image/webp;base64,UklGRsgAAABXRUJQVlA4ILwAAADQBACdASocABMAPtFWo0uoJKMhsAgBABoJbACdMxgCdbU7wK6j1cQVN2zOYJm6AAD9i7F12Y2837Qq6iH4boTUC6z+Oeo5qnBy+1w83eE5zqP5QoRuNGOqVB1UFn/RhddqyTrGGeovznHdLSUZm6yowzQrei3HmfEDQ9SkF0+TmJqvDvObDQjPzMsdZfz7W76MSTaydYrhf+3JZ0SPSfCBzqrja8Dh/bhyfiMJa7bLtgwUO1ELNJA5NQAAAA==") 52% 58%/cover no-repeat!important}
+.ios .bg-repte-2{background-position:34% 64%!important}.ios .bg-repte-2::before{background:url("data:image/webp;base64,UklGRuQAAABXRUJQVlA4INgAAABwBQCdASocABMAPtFUpk2oJCOiMBgIAQAaCUAWo3I+SYMl0SWrKpnXJ+FmySIQb9YlBjlgAPxmhcjPJ8CGuo3Qx+N3WENj5y4UhyxpNHVRuN2nt1l+viMgwX6Nh3MQclE6XlpWHGnvPcOSKDFKEOckS+aFxKJGLHxxHxHGn59LO2w+WshybRW4x5vDKZSAEw9GflByZCwARsXgvYMMoEDa0rvBZPdPqRImUIWsbURduM1PjWLmyYAgHtFE8efVsaLJkF7d9zeHmxDkxSOLAb/8zhB5jK98QAA=") 34% 64%/cover no-repeat!important}
+.ios .bg-any{background-position:28% 55%!important}.ios .bg-any::before{background:url("data:image/webp;base64,UklGRuQAAABXRUJQVlA4INgAAABwBQCdASocABMAPtFUpk2oJCOiMBgIAQAaCUAWo3I+SYMl0SWrKpnXJ+FmySIQb9YlBjlgAPxmhcjPJ8CGuo3Qx+N3WENj5y4UhyxpNHVRuN2nt1l+viMgwX6Nh3MQclE6XlpWHGnvPcOSKDFKEOckS+aFxKJGLHxxHxHGn59LO2w+WshybRW4x5vDKZSAEw9GflByZCwARsXgvYMMoEDa0rvBZPdPqRImUIWsbURduM1PjWLmyYAgHtFE8efVsaLJkF7d9zeHmxDkxSOLAb/8zhB5jK98QAA=") 28% 55%/cover no-repeat!important}
+.ios .bg-recompensa-bus{background-position:40% 78%!important}.ios .bg-recompensa-bus::before{background:url("data:image/webp;base64,UklGRrABAABXRUJQVlA4IKQBAAAwCACdASocABwAPsVSoEunpKMht/VYAPAYiWwAnS921gNspds28t2YIfOnA3ANKazOGX/Yj6asd0e3bOL41//PHyQtTs39eM1iAAD+80YixUmfvDi3pQKXTq3ltDWUfrW0eC8KGPIaSLYfvLY2bvU+YISvD63k8PuotPMkIrSN8eOq9V51ojUcPVHRIaLgxXr6k7UoAYsv9aaoCCASMXqvubCZ+dO9rahA1hIW+W3153ljw5Ken1tNwfHm++SZ6blekys2fr/Ene1yO+osDJ6uoHjBYb1v20/4T9UsGsil2EhcDDVtUmptrL5nUgZkBZvy3Sk0H9PaSe7FfUzp6vs2dH3GGECcJ9uMkjH48CgFgsCz6LJDZfvOi+T+EnQurifexR9+nr6e5QAXOWXdMuvXnzAX/oAQi4OFsetrup8yLqbJXeY54m4o9oh8Pf7/7h3YydkmqT7Ckhr1YaIys+KpVYSSECaDiedJWFrGuUzPVOq3oPSyu52/F/V3WP97M3xoNWOksQoAV1V3PGKzpXJUrBoFt9cXowRpCWB7nK/ZyV7kAAA=") 40% 78%/cover no-repeat!important}
+.ios .bg-recompensa-bici{background-position:58% 68%!important}.ios .bg-recompensa-bici::before{background:url("data:image/webp;base64,UklGRr4AAABXRUJQVlA4ILIAAACQBQCdASocABMAPtFepE6oJSMiKAqpABoJZgCsM1XBw4G5oP+lGVMdnd6fyWTFgG+ABVKBwAD9tLC850wCSN6gZa0AqqpVGXYF6N43FifAGGGfSpMFZ7HuX2bQ2VOkNALH0GLcu96+wgYBNERF0f64GCwvxrrEIZwsd6xgvM7xg3ZG7RK4si39bHEJ5FMgR3wefuZEkxmdh/qoEwLhM058G5lIb7jJ6DDVZxHsuuj6c4AA") 58% 68%/cover no-repeat!important}
+.ios .bg-recompensa-esmorzar{background-position:38% 50%!important}.ios .bg-recompensa-esmorzar::before{background:url("data:image/webp;base64,UklGRvQAAABXRUJQVlA4IOgAAADwBACdASocABAAPtFWpEuoJKOhsAgBABoJZACdMoR4Gc/47qDocvTDxtLBiciK0oAA/umONBFIHT5VDgupYu7KlTVNg3MLeikv+Ug7ZkK+WCpIP/X8hEzOgKs8hGaKXMdwK7wAjEdwrS4bbMlSakgbb+3M3+Qkq1YvuvvCb4GdmPVfknMl7NG9Zb+C1kEKm9RlD1UcqeyznPQvZu7P4bulZYTSc4YYrKh5HyNHNO8LX8UX7lm8Z+I8/qFRf7Djomm9axjZntYofonb/q71FRaY3hA3wIoXS4UGnE7ybRo7oP3ncxGIuAAA") 38% 50%/cover no-repeat!important}
+.ios .bg-recompensa-mercat{background-position:35% 70%!important}.ios .bg-recompensa-mercat::before{background:url("data:image/webp;base64,UklGRsQAAABXRUJQVlA4ILgAAACQBQCdASocABMAPtFcpEyoJSOiMBgIAQAaCUAVhmrI3sJouNlxVE1mhR5oLiKZ35mZXxTzIAD+kCzXH8opq0Ty7XzO/2iGFXoW+8Zbv14/VhjRCWvOEPHXLITXLZBF3kEDp1E6Y/fC74pKOeSWnBA7S7WsIMI/g2ypFE4o2nGVJ3KD4PzBZZNus4+Qb57q1u4Mm3SIyrry9AbLPAQai2tVpdbkHLH2BZ30k5BZXCnEwygySoIoreAA") 35% 70%/cover no-repeat!important}
+.ios .bg-recompensa-museu{background-position:55% 35%!important}.ios .bg-recompensa-museu::before{background:url("data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAABQBQCdASocABUAPtFcpE0oJSOiMBgIAQAaCWUAwNwQ79n/qX0NZqAr0BTDUGeqtZo2KAAA/u4fGbbxhi0q7Efg1ZlTK0eYetgiKzMWInA3N9bGn/N6Idrq2UQX4L+K7+10egY+Lwl+pJH9WmjTf+puwwYsGLWNUxVvkcx+EVn97newW65AzACiaG0Qt/tvkzqzYNYsY93sT0U9roaGqSE4OWU0GkQNZZgUAAAA") 55% 35%/cover no-repeat!important}
+.ios .bg-recompensa-arbre{background-position:30% 55%!important}.ios .bg-recompensa-arbre::before{background:url("data:image/webp;base64,UklGRtwAAABXRUJQVlA4INAAAAAQBQCdASocABEAPtFUpk2oJCOiMBgIAQAaCUAYUAI9BDOQqcwMmjAfaWmvnBBw8uqgAPzZewuLMy97jbk75FWJisrYF9Wtj0QIU632SU27dzfvs64yOT+plgJgWcHf3OxuM25jSZrpOAqV6IMQhHcByqzYbaQKm4P/sgIyxSQFUmYffZlhSU4ILTy8gfObKlDCFVYrqhSQiL8+jdCigldPse/XcG5iJXVwfltNHf10JX9IL6F6m4bK7SDZttMHVxau2MzIkOo8EudD2yIPAAAA") 30% 55%/cover no-repeat!important}
+/* ===================== Carcassa de la PWA: mòbil real (pantalla completa) o marc d'iPhone a l'ordinador ===================== */
+html,body{margin:0;height:100%;background:#E9ECEA;overflow:hidden;overscroll-behavior:none;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{position:fixed;inset:0;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Inter',system-ui,sans-serif;color:#0B0D0C}
+[hidden]{display:none!important}
+.stage{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:56px}
+.phone{position:relative;width:393px;height:852px;overflow:hidden;background:#fff;isolation:isolate}
+/* ordinador: marc d'iPhone 15 escalat */
+html.framed .phone-wrap{width:calc(413px * var(--fs,1));height:calc(872px * var(--fs,1));flex:none}
+html.framed .phone{margin:10px;border-radius:55px;background:#000;box-shadow:0 0 0 10px #0d0f0d,0 0 0 11px rgba(255,255,255,.12),0 28px 70px rgba(0,0,0,.3);transform:scale(var(--fs,1));transform-origin:0 0}
+.dside{max-width:300px}
+.dside h1{font:600 44px/1 'GV Fraunces',Georgia,serif;letter-spacing:-.02em;margin:6px 0 14px;color:#0B0D0C}
+.dside .dk{margin:0;font-size:13px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:#00754A}
+.dside .dl{margin:0 0 10px;font-size:16px;line-height:1.45;color:#3C4440}
+.dside .dn{margin:14px 0 0;font-size:13px;line-height:1.45;color:#55605A}
+@media (max-width:900px){ html.framed .dside{display:none} }
+/* mòbil: l'app ocupa tota la pantalla, sense marc ni barra d'estat simulada */
+html.device,html.device body{background:#fff}
+html.device .stage{display:block}
+html.device .dside{display:none}
+html.device .phone{position:fixed;left:0;top:0;transform-origin:0 0}
+html.device .ios .statusbar,html.device .ios .island,html.device .ios .homeind{display:none}
+/* iOS amplia la pàgina si el camp té menys de 16 px reals: es compensa l'escala */
+html.device .ios input,html.device .ios textarea{font-size:max(17px,1em,calc(16.5px / var(--s,1)))}
+.ios.kbd-on{--safe-b:0px!important;--tab-h:0px!important}
+.ios.kbd-on .tabbar{display:none}
+.ios .ferr{color:var(--red);font-size:var(--t-fn);margin:6px 2px 0}
+.ios .dk-scroll{overflow-y:auto;overscroll-behavior:contain;scrollbar-width:none;justify-content:flex-start;padding-top:16px;padding-bottom:calc(var(--safe-b) + 16px)}
+.ios .dk-scroll::-webkit-scrollbar{display:none}
+.ios .dk-scroll > :first-child{margin-top:auto}
+.ios .dk-scroll > :last-child{margin-bottom:auto}
+.ios .sheet.dark .lnk{color:#3BD49A}
+.ios .sheet.dark .ferr{color:#FF7A7A}
+.ios .ferr:empty{display:none}
+.ios .dk-inp.bad{box-shadow:inset 0 0 0 2px #FF7A7A}
+.ios .demo-box{margin:6px 0 4px;padding:14px 16px;border-radius:12px;background:#1E2421;box-shadow:inset 0 0 0 1px #2F3833}
+.ios .dk-acc{gap:6px;margin-top:2px}
+.ios .sheet.dark .btn.out{color:#fff}
+.dqr{display:flex;gap:16px;align-items:flex-start;margin-top:22px;padding:16px;border-radius:16px;background:#fff;box-shadow:0 1px 0 rgba(0,0,0,.04),0 8px 24px rgba(0,0,0,.06)}
+.dqr-c{flex:none;width:120px;height:120px}.dqr-c > svg{width:100%;height:100%;display:block}
+.dqr-u{margin:0 0 10px!important;word-break:break-all;font-family:ui-monospace,Menlo,monospace;font-size:12px!important}
+.dqr-b{display:flex;flex-wrap:wrap;gap:6px}
+.dqr-b button{min-height:36px;padding:0 12px;border-radius:10px;border:1.5px solid #D5DAD7;background:#fff;color:#0B0D0C;font:600 13px -apple-system,BlinkMacSystemFont,'Inter',system-ui,sans-serif;cursor:pointer}
+.dqr-b button:hover{border-color:#00754A}.dqr-b button:focus-visible{outline:3px solid #0A63D6;outline-offset:2px}
+.dside{max-width:340px}
+
+/* ===== Mapa real (valia-map): només posició dels controls del mòdul dins de les pantalles de l'app ===== */
+/* ordinador: l'app es veu dins d'un marc de mòbil, així que el mapa fa servir la disposició de mòbil */
+.framed .ios .vm-top{right:66px;width:auto}
+.framed .ios .vm-sheet{left:0;right:0;top:auto;width:auto;bottom:0;max-height:58%;border-radius:22px 22px 0 0;box-shadow:0 -10px 30px -10px rgba(0,0,0,.35)}
+.framed .ios .vm-grab{display:flex}
+.framed .ios .vm-shead{padding-top:0}
+.framed .ios .vm-sclose{top:0}
+.framed .ios .vm-has-sheet .maplibregl-ctrl-bottom-left{left:6px;opacity:0;pointer-events:none}
+.framed .ios .vm-has-sheet .maplibregl-ctrl-bottom-right{opacity:0;pointer-events:none}
+/* Explorar: el buscador i els botons del mapa queden sota la barra flotant; a baix, per sobre de la targeta i de les pestanyes */
+.ios .mappg .vm-top,.ios .mappg .vm-root .maplibregl-ctrl-top-right{top:calc(var(--safe-t) + 52px)}
+.ios .mappg .vm-side{top:calc(var(--safe-t) + 274px)}
+.ios .mappg .vm-panel{top:calc(var(--safe-t) + 108px);max-height:calc(100% - var(--safe-t) - 120px - var(--tab-h))}
+.ios .mappg .vm-root .maplibregl-ctrl-bottom-left,.ios .mappg .vm-root .maplibregl-ctrl-bottom-right{bottom:calc(var(--tab-h) + 122px)}
+.ios .mappg .vm-toast{bottom:calc(var(--tab-h) + 130px)}
+.ios .mappg .vm-sheet{bottom:var(--tab-h)}
+/* Ruta en curs: mana la interfície de la ruta (els botons de capes i ubicació de l'app obren els del mapa) */
+.ios .routepg .vm-top,.ios .routepg .vm-side,.ios .routepg .vm-sheet,.ios .routepg .vm-root .maplibregl-ctrl-top-right{display:none}
+.ios .routepg .vm-panel{top:calc(var(--safe-t) + 140px);right:60px;width:auto;left:10px;max-height:calc(100% - var(--safe-t) - 150px - var(--rp-h, 300px))}
+.ios .routepg .vm-root .maplibregl-ctrl-bottom-left,.ios .routepg .vm-root .maplibregl-ctrl-bottom-right{bottom:calc(var(--rp-h, 300px) + 2px);opacity:1;pointer-events:auto}
+.ios .routepg .vm-toast{bottom:calc(var(--rp-h, 300px) + 40px)}
