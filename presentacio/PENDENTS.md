@@ -1,74 +1,109 @@
-# PENDENTS · Presentació de la defensa del TR (Valia)
+# PENDENTS · Presentació de la defensa del TR «Vallès Endins» (app Valia)
 
-Estat: **F0 (inventari) acabada · F1 bloquejada** fins que arribi `referencia/Teoria.docx`.
-Darrera actualització: 14-11-2026.
+Estat: **F1 lliurada, pendent de la vostra aprovació.** Darrera actualització: 16-11-2026.
 
 Llegenda: 🔴 bloqueja una fase · 🟠 risc davant del tribunal · 🟡 millora o comprovació.
 
----
+## Resum
 
-## A. Fitxers que falten
-
-| # | Què falta | Estat | Bloqueja | Què en necessito exactament |
-|---|---|---|---|---|
-| A1 | `referencia/Teoria.docx` | 🔴 No és a cap repositori | F1 sencera | Hipòtesi principal i 3 secundàries (literals), metodologia i fases, resultats de les enquestes i entrevistes (n, dates, preguntes), benchmarking, model de negoci (Canvas), pla econòmic (supòsits, 3 escenaris, punt d'equilibri, finançament), fórmula i exemple de l'IIT, DAFO/CAME, PESTEL, Porter, marc legal, conclusions, declaració d'ús d'IA i bibliografia |
-| A2 | Dades de la portada | 🔴 No consten enlloc | F2 (portada) | Nom i cognoms dels dos autors (i qui és A1 i qui A2), tutor o tutora, institut, curs i data de la defensa |
-| A3 | `referencia/normes_centre.pdf` | 🟠 No hi és | — | Sense això aplico l'apartat 3 del prompt (15 min màxim, objectiu 13:30). Si el centre talla abans o exigeix un format, cal saber-ho ara |
-| A4 | `referencia/fotos/` | 🟠 Buida | Diapositives amb foto | Fotos pròpies. Les 17 imatges de `pwa/img/` són **provisionals** segons la guia del prototip («Les imatges dels llocs són provisionals») i d'origen no acreditat: no les faré servir a les diapositives |
-| A5 | `referencia/video/valia_trailer_45s_1080p.mp4` i projecte Remotion | 🟠 No hi són | Pla B de la diapositiva 8 | El MP4 (H.264). Sense el projecte Remotion, el tall de 15–20 s el faig retallant el MP4 amb FFmpeg |
-| A6 | `referencia/captures/` | 🟡 Buida | — | No cal: les genero amb Playwright des de `referencia/pwa/` |
-
-Recuperat sense que calgui pujar-ho: la PWA (`referencia/pwa/`, de `ufachord94/VALIA@48f8ca3`) i el logo amb la mascota (`referencia/logo/`).
+- El TR pujat arriba fins a l'apartat 4 (introducció, territori i benchmarking), més el document del prototip.
+- **No hi ha encara:** rutes pilot, enquestes ni proves amb usuaris, model de negoci, pla econòmic, màrqueting, fórmula de l'IIT ni conclusions.
+- Conseqüència: de les 15 diapositives, **5 són [PENDENT] senceres** (D9, D10, D11, D12 i D14) i **2 ho són en part** (D3 i D13). Sumen 6:40 dels 13:25.
+- De les 83 dades de `dades/dades.json`, 31 tenen algun [PENDENT].
 
 ---
 
-## B. Contradiccions entre el prompt i el material real
+## A. Decisions vostres (les necessito per començar F2)
 
-| # | El prompt diu | El que he trobat | Proposta |
+| # | Decisió | Què he fet servir mentrestant | Recomanació |
 |---|---|---|---|
-| B1 | Superfície de la comarca: **727 km²** | El mòdul de mapa del vostre prototip calcula **735,7 km²** i cita «Idescat: 735 km²». La Cambra de Barcelona (2020) també dona 735 km². 727 no surt a cap font consultada | 🟠 Fer servir la xifra de l'Idescat i revisar què diu `Teoria.docx`. Pendent de llegir la fitxa de l'Idescat directament (amfitrió bloquejat per la xarxa de l'entorn) |
-| B2 | App amb «rutes amb IA» | La guia del prototip diu: «**Simulat**: l'assistent respon per paraules clau. La IA real és la fase següent» | 🟠 A la defensa: «assistent simulat al prototip; IA real prevista a la fase següent». Dir «rutes amb IA» com a fet és atacable |
-| B3 | Mapes amb límits de l'**ICGC** (CC BY 4.0) | El prototip fa servir límits d'**OpenStreetMap** (ODbL), amb Aiguafreda afegida a mà | 🟡 Per a les diapositives baixo els límits oficials de l'ICGC. Cal obrir l'accés de xarxa a `geoserveis.icgc.cat` |
-| B4 | Tot ha de funcionar amb doble clic (`file://`) **i** la demo va en un `iframe` amb la PWA local | Amb `file://` la PWA carrega, però el **mapa real no** (Chrome bloqueja els mòduls ES i `fetch` en local). A més, el mapa demana tessel·les a internet | 🟠 Demo de 3 passos que no passi pel mapa (inici de sessió → xat → ruta guiada/recompenses), més un `obre.bat` opcional amb servidor local, més el vídeo com a pla B |
-| B5 | Sense cap petició externa | La PWA demana la tipografia Inter a `fonts.googleapis.com` | 🟡 A la còpia de la demo, Inter en local |
-| B6 | «Només eines gratuïtes i de codi obert» + GSAP 3 | GSAP 3.15.1 és gratuït amb tots els plugins (DrawSVG, MotionPath, Flip i SplitText inclosos), però la seva llicència («Standard no charge») **no és de codi obert** | 🟡 Mantinc GSAP perquè està decidit a l'apartat 5. Cost: 0 €. A la declaració d'eines s'ha de dir «gratuït», no «codi obert» |
-| B7 | reveal.js 5 | La versió actual és la 6.0.2; la darrera 5.x és la 5.2.1 | 🟡 Faig servir la 5.2.1, com diu el prompt |
-| B8 | Marca Valia | El compte de demostració del prototip és `jurat@greenvalles.cat` i la guia parla del TR «GreenVallès» | 🟡 Ho explico en una frase («abans GreenVallès») o es canvia al prototip |
+| A1 | 🔴 Qui és A1 (Turisme i Convenis) i qui A2 (Empresa, Economia i Màrqueting) | A1 = Xavi, A2 = Unai (suposició) | Confirmeu-ho o gireu-ho |
+| A2 | 🔴 Nom a la portada: el TR es titula «Vallès Endins» i l'app es diu «Valia». Al text del TR la paraula «Valia» no surt | Títol del TR en gran, i a sota «Valia · El Vallès que encara no has viscut.» | Mantenir el títol oficial del TR i afegir al treball escrit una frase que digui que l'app es diu Valia |
+| A3 | 🟠 Superfície de la comarca: el TR diu 727 km²; la Cambra de Barcelona i el vostre mòdul de mapa (que cita l'Idescat) diuen 735 km² | La D4 **no ensenya** la superfície: no cal per a l'argument | Corregir el TR a 735 km² després de comprovar-ho a l'Idescat. No ensenyar cap xifra dubtosa en pantalla |
+| A4 | 🟠 Matriu de benchmarking: el TR dona «Sí» a Google Maps a «Impacte territorial mesurable» i a «Participació d'agents locals» | Matriu transcrita tal com és al TR, marcada PENDENT | Revisar aquestes dues cel·les: la primera contradiu el §4.5, on mesurar l'impacte és justament el buit que detecteu |
+| A5 | 🟠 Columna «Valia» a la matriu: al TR no hi és | Prevista com a «Valia (proposta)» | Afegir-la, però distingint el que el prototip ja ensenya del que encara és disseny. I afegir-la també al TR |
+| A6 | 🟠 Fotos: el document del prototip diu «fotografies reals pròpies» i la guia del prototip diu «Les imatges dels llocs són provisionals» | Cap foto a les diapositives | Si les 17 imatges de `pwa/img/` són vostres, digueu-m'ho i les faig servir. Si no, pugeu fotos pròpies a `referencia/fotos/` |
+| A7 | 🟠 Ruta de la D7: la fase de rutes pilot no és al TR | «Itinerari termal de Caldes», del prototip, amb establiments d'exemple | Confirmeu la ruta. Si teniu una ruta pilot feta de debò, millor aquella |
+| A8 | 🟡 «Microaventura»: la paraula no surt ni al TR ni al document del prototip | La faig servir a la D7 amb una definició treta del §4.5 | Mantenir-la i afegir-la al treball escrit, o canviar-la per «experiència» |
+| A9 | 🟡 Pregunta de recerca: no és escrita al TR (hi ha hipòtesis i objectius) | La del prompt, abreujada a 17 paraules per a la pantalla | Afegir-la a l'apartat 1 del TR |
 
 ---
 
-## C. Xifres del prompt: contrast preliminar
+## B. Apartats que falten al TR i què necessito de cada un
 
-Contrast fet amb cerca web, **pendent de llegir cada font primària i de comparar-ho amb `Teoria.docx`**. Cap d'aquestes xifres entra a `dades.json` com a «verificada» fins llavors.
+| Diapositiva | Què falta exactament |
+|---|---|
+| **D3 · Metodologia** (en part) | Què s'ha fet a les fases 4 (rutes pilot), 5 (proves amb usuaris) i 6 (viabilitat i impacte): una frase per fase |
+| **D9 · Investigació de camp** | Enquesta: mostra (n), dates, canal i perfil dels enquestats · resultats de les preguntes clau (interès, valoració, intenció de repetir, disposició a pagar) · proves del prototip amb usuaris: quants, quan i què se'ls va demanar · agents del territori contactats i què van dir |
+| **D10 · Model de negoci** | Els nou blocs del Canvas · segments de clients · fonts d'ingressos i preus · proposta de valor per a cada segment · socis i recursos clau |
+| **D11 · Viabilitat econòmica** | Taula de supòsits · resultats a tres anys en tres escenaris · punt d'equilibri (en usuaris o ingressos, i en quin mes) · inversió inicial i necessitat de finançament · fonts de finançament |
+| **D12 · Màrqueting** | Públic objectiu, canals i missatges · calendari o embut de llançament amb fites · pressupost · què vol dir «Branding Verd» (no surt al TR) |
+| **D13 · IIT** (en part) | Fórmula amb variables, escala i pesos · justificació dels pesos · un exemple calculat pas a pas · fonts oficials dels factors de CO₂ (els del prototip són «d'exemple») |
+| **D14 · Conclusions** | Resultat de cada indicador · veredicte de cada hipòtesi · resposta a la pregunta de recerca · limitacions i línies de futur |
+| **Annex** | Supòsits econòmics · DAFO i CAME · PESTEL · cinc forces de Porter · marc legal · càlcul complet de l'IIT · fitxa tècnica de l'enquesta · declaració d'ús d'IA · la referència de l'estudi dels mercats municipals |
 
-| Dada del prompt | Resultat | Font trobada |
-|---|---|---|
-| 39 municipis | Coincideix | [Cambra de Barcelona, 2020](https://cambrabcn.org/wp-content/uploads/2024/01/ITDB_20_Valles-Oriental.pdf) |
-| 727 km² | **No coincideix**: 735 km² | [Cambra de Barcelona, 2020](https://cambrabcn.org/wp-content/uploads/2024/01/ITDB_20_Valles-Oriental.pdf) · [Idescat, fitxa comarcal](https://www.idescat.cat/emex/?id=41) (no llegida) |
-| Gallecs, 733 ha | Coincideix (733,52 ha). Atenció: la part inclosa al PEIN són 698,91 ha | [Diputació de Barcelona, Patrimoni Cultural](https://patrimonicultural.diba.cat/print/pdf/node/56879) |
-| Caldes, 74 °C | Coincideix. Altres fonts donen 76 °C | [Patrimoni Cultural, Generalitat](https://patrimoni.gencat.cat/en/collection/caldes-de-montbui-aquae-calidae) |
-| Xarxa de 372 km | **[PENDENT]**: no l'he trobat a cap font | Cal la font que cita el TR |
-| Zapico et al. (2023), activitat física dels joves | **[PENDENT]**: l'estudi existeix, però no en tinc la xifra ni la cita exacta | Cal la cita del TR |
-
----
-
-## D. Riscos de contingut que s'han de resoldre amb el TR al davant
-
-| # | Risc | Per què importa |
-|---|---|---|
-| D1 | 🟠 «Contaminació zero» | No puc saber si el TR l'ha reformulada. Titular defensable proposat: «Impacte mínim, mesurat i compensat». S'ha de tancar a F1 |
-| D2 | 🟠 Factors de CO₂ del prototip | La guia del prototip diu que són «d'exemple (pendents de fonts oficials)». Si l'IIT de la diapositiva 13 es calcula amb aquests factors, el tribunal ho pot tombar |
-| D3 | 🟠 Convenis Km0 | El prototip diu: «Establiments adherits: pendents dels convenis Km0». A les diapositives 7 i 10, els comerços s'han de marcar com a «exemple» |
-| D4 | 🟠 Veredicte de les hipòtesis | Sense resultats al TR no hi haurà veredicte a la diapositiva 14: només la cadena hipòtesi → indicador → [PENDENT] |
-| D5 | 🟡 Temps | La taula del prompt suma 13:25 (A1 ≈ 6:55, A2 ≈ 6:30). Punts tibants: la demo en directe (1:05) i la viabilitat econòmica (1:20) |
+Sense resultats no hi haurà veredicte a la D14: només la cadena hipòtesi → indicador → [PENDENT].
 
 ---
 
-## E. Accés de xarxa
+## C. Contradiccions entre el prompt i el material
 
-| Amfitrió | Per a què | Estat |
+| # | El prompt diu | El material diu | Com ho he resolt |
+|---|---|---|---|
+| C1 | Dada del ganxo: «Zapico et al., 2023» | El TR cita Zapico et al. (2023), que és l'estudi PASOS: «només una de cada tres persones d'entre 8 i 16 anys» | Coincideix. Faig servir «1 de cada 3», no «33 %» (vegeu D2) |
+| C2 | «Xarxa de 372 km» | El TR diu que el Consell Comarcal «ha plantejat» la xarxa. El títol de la font diu «projecta una xarxa de 372 km per accedir als polígons» | 🟠 A la D4 hi dic «projectats». No és una xarxa de senders turístics que ja existeixi |
+| C3 | App amb «rutes amb IA» | Document del prototip: «les respostes no les genera una IA real. Surten de normes senzilles» | 🟠 A la D8 es diu explícitament que l'assistent és simulat |
+| C4 | «Contaminació zero» com a risc | L'expressió no surt al TR. La hipòtesi diu «minimitzi l'impacte ambiental» | Resolt al text escrit. A la D13 hi ha la frase «No prometem contaminació zero». Que no s'escapi oralment |
+| C5 | Metodologia en cinc fases: teoria, benchmarking, camp, prototip i pla econòmic | El TR (§1.5) en descriu sis i en un altre ordre: territori, benchmarking, proposta i prototip, rutes pilot, proves amb usuaris, viabilitat i impacte | Faig servir les sis del TR |
+| C6 | Terminologia: «microaventures», «regeneració territorial», «Branding Verd» | Cap dels tres termes surt al TR | 🟡 «Microaventura» es manté amb definició (A8). Els altres dos no els faig servir |
+| C7 | La columna de Valia «és l'única completa» | La matriu del TR no té columna de Valia | 🟠 Vegeu A5 |
+| C8 | Mapes amb límits de l'ICGC | El prototip fa servir límits d'OpenStreetMap | 🟡 Per a les diapositives calen els de l'ICGC (vegeu F) |
+| C9 | Tot funciona amb doble clic (`file://`) i la demo va en un `iframe` | Amb `file://` la PWA carrega, però el mapa real no. El mapa, a més, demana tessel·les a internet | 🟠 La demo de tres passos evita el mapa. Hi haurà un servidor local opcional i el vídeo com a pla B |
+| C10 | Sense cap petició externa | La PWA demana la tipografia Inter a `fonts.googleapis.com` | 🟡 A la còpia de la demo, Inter en local |
+| C11 | «Eines gratuïtes i de codi obert» + GSAP | GSAP 3.15.1 és gratuït amb tots els plugins, però la seva llicència no és de codi obert | 🟡 El mantinc (decidit a l'apartat 5). A la declaració d'eines: «gratuït» |
+| C12 | reveal.js 5 | L'última versió és la 6.0.2; l'última 5.x, la 5.2.1 | 🟡 Faig servir la 5.2.1 |
+| C13 | Superfície: 727 km² | Vegeu A3 | 🟠 |
+
+---
+
+## D. Riscos del treball escrit que el tribunal pot veure
+
+La rúbrica valora la coherència entre la defensa i el treball. Això no ho puc arreglar jo: és al TR.
+
+| # | Risc | On |
 |---|---|---|
-| `geoserveis.icgc.cat` | Baixar els límits comarcals i municipals oficials (ICGC, CC BY 4.0) | Afegit a la xarxa de l'entorn. La baixada ha quedat aturada pel control de permisos de la sessió: cal el vistiplau explícit |
-| `www.idescat.cat` | Llegir les xifres oficials de la comarca | Igual que l'anterior |
+| D1 | 🟠 Sis notes i el peu de la Figura 2 tenen enllaços amb `?utm_source=chatgpt.com`. Delata d'on surt la referència | Notes 2, 3, 4, 5, 6 i 7, i Figura 2 |
+| D2 | 🟠 La Figura 2 atribueix el gràfic a «Herrera-Ramos et al. (2023)» amb el mateix DOI que la nota 3 (Zapico et al.). L'autor principal és Zapico. A més, «33 % / 67 %» és més precís que el que he pogut contrastar: PASOS 2019 dona un 36,7 % que compleix i l'avanç de PASOS 2022, un 70,6 % que no | §2 |
+| D3 | 🟠 La crida de nota «4» surt dues vegades. L'estudi de la Generalitat sobre els mercats municipals (2025) no té referència enlloc | §2.1 i §2.2 |
+| D4 | 🟠 La portada i les quatre imatges del §3.1 (Gallecs, Montseny, Granollers i Congost) semblen generades amb IA. Si ho són, s'ha de dir al peu, i no es poden presentar com a fotos dels llocs | Portada i §3.1 |
+| D5 | 🟠 El §4.1 llista 12 criteris (dos amb el número 11, i un és «Ús d'intel·ligència artificial»). La matriu del §4.3 té 13 files diferents: no hi ha la IA i hi ha «Comunitat d'usuaris» | §4.1 i §4.3 |
+| D6 | 🟡 Numeració de figures: hi ha «Figura 1» a «Figura 4» dins d'una mateixa imatge, a més de les Figures 1, 2 i 3 del text i una «Figura X» | §1.2, §2, §3.1, §3.9 i §4.3 |
+| D7 | 🟡 Tres noms per al mateix projecte: «Vallès Endins» (portada), «Valia» (app) i «GreenVallès» (guia del prototip i compte de demostració `…@greenvalles.cat`) | Portada i prototip |
+| D8 | 🟡 Ortografia: «Metodología» (dues vegades, amb accent castellà), «la nostre edat», «Vam emprendre tres decisions» (hauria de ser «prendre»), una frase tallada al final del §2.2 («l'activitat físic») i «Solucions actuals amb el problema» (a l'índex, «al problema») | §1.5, §2.1, §2.2, §4.1, §4.2 i prototip |
+| D9 | 🟡 Fonts febles: Viquipèdia en anglès per al Museu de Granollers, blogs i webs de turisme. Les notes 15 i 23 citen un article sobre Gallecs per parlar del modernisme i dels rius | Notes 15, 17 i 23 |
+| D10 | 🟡 La guia del prototip parla de «12 llocs»; al catàleg de rutes n'hi ha 11 | Prototip |
 
-Alternativa sense xarxa: pujar a `referencia/` el fitxer de límits administratius de l'ICGC (GeoJSON o SHP) i una captura o PDF de la fitxa comarcal de l'Idescat.
+---
+
+## E. Fitxers que encara falten
+
+| Fitxer | Estat | Per a què |
+|---|---|---|
+| `referencia/normes_centre.pdf` | 🟠 No hi és, i no he trobat les normes del vostre institut a internet | Sense això aplico 15 minuts com a màxim i objectiu de 13:30 |
+| `referencia/fotos/` | 🟠 Buida | Vegeu A6 |
+| `referencia/video/valia_trailer_45s_1080p.mp4` | 🟠 No hi és | Pla B de la D8 i tall de 15–20 s |
+| Projecte Remotion del tràiler | 🟡 No hi és | Sense el projecte, el tall el faig retallant el MP4 amb FFmpeg |
+| Data de la defensa | 🟡 No consta | Per al kit d'assaig |
+
+---
+
+## F. Accés de xarxa (bloquejat)
+
+Vaig afegir `geoserveis.icgc.cat` i `www.idescat.cat` a la xarxa de l'entorn, però el control de permisos de la sessió m'ha rebutjat tres intents de llegir-los (dos amb `curl` i un amb el lector de pàgines). No he baixat res d'aquests dos llocs i no ho tornaré a provar sense el vostre vistiplau.
+
+| Què necessito | Per a què | Alternativa sense xarxa |
+|---|---|---|
+| Límits comarcals i municipals de l'ICGC | Mapa de la portada, de la D4 i de la D7 (F2) | Pujar a `referencia/` el fitxer de divisions administratives de l'ICGC (GeoJSON o SHP) |
+| Fitxa comarcal de l'Idescat | Tancar la decisió A3 | Pujar una captura o el PDF de la fitxa |
+
+Si no arriba cap de les dues coses, la mostra de mapa de F2 la faré amb el contorn d'OpenStreetMap que ja hi ha al prototip, amb l'atribució d'OSM, i la canviaré pel de l'ICGC quan hi hagi accés.
