@@ -1,6 +1,6 @@
 # PENDENTS · Presentació de la defensa del TR «Vallès Endins» (app Valia)
 
-Estat: **F1 lliurada, pendent de la vostra aprovació.** Darrera actualització: 16-11-2026.
+Estat: **F1 aprovada (17-11-2026). F2 lliurada, pendent de la vostra aprovació.** Darrera actualització: 17-11-2026.
 
 Llegenda: 🔴 bloqueja una fase · 🟠 risc davant del tribunal · 🟡 millora o comprovació.
 
@@ -13,16 +13,18 @@ Llegenda: 🔴 bloqueja una fase · 🟠 risc davant del tribunal · 🟡 millor
 
 ---
 
-## A. Decisions vostres (les necessito per començar F2)
+## A. Decisions vostres
+
+Resoltes el 17-11-2026: guió de F1 aprovat; **A1 = Xavi, A2 = Unai**; portada amb «Vallès Endins» en gran i «Valia» a sota; les 17 imatges de `referencia/pwa/img/` són fotos vostres i es poden fer servir.
 
 | # | Decisió | Què he fet servir mentrestant | Recomanació |
 |---|---|---|---|
-| A1 | 🔴 Qui és A1 (Turisme i Convenis) i qui A2 (Empresa, Economia i Màrqueting) | A1 = Xavi, A2 = Unai (suposició) | Confirmeu-ho o gireu-ho |
-| A2 | 🔴 Nom a la portada: el TR es titula «Vallès Endins» i l'app es diu «Valia». Al text del TR la paraula «Valia» no surt | Títol del TR en gran, i a sota «Valia · El Vallès que encara no has viscut.» | Mantenir el títol oficial del TR i afegir al treball escrit una frase que digui que l'app es diu Valia |
+| A1 | ✅ Qui és A1 i qui A2 | A1 = Xavi Hernandez Godoy (Turisme i Convenis) · A2 = Unai Farràs Chordjian (Empresa, Economia i Màrqueting) | Confirmat |
+| A2 | ✅ Nom a la portada | Títol del TR en gran i, a sota, «Valia · El Vallès que encara no has viscut.» | Confirmat. Recomanació pendent: al TR escrit, una frase que digui que l'app es diu Valia |
 | A3 | 🟠 Superfície de la comarca: el TR diu 727 km²; la Cambra de Barcelona i el vostre mòdul de mapa (que cita l'Idescat) diuen 735 km² | La D4 **no ensenya** la superfície: no cal per a l'argument | Corregir el TR a 735 km² després de comprovar-ho a l'Idescat. No ensenyar cap xifra dubtosa en pantalla |
 | A4 | 🟠 Matriu de benchmarking: el TR dona «Sí» a Google Maps a «Impacte territorial mesurable» i a «Participació d'agents locals» | Matriu transcrita tal com és al TR, marcada PENDENT | Revisar aquestes dues cel·les: la primera contradiu el §4.5, on mesurar l'impacte és justament el buit que detecteu |
 | A5 | 🟠 Columna «Valia» a la matriu: al TR no hi és | Prevista com a «Valia (proposta)» | Afegir-la, però distingint el que el prototip ja ensenya del que encara és disseny. I afegir-la també al TR |
-| A6 | 🟠 Fotos: el document del prototip diu «fotografies reals pròpies» i la guia del prototip diu «Les imatges dels llocs són provisionals» | Cap foto a les diapositives | Si les 17 imatges de `pwa/img/` són vostres, digueu-m'ho i les faig servir. Si no, pugeu fotos pròpies a `referencia/fotos/` |
+| A6 | ✅ Fotos | Les 17 imatges de `pwa/img/` són vostres: les faré servir a partir de F3 | Confirmat. Al prototip, la guia (`guia.html`) encara diu «Les imatges dels llocs són provisionals»: convé treure-ho |
 | A7 | 🟠 Ruta de la D7: la fase de rutes pilot no és al TR | «Itinerari termal de Caldes», del prototip, amb establiments d'exemple | Confirmeu la ruta. Si teniu una ruta pilot feta de debò, millor aquella |
 | A8 | 🟡 «Microaventura»: la paraula no surt ni al TR ni al document del prototip | La faig servir a la D7 amb una definició treta del §4.5 | Mantenir-la i afegir-la al treball escrit, o canviar-la per «experiència» |
 | A9 | 🟡 Pregunta de recerca: no és escrita al TR (hi ha hipòtesis i objectius) | La del prompt, abreujada a 17 paraules per a la pantalla | Afegir-la a l'apartat 1 del TR |
@@ -90,20 +92,42 @@ La rúbrica valora la coherència entre la defensa i el treball. Això no ho puc
 | Fitxer | Estat | Per a què |
 |---|---|---|
 | `referencia/normes_centre.pdf` | 🟠 No hi és, i no he trobat les normes del vostre institut a internet | Sense això aplico 15 minuts com a màxim i objectiu de 13:30 |
-| `referencia/fotos/` | 🟠 Buida | Vegeu A6 |
+| `referencia/fotos/` | ✅ No cal | Les fotos són les 17 de `referencia/pwa/img/` (A6). Si en teniu més, pugeu-les aquí |
 | `referencia/video/valia_trailer_45s_1080p.mp4` | 🟠 No hi és | Pla B de la D8 i tall de 15–20 s |
 | Projecte Remotion del tràiler | 🟡 No hi és | Sense el projecte, el tall el faig retallant el MP4 amb FFmpeg |
 | Data de la defensa | 🟡 No consta | Per al kit d'assaig |
 
 ---
 
-## F. Accés de xarxa (bloquejat)
+## F. Accés de xarxa (segueix bloquejat)
 
-Vaig afegir `geoserveis.icgc.cat` i `www.idescat.cat` a la xarxa de l'entorn, però el control de permisos de la sessió m'ha rebutjat tres intents de llegir-los (dos amb `curl` i un amb el lector de pàgines). No he baixat res d'aquests dos llocs i no ho tornaré a provar sense el vostre vistiplau.
+El 17-11-2026 vau autoritzar la descàrrega, però el control automàtic de permisos de la sessió la va tornar a rebutjar. En total han estat quatre intents: tres amb `curl` i un amb el lector de pàgines. No he baixat res de l'ICGC ni de l'Idescat. Aquest control no el puc desactivar jo.
 
-| Què necessito | Per a què | Alternativa sense xarxa |
+**Mentrestant:** el mapa de F2 fa servir el contorn de la comarca i el centre dels 39 municipis del mòdul de mapa del prototip (OpenStreetMap, ODbL). Al peu de la portada i de la D4 hi ha l'atribució d'OSM i una marca **PENDENT** visible.
+
+**La solució més ràpida (5 minuts, des del vostre ordinador):**
+1. Obriu la pàgina de [Divisions administratives de l'ICGC](https://www.icgc.cat/en/Geoinformation-and-Maps/Data-and-products/Cartographic-geoinformation/Administrative-boundaries) (la podeu canviar a català des del mateix web).
+2. Descarregueu la versió vigent en **GeoJSON** (o SHP) a escala 1:50.000 o 1:250.000.
+3. Pugeu el ZIP a `referencia/icgc/` de la branca `claude/valia-tr-defense-f428bx`.
+
+Amb aquest fitxer canvio el mapa per l'oficial (contorn i límits dels 39 municipis) i el peu passa a dir: «Elaboració pròpia a partir de dades de l'Institut Cartogràfic i Geològic de Catalunya (ICGC), sota llicència CC BY 4.0».
+
+| Què necessito | Per a què | Alternativa |
 |---|---|---|
-| Límits comarcals i municipals de l'ICGC | Mapa de la portada, de la D4 i de la D7 (F2) | Pujar a `referencia/` el fitxer de divisions administratives de l'ICGC (GeoJSON o SHP) |
-| Fitxa comarcal de l'Idescat | Tancar la decisió A3 | Pujar una captura o el PDF de la fitxa |
+| Límits comarcals i municipals de l'ICGC | Mapa de la portada, de la D4 i de la D7 | Pujar el fitxer (passos de dalt) |
+| Fitxa comarcal de l'Idescat | Tancar la decisió A3 (727 o 735 km²) | Pujar una captura o el PDF de la fitxa |
 
-Si no arriba cap de les dues coses, la mostra de mapa de F2 la faré amb el contorn d'OpenStreetMap que ja hi ha al prototip, amb l'atribució d'OSM, i la canviaré pel de l'ICGC quan hi hagi accés.
+---
+
+## G. F2 · Sistema visual: decisions i comprovacions
+
+| Tema | Decisió | Per què |
+|---|---|---|
+| GSAP | 3.15.0 (abril de 2026), no 3.15.1 | La 3.15.1 tenia 13 dies quan la vaig instal·lar: millor una versió provada |
+| Tipografies | Fraunces 600 als titulars i Inter al cos, totes dues en local | Fraunces és la del prototip. Només 2 famílies |
+| Colors del pictograma (D1) | Verd `#006B47` (es mou) i gris `#7A9488` (no arriba al mínim) | Validats amb l'eina de la guia de visualització: separació per a daltonisme ΔE 16,2 (mín. 8), visió normal 18,9 (mín. 15), contrast ≥ 3:1. Els avisos de «croma» i de «banda de lluminositat» són per a paletes de sèries i aquí no apliquen: el gris ha de semblar gris |
+| Pictograma (D1) | La figura que es mou camina i les quietes estan dretes | La postura codifica la dada: no depèn només del color |
+| Etiquetes del mapa (D4) | Montseny, Montnegre, Gallecs i Caldes, situats per coordenades | Són «ubicacions indicatives» (ho diu el peu), no límits de parcs: no tinc les geometries oficials dels espais naturals |
+| «372 km» (D4) | L'etiqueta diu «d'itineraris projectats per anar a peu i en bici» | La font diu que és una xarxa projectada per accedir als polígons. A les notes de l'orador ho recordo |
+
+**Comprovat el 17-11-2026, obrint `index.html` amb `file://`:** 0 peticions externes · 0 errors de consola · cap text fora del llenç a 1920×1080, 1366×768 i 1024×768 · tots els contrastos per sobre del mínim, en mode clar i fosc (`eines/contrast.mjs`) · cap xifra escrita a mà a l'HTML (`eines/comprova.mjs`). Captures i vídeo a `qa/f2/`.

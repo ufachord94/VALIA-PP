@@ -1,0 +1,19 @@
+{
+  "name": "valia-defensa-tr",
+  "private": true,
+  "version": "0.2.0",
+  "description": "Presentació de la defensa del Treball de Recerca «Vallès Endins» (app Valia).",
+  "type": "module",
+  "scripts": {
+    "construeix": "node eines/construeix.mjs",
+    "comprova": "node eines/comprova.mjs",
+    "contrast": "node eines/contrast.mjs",
+    "captures": "node eines/captura.mjs"
+  },
+  "devDependencies": {
+    "@fontsource-variable/fraunces": "5.3.0",
+    "@fontsource-variable/inter": "5.3.0",
+    "gsap": "3.15.0",
+    "reveal.js": "5.2.1"
+  }
+}

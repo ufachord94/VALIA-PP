@@ -16,7 +16,7 @@ Versió F1 · 15-11-2026 · **pendent de la vostra aprovació**
 | 1 | Ganxo | A1 | 0:40 | 74 | 0:34 | ✅ |
 | 2 | Pregunta de recerca i hipòtesis | A2 | 0:50 | 102 | 0:47 | 🟠 |
 | 3 | Metodologia | A2 | 0:40 | 41 | 0:19 + [PENDENT] | 🟠 |
-| 4 | El territori | A1 | 1:00 | 104 | 0:48 | 🟠 |
+| 4 | El territori | A1 | 1:00 | 110 | 0:51 | 🟠 |
 | 5 | El problema: tot està dispers | A1 | 0:50 | 85 | 0:39 | ✅ |
 | 6 | Benchmarking | A2 | 0:50 | 88 | 0:41 | 🟠 |
 | 7 | La solució: una microaventura | A1 | 1:10 | 117 | 0:54 | 🟠 |
@@ -32,7 +32,7 @@ Versió F1 · 15-11-2026 · **pendent de la vostra aprovació**
 
 - **Temps total previst: 13:25** (objectiu 13:30 ± 0:30; màxim 15:00).
 - **Repartiment:** A1 6:55 (52 %) · A2 6:30 (48 %).
-- **Diapositives amb el guió complet (8):** D1, D2, D4, D5, D6, D7, D8, D15. Sumen 5:21 de guió en 6:45 de franja.
+- **Diapositives amb el guió complet (8):** D1, D2, D4, D5, D6, D7, D8, D15. Sumen 5:24 de guió en 6:45 de franja.
 - **Diapositives amb [PENDENT] al guió (7):** D3, D9, D10, D11, D12, D13, D14. Tenen reservats 6:40; el temps real no es pot calcular fins que hi hagi contingut.
 - El temps estimat és el del text escrit a 130 paraules per minut. A la D8 cal sumar-hi el temps de tocar la pantalla durant la demostració.
 <!-- TEMPS:FI -->
@@ -155,7 +155,7 @@ Versió F1 · 15-11-2026 · **pendent de la vostra aprovació**
 > Al nord, el Montseny, Reserva de la Biosfera des del mil nou-cents setanta-vuit. Al sud-est, el Montnegre i el Corredor.
 > Al mig de la plana, Gallecs: set-centes trenta-tres hectàrees agrícoles envoltades de ciutats.
 > I a Caldes de Montbui l'aigua brolla a més de setanta-quatre graus i s'aprofita des de l'època romana.
-> A més, el Consell Comarcal projecta tres-cents setanta-dos quilòmetres d'itineraris per anar a peu i en bicicleta.
+> A més, el Consell Comarcal projecta tres-cents setanta-dos quilòmetres d'itineraris per anar a peu i en bicicleta, que connectaran pobles, estacions i polígons.
 
 **Transició**
 > De recursos, doncs, n'hi ha molts. El problema és com hi arribem.

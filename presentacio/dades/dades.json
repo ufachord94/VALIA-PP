@@ -17,6 +17,7 @@
       "url": "Enllaç a la font primària. null si no n'hi ha.",
       "estat": "«verificat» = consta a referencia/ i no té cap discrepància coneguda. «PENDENT» = no consta a referencia/, o hi ha una discrepància que han de resoldre els autors.",
       "contrast": "Opcional. Resultat de contrastar la dada amb fonts externes (cerca web del 14 i 15-11-2026; fonts primàries no llegides directament si no s'indica).",
+      "peu": "Opcional. Com es cita la dada al peu de la diapositiva: autor i data. Les diapositives construeixen el peu de font a partir d'aquest camp.",
       "nota": "Opcional. Advertiment per als autors."
     }
   },
@@ -37,10 +38,11 @@
       "valor": { "A1": "Xavi Hernandez Godoy", "A2": "Unai Farràs Chordjian" },
       "unitat": "A1 = Turisme i Convenis · A2 = Empresa, Economia i Màrqueting",
       "any": 2026,
-      "font": "Suposició. El TR (§1.2) diu que un membre porta turisme i convenis i l'altre empresa, economia i màrqueting, però no diu qui",
+      "font": "Confirmat pels autors el 17-11-2026. El TR (§1.2) en descriu les àrees però no diu qui porta cada una",
       "url": null,
-      "estat": "PENDENT"
+      "estat": "verificat"
     },
+    "portada": { "valor": "Títol del TR («Vallès Endins») en gran i, a sota, «Valia · El Vallès que encara no has viscut.»", "unitat": null, "any": 2026, "font": "Decisió dels autors (17-11-2026)", "url": null, "estat": "verificat" },
     "data_defensa": { "valor": null, "unitat": null, "any": null, "font": null, "url": null, "estat": "PENDENT" }
   },
 
@@ -52,6 +54,9 @@
       "font": "Zapico et al. (2023), estudi PASOS, citat al TR §2.1 (nota 3)",
       "url": "https://doi.org/10.1038/s41390-023-02710-2",
       "estat": "verificat",
+      "peu": { "autor": "Zapico et al., estudi PASOS", "data": "2023" },
+      "etiqueta": "dels joves de 8 a 16 anys fa l'activitat física recomanada a Espanya",
+      "invers": "Dos de cada tres",
       "contrast": "L'article existeix i la cita del TR és correcta (Pediatric Research, 94(6), 2077–2084; 3.261 participants). No he pogut llegir-hi la xifra exacta. L'informe PASOS 2019 dona un 36,7 % que compleix; l'avanç de PASOS 2022, un 70,6 % que no compleix. «1 de cada 3» és coherent amb tots dos.",
       "nota": "Feu servir la fracció «1 de cada 3», no «33 %». La Figura 2 del TR dona «33 % / 67 %» i l'atribueix a «Herrera-Ramos et al. (2023)» amb el mateix DOI que Zapico et al.: una de les dues atribucions és errònia (Herrera Ramos n'és coautora, no primera autora)."
     },
@@ -147,7 +152,7 @@
   },
 
   "territori": {
-    "municipis": { "valor": 39, "unitat": "municipis", "any": 2026, "font": "Consell Comarcal del Vallès Oriental, citat al TR §3.1 (nota 8)", "url": "https://www.vallesoriental.cat/la-comarca/descripcio", "estat": "verificat", "contrast": "Coincideix amb la Cambra de Barcelona (2020)." },
+    "municipis": { "valor": 39, "unitat": "municipis", "any": 2026, "font": "Consell Comarcal del Vallès Oriental, citat al TR §3.1 (nota 8)", "url": "https://www.vallesoriental.cat/la-comarca/descripcio", "estat": "verificat", "peu": { "autor": "Consell Comarcal del Vallès Oriental", "data": "consulta: juliol de 2026" }, "contrast": "Coincideix amb la Cambra de Barcelona (2020)." },
     "superficie_km2": {
       "valor": 727, "unitat": "km²", "any": 2026,
       "font": "Consell Comarcal del Vallès Oriental, citat al TR §3.1 (nota 8): «aproximadament 727 km²»",
@@ -157,17 +162,19 @@
       "nota": "Decisió dels autors: o es corregeix a 735 km² (i es diu), o es comprova que la font del TR diu 727. No he pogut llegir ni la pàgina del Consell Comarcal ni la de l'Idescat."
     },
     "superficie_km2_alternativa": { "valor": 735, "unitat": "km²", "any": 2020, "font": "Cambra de Comerç de Barcelona (2020), Informe territorial del Vallès Oriental", "url": "https://cambrabcn.org/wp-content/uploads/2024/01/ITDB_20_Valles-Oriental.pdf", "estat": "PENDENT", "nota": "No és al TR. Xifra obtinguda per cerca web; font primària no llegida directament." },
-    "capital": { "valor": "Granollers", "unitat": null, "any": 2026, "font": "TR §3.1 (nota 8)", "url": "https://www.vallesoriental.cat/la-comarca/descripcio", "estat": "verificat" },
+    "capital": { "valor": "Granollers", "unitat": null, "any": 2026, "font": "TR §3.1 (nota 8)", "url": "https://www.vallesoriental.cat/la-comarca/descripcio", "estat": "verificat", "peu": { "autor": "Consell Comarcal del Vallès Oriental", "data": "consulta: juliol de 2026" } },
     "distancia_barcelona_km": { "valor": 30, "unitat": "km (aproximadament, de Granollers a Barcelona)", "any": 2026, "font": "TR §3.1 (nota 8)", "url": "https://www.vallesoriental.cat/la-comarca/descripcio", "estat": "verificat" },
-    "montseny_reserva_biosfera": { "valor": 1978, "unitat": "any de declaració del Montseny com a Reserva de la Biosfera", "any": 1978, "font": "Diputació de Barcelona, citada al TR §3.4 (nota 18)", "url": "https://parcs.diba.cat/en/web/montseny", "estat": "verificat" },
-    "montnegre_corredor": { "valor": "Parc del Montnegre i el Corredor: alzinars, suredes i pinedes al sud-est de la comarca", "unitat": null, "any": 2026, "font": "Territoris Surers, citat al TR §3.4 (nota 19)", "url": "https://www.visitterritorissurers.cat/project/parc-natural-del-montnegre-el-corredor/", "estat": "verificat" },
-    "gallecs_ha": { "valor": 733, "unitat": "hectàrees (Espai Natural de Gallecs)", "any": 2026, "font": "Frontissa, citat al TR §3.4 (nota 20)", "url": "https://www.frontissa.cat/noticia/46307/lespai-natural-de-gallecs", "estat": "verificat", "contrast": "Coincideix: la Diputació de Barcelona dona 733,52 ha. La part inclosa al PEIN són 698,91 ha." },
-    "caldes_temperatura_c": { "valor": 74, "unitat": "°C (temperatura a què brolla l'aigua termal de Caldes de Montbui; el TR diu «més de 74 °C»)", "any": 2026, "font": "Turismedia i Diari Públic, citats al TR §3.5 (notes 21 i 22)", "url": "https://turismedia.info/destinos/destino/catalunya/valles-oriental/caldes-de-montbui/", "estat": "verificat", "contrast": "Coincideix amb Patrimoni Cultural de la Generalitat (74 °C de mitjana). Altres fonts donen 76 °C." },
+    "montseny_reserva_biosfera": { "valor": 1978, "unitat": "any de declaració del Montseny com a Reserva de la Biosfera", "any": 1978, "font": "Diputació de Barcelona, citada al TR §3.4 (nota 18)", "url": "https://parcs.diba.cat/en/web/montseny", "estat": "verificat", "peu": { "autor": "Diputació de Barcelona", "data": "consulta: juliol de 2026" } },
+    "montnegre_corredor": { "valor": "Parc del Montnegre i el Corredor: alzinars, suredes i pinedes al sud-est de la comarca", "unitat": null, "any": 2026, "font": "Territoris Surers, citat al TR §3.4 (nota 19)", "url": "https://www.visitterritorissurers.cat/project/parc-natural-del-montnegre-el-corredor/", "estat": "verificat", "peu": { "autor": "Territoris Surers", "data": "consulta: juliol de 2026" }, "etiqueta": "alzinars, suredes i pinedes" },
+    "gallecs_ha": { "valor": 733, "unitat": "hectàrees (Espai Natural de Gallecs)", "any": 2026, "font": "Frontissa, citat al TR §3.4 (nota 20)", "url": "https://www.frontissa.cat/noticia/46307/lespai-natural-de-gallecs", "estat": "verificat", "peu": { "autor": "Frontissa", "data": "consulta: juliol de 2026" }, "contrast": "Coincideix: la Diputació de Barcelona dona 733,52 ha. La part inclosa al PEIN són 698,91 ha." },
+    "caldes_temperatura_c": { "valor": 74, "unitat": "°C (temperatura a què brolla l'aigua termal de Caldes de Montbui; el TR diu «més de 74 °C»)", "any": 2026, "font": "Turismedia i Diari Públic, citats al TR §3.5 (notes 21 i 22)", "url": "https://turismedia.info/destinos/destino/catalunya/valles-oriental/caldes-de-montbui/", "estat": "verificat", "peu": { "autor": "Turismedia", "data": "consulta: juliol de 2026" }, "contrast": "Coincideix amb Patrimoni Cultural de la Generalitat (74 °C de mitjana). Altres fonts donen 76 °C." },
     "xarxa_projectada_km": {
       "valor": 372, "unitat": "km d'itineraris projectats per anar a peu, en bicicleta i amb VMP", "any": 2026,
       "font": "Consell Comarcal del Vallès Oriental, citat al TR §3.8 (nota 32)",
       "url": "https://www.vallesoriental.cat/ambits/2233-promocio-economica-i-ocupacio/poligons-dactivitat-economica/el-valles-oriental-projecta-una-xarxa-de-372-km-per-accedir-als-poligons-a-peu-bicicleta-i-vmp.html",
       "estat": "verificat",
+      "peu": { "autor": "Consell Comarcal del Vallès Oriental", "data": "consulta: juliol de 2026" },
+      "etiqueta": "d'itineraris projectats per anar a peu i en bici",
       "nota": "És una xarxa PROJECTADA i pensada per accedir als polígons d'activitat econòmica, no una xarxa de senders turístics ja existent. A la diapositiva s'ha de dir «projectada»."
     },
     "transport_public": { "valor": "Una part important del territori queda fora de la zona d'influència directa de les línies ferroviàries", "unitat": null, "any": 2023, "font": "femVallès (2023), citat al TR §3.8 (nota 31)", "url": "https://www.femvalles.cat/valles-oriental-model-territorial-i-noves-xarxes-dinfraestructura/", "estat": "verificat" },
@@ -181,6 +188,31 @@
     "patrimoni_exemples": { "valor": ["Dòlmens de la Pedra Gentil i de la Pedra Arca (3500–2000 aC)", "Poblat ibèric de Torre Roja", "Termes romanes de Caldes de Montbui", "Monestir de Roca-rossa", "Modernisme i estiueig a la Garriga i Caldes de Montbui", "Museu de Granollers"], "unitat": null, "any": 2026, "font": "TR §3.2 i §3.3 (notes 11 a 17)", "url": null, "estat": "verificat" },
     "productes_locals": { "valor": ["Cigró menut", "Col de pell de galàpet", "Col paperina"], "unitat": null, "any": 2026, "font": "TurismeVallès, citat al TR §3.5 i §3.6 (notes 24 i 25)", "url": "https://turismevalles.com/productes-de-proximitat-del-valles-oriental/", "estat": "verificat" },
     "mercats_i_fires": { "valor": ["Mercat de Granollers", "Mercat de les Franqueses del Vallès", "Mercat de l'Olla i la Caldera (Caldes de Montbui)", "Mercat de Km 0 de la Roca del Vallès"], "unitat": null, "any": 2026, "font": "TR §3.6 (notes 26 a 29)", "url": null, "estat": "verificat" }
+  },
+
+  "mapa": {
+    "base": {
+      "valor": "Límit comarcal (relació OSM 2417929 + Aiguafreda) i centre dels 39 municipis",
+      "unitat": null, "any": 2026,
+      "font": "Mòdul de mapa del prototip (referencia/pwa/valia-map/data/limit.geojson i municipis.json), dades d'OpenStreetMap del 9-11-2026",
+      "url": "https://www.openstreetmap.org/copyright",
+      "estat": "PENDENT",
+      "peu": { "autor": "Mapa: elaboració pròpia a partir de dades d'OpenStreetMap (© col·laboradors d'OpenStreetMap, ODbL)", "data": "2026" },
+      "nota": "Provisional. El prompt demana els límits de l'ICGC (CC BY 4.0). La descàrrega està bloquejada pel control de permisos de la sessió: es canviarà quan hi hagi el fitxer de l'ICGC."
+    },
+    "punts": {
+      "valor": [
+        { "id": "granollers", "etiqueta": "Granollers", "lonlat": [2.277, 41.58795], "origen": "centre del municipi (OSM)" },
+        { "id": "montseny", "etiqueta": "Montseny", "lonlat": [2.38676, 41.78544], "origen": "centre del municipi de Montseny (OSM)" },
+        { "id": "montnegre", "etiqueta": "Montnegre i el Corredor", "lonlat": [2.51, 41.64155], "origen": "centre del municipi de Vallgorguina, dins del parc (OSM)" },
+        { "id": "gallecs", "etiqueta": "Gallecs", "lonlat": [2.1987, 41.5603], "origen": "sortida de la ruta «Gallecs en bicicleta» del prototip" },
+        { "id": "caldes", "etiqueta": "Caldes de Montbui", "lonlat": [2.1668, 41.6326], "origen": "sortida de la ruta «Itinerari termal de Caldes» del prototip" }
+      ],
+      "unitat": "longitud, latitud (WGS84)", "any": 2026,
+      "font": "Ubicacions indicatives per situar les etiquetes al mapa",
+      "url": null,
+      "estat": "verificat"
+    }
   },
 
   "benchmarking": {
@@ -262,6 +294,7 @@
     "rutes_cataleg": { "valor": ["Itinerari termal de Caldes (Caldes de Montbui)", "Sant Miquel del Fai (Bigues i Riells del Fai)", "Gallecs en bicicleta (Mollet del Vallès)", "Fageda de Santa Fe del Montseny (Fogars de Montclús)", "Pla de la Calma i Tagamanent (Tagamanent)", "Granollers: la Porxada i el mercat (Granollers)", "Riu Congost en bici (Granollers)", "Cardedeu i el Museu Tomàs Balvey (Cardedeu)", "Ruta megalítica de la Roca (la Roca del Vallès)", "Castell Vell de Llinars (Llinars del Vallès)", "Puiggraciós i els Cingles de Bertí (Bigues i Riells del Fai)"], "unitat": "propostes en llocs reals de la comarca", "any": 2026, "font": "PWA, app.js", "url": null, "estat": "verificat", "nota": "La guia del prototip parla de «12 llocs»; al catàleg de rutes n'hi ha 11. Les durades, distàncies i punts són d'exemple." },
     "recompenses_exemple": { "valor": ["Recàrrega de transport públic", "Bicicleta compartida", "Esmorzar en un bar de poble", "Vals en productors Km0", "Entrades a museus de la comarca", "Plantar un arbre"], "unitat": "catàleg d'exemple", "any": 2026, "font": "PROTOTIP_DOC", "url": null, "estat": "verificat" },
     "factors_co2": { "valor": { "A peu": 0, "Bici": 0, "Tren o bus": 0.04, "Cotxe": 0.15 }, "unitat": "kg CO₂e per km (valors indicatius, dades d'exemple)", "any": 2026, "font": "PWA, app.js", "url": null, "estat": "PENDENT", "nota": "La guia del prototip diu que els factors de CO₂ són «pendents de fonts oficials». No s'han de presentar com a dades reals ni fer-los servir per a l'exemple de l'IIT sense una font." },
+    "fotos": { "valor": "Les 17 imatges de referencia/pwa/img/ són fotografies pròpies dels autors", "unitat": null, "any": 2026, "font": "Confirmat pels autors el 17-11-2026; PROTOTIP_DOC («fotografies reals pròpies»)", "url": null, "estat": "verificat", "nota": "La guia del prototip (guia.html) encara diu «Les imatges dels llocs són provisionals». Convé treure-ho." },
     "idiomes": { "valor": ["català", "castellà", "anglès", "francès"], "unitat": null, "any": 2026, "font": "PROTOTIP_DOC", "url": null, "estat": "verificat" },
     "com_sha_fet": { "valor": "El prototip l'hem fet amb eines d'intel·ligència artificial i s'ha anat millorant en diverses versions.", "unitat": null, "any": 2026, "font": "PROTOTIP_DOC (literal)", "url": null, "estat": "verificat" },
     "demo_3_passos": {

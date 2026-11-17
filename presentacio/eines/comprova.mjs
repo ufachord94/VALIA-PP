@@ -2,7 +2,7 @@
 // Comprova la coherència entre GUIO.md i dades/dades.json i actualitza la taula de temps del guió.
 // Ús: node eines/comprova.mjs            (des de la carpeta presentacio/)
 //     node eines/comprova.mjs --nomes-llegir   (no reescriu GUIO.md)
-import { readFileSync, writeFileSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -122,7 +122,26 @@ const taula = linies.join('\n');
 const nou = guio.replace(/<!-- TEMPS:INICI -->[\s\S]*<!-- TEMPS:FI -->/, `<!-- TEMPS:INICI -->\n${taula}\n<!-- TEMPS:FI -->`);
 if (!nomesLlegir && nou !== guio) writeFileSync(fitxerGuio, nou);
 
-// ---------- 4. Informe ----------
+// ---------- 4. Xifres escrites a mà a l'HTML i fitxers generats desactualitzats ----------
+const fitxerHtml = join(ARREL, 'index.html');
+if (existsSync(fitxerHtml)) {
+  const text = readFileSync(fitxerHtml, 'utf8')
+    .replace(/<!--[\s\S]*?-->/g, ' ').replace(/<(script|style)[\s\S]*?<\/\1>/gi, ' ')
+    .replace(/<[^>]+>/g, ' ').replace(/&[a-z]+;/g, ' ');
+  const amb = text.split(/\s{2,}/).map(s => s.trim()).filter(s => /\d/.test(s));
+  if (amb.length) errors.push(`index.html té xifres escrites a mà (han de sortir de dades.json): ${amb.map(s => `«${s.slice(0, 50)}»`).join(', ')}`);
+  const djs = join(ARREL, 'dades', 'dades.js');
+  if (!existsSync(djs) || !readFileSync(djs, 'utf8').includes(JSON.stringify(dades))) errors.push('dades/dades.js no coincideix amb dades.json: executeu «node eines/construeix.mjs»');
+  const htmlNet = readFileSync(fitxerHtml, 'utf8').replace(/<!--[\s\S]*?-->/g, ' ');
+  for (const m of htmlNet.matchAll(/data-(?:d|compta)="([^"]+)"/g)) {
+    if (!existeix(m[1])) errors.push(`index.html fa servir la clau «${m[1]}», que no existeix a dades.json`);
+  }
+  for (const m of htmlNet.matchAll(/data-peu="([^"]+)"/g)) {
+    for (const c of m[1].split(/\s+/)) if (c && !existeix(c)) errors.push(`index.html cita al peu la clau «${c}», que no existeix a dades.json`);
+  }
+}
+
+// ---------- 5. Informe ----------
 console.log(taula.replace(/\*\*/g, ''));
 console.log(`\ndades.json: ${nDades} dades, ${pendents.length} amb algun PENDENT.`);
 if (avisos.length) console.log('\nAVISOS\n' + avisos.map(a => '  - ' + a).join('\n'));

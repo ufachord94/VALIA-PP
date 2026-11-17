@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vallès Endins · Defensa del TR</title>
+<meta name="description" content="Presentació de la defensa del Treball de Recerca «Vallès Endins» (app Valia). Funciona sense internet.">
+<link rel="stylesheet" href="js/vendor/reset.css">
+<link rel="stylesheet" href="js/vendor/reveal.css">
+<link rel="stylesheet" href="css/valia.css">
+</head>
+<body>
+<!--
+  Mostra F2: portada (D0), una diapositiva de dades (D1) i una de mapa (D4).
+  Regla: cap xifra escrita a mà. Els valors surten de dades/dades.json via data-d="clau"
+  (data-camp tria un camp que no sigui «valor»; data-compta fa un comptador).
+-->
+<div class="reveal">
+  <div class="slides">
+
+    <!-- D0 · Portada -->
+    <section class="portada" data-escena="portada" data-diapo="0">
+      <div class="marc">
+        <div class="esquerra">
+          <p class="avant">Treball de Recerca</p>
+          <h1 data-d="projecte.titol_tr"></h1>
+          <p class="subtitol" data-d="projecte.subtitol_tr"></p>
+          <p class="app"><span class="logo" aria-hidden="true"></span><span><b data-d="projecte.nom_app"></b><br><span data-d="projecte.eslogan"></span></span></p>
+          <div class="credits">
+            <div class="autors" data-d="projecte.autors"></div>
+            <div>Tutora: <span data-d="projecte.tutora"></span></div>
+            <div><span data-d="projecte.institut"></span> · Curs <span data-d="projecte.curs"></span></div>
+          </div>
+        </div>
+        <div class="mapa" aria-hidden="true"></div>
+      </div>
+      <p class="peu" data-peu="mapa.base"></p>
+    </section>
+
+    <!-- D1 · Ganxo -->
+    <section class="ganxo" data-escena="ganxo" data-diapo="1">
+      <p class="eslogan" data-d="projecte.eslogan"></p>
+      <div class="dades">
+        <h2 class="titular"><span data-d="ganxo.compliment_activitat_fisica" data-camp="invers"></span> joves no es mouen prou, i tenen el Vallès a tocar.</h2>
+        <div class="cos">
+          <div>
+            <div class="xifra" data-d="ganxo.compliment_activitat_fisica" data-format="fraccio"></div>
+            <p class="lectura" data-d="ganxo.compliment_activitat_fisica" data-camp="etiqueta"></p>
+          </div>
+          <div class="figures" aria-hidden="true"></div>
+        </div>
+        <p class="peu" data-peu="ganxo.compliment_activitat_fisica"></p>
+      </div>
+      <span class="fragment custom" data-pas="1"></span>
+    </section>
+
+    <!-- D4 · El territori -->
+    <section class="territori" data-escena="territori" data-diapo="4">
+      <div class="marc">
+        <h2 class="titular">En <span data-d="territori.municipis"></span> municipis hi cap tot: muntanya protegida, plana agrícola i aigua termal a <span data-d="territori.caldes_temperatura_c"></span>&nbsp;°C.</h2>
+        <div class="resum">
+          <div>
+            <div class="xifra" data-compta="territori.municipis"></div>
+            <div class="etiqueta">municipis</div>
+          </div>
+          <div class="km372">
+            <div class="xifra mitjana"><span data-compta="territori.xarxa_projectada_km"></span><small>km</small></div>
+            <div class="etiqueta" data-d="territori.xarxa_projectada_km" data-camp="etiqueta"></div>
+          </div>
+        </div>
+        <div class="mapa" role="img" aria-label="Mapa del Vallès Oriental amb els 39 municipis i els espais destacats">
+          <div class="lloc petit" data-punt="granollers" data-dx="18" data-dy="2"><b data-d="territori.capital"></b></div>
+          <div class="lloc esq" data-punt="montseny" data-pas="1" data-dx="-34" data-dy="0"><b>Montseny</b><span>Reserva de la Biosfera (<span data-d="territori.montseny_reserva_biosfera" data-format="any"></span>)</span></div>
+          <div class="lloc esq" data-punt="montnegre" data-pas="2" data-dx="140" data-dy="118"><b>Montnegre i<br>el Corredor</b><span data-d="territori.montnegre_corredor" data-camp="etiqueta"></span></div>
+          <div class="lloc esq" data-punt="gallecs" data-pas="3" data-dx="-34" data-dy="10"><b>Gallecs</b><span><span data-d="territori.gallecs_ha"></span> ha agrícoles</span></div>
+          <div class="lloc esq" data-punt="caldes" data-pas="4" data-dx="-34" data-dy="-4"><b>Caldes de Montbui</b><span>aigua termal a <span data-d="territori.caldes_temperatura_c"></span>&nbsp;°C</span></div>
+        </div>
+      </div>
+      <p class="peu" data-peu="territori.municipis territori.montseny_reserva_biosfera territori.montnegre_corredor territori.gallecs_ha territori.caldes_temperatura_c territori.xarxa_projectada_km mapa.base" data-peu-extra="Ubicacions indicatives."></p>
+      <span class="fragment custom" data-pas="1"></span>
+      <span class="fragment custom" data-pas="2"></span>
+      <span class="fragment custom" data-pas="3"></span>
+      <span class="fragment custom" data-pas="4"></span>
+      <span class="fragment custom" data-pas="5"></span>
+    </section>
+
+  </div>
+</div>
+
+<script src="js/vendor/reveal.js"></script>
+<script src="js/vendor/notes.js"></script>
+<script src="js/vendor/gsap.min.js"></script>
+<script src="js/vendor/DrawSVGPlugin.min.js"></script>
+<script src="js/vendor/SplitText.min.js"></script>
+<script src="js/vendor/MotionPathPlugin.min.js"></script>
+<script src="js/vendor/Flip.min.js"></script>
+<script src="dades/dades.js"></script>
+<script src="dades/notes.js"></script>
+<script src="media/mapa-valles.js"></script>
+<script src="js/valia-rig.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
