@@ -235,6 +235,7 @@
         { "funcionalitat": "Impacte territorial mesurable", "Komoot": "no", "Wikiloc": "no", "AllTrails": "no", "Google Maps": "si" }
       ],
       "unitat": "13 funcionalitats × 4 plataformes",
+      "peu": { "autor": "Elaboració pròpia a partir de l'anàlisi de les plataformes (Treball de Recerca, apartat 4.3)", "data": "2026" },
       "any": 2026,
       "font": "TR §4.3, «Comparació de funcionalitats entre plataformes de rutes i localització». Elaboració pròpia dels autors a partir de l'anàlisi de les plataformes",
       "url": null,
@@ -242,12 +243,13 @@
       "nota": "Transcrita cel·la a cel·la de la figura del TR. Queda PENDENT per dues incoherències: (1) la fila «Impacte territorial mesurable» dona «Sí» a Google Maps, cosa que contradiu el §4.5, on la mesura de l'impacte és justament el buit detectat; (2) el §4.1 llista 12 criteris (amb «Ús d'intel·ligència artificial») i la matriu en té 13 de diferents (sense IA i amb «Comunitat d'usuaris»)."
     },
     "columna_valia": {
-      "valor": null,
-      "unitat": "Columna «Valia (proposta)» de la matriu",
+      "valor": { "Descoberta de rutes": "si", "Patrimoni cultural integrat": "si", "Comerç de proximitat": "si", "Gamificació": "si" },
+      "unitat": "Columna «Valia (prototip)» de la matriu, només per a les 4 funcions de la diapositiva",
       "any": 2026,
-      "font": "No consta al TR: la matriu del §4.3 no té columna de Valia",
+      "font": "Document del prototip Valia v6.0: Explorar (rutes i patrimoni), Recompenses (comerç local i gamificació). No consta a la matriu del TR (§4.3)",
       "url": null,
-      "estat": "PENDENT",
+      "estat": "verificat",
+      "peu": { "autor": "Valia: funcions del prototip v6.0, amb el catàleg de comerços d'exemple", "data": "2026" },
       "nota": "Si s'hi afegeix, s'ha de titular «Valia (proposta)» i distingir el que el prototip ja ensenya (explorar, ruta guiada, punts, nivells, recompenses, transport públic, CO₂ estimat) del que encara és disseny (IA real, convenis amb comerços, IIT)."
     },
     "criteris_4_1": { "valor": ["Planificació i descoberta de rutes", "Personalització segons l'usuari", "Ús d'intel·ligència artificial o sistemes de recomanació", "Seguiment de l'activitat física", "Gamificació i recompenses", "Informació sobre patrimoni i cultura", "Connexió amb gastronomia i productors locals", "Promoció del comerç de proximitat", "Educació i sensibilització ambiental", "Mobilitat sostenible", "Participació d'agents locals", "Possibilitat de mesurar l'impacte sobre el territori"], "unitat": "12 criteris", "any": 2026, "font": "TR §4.1, figura de criteris", "url": null, "estat": "verificat", "nota": "A la figura del TR, els dos últims criteris porten tots dos el número 11." },
