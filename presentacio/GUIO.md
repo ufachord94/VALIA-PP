@@ -1,8 +1,8 @@
 # GUIÓ · Defensa del TR «Vallès Endins» (app Valia)
 
-Versió F1 · 15-11-2026 · **pendent de la vostra aprovació**
+Versió F1 · aprovada el 17-11-2026 · en revisió a la fase de millora (M0–M7, vegeu `INFORME_MILLORA.md`)
 
-- **A1 = Xavi Hernandez Godoy** (Turisme i Convenis) · **A2 = Unai Farràs Chordjian** (Empresa, Economia i Màrqueting). *És una suposició: el TR no diu qui porta cada àrea. Confirmeu-ho.*
+- **A1 = Xavi Hernandez Godoy** (Turisme i Convenis) · **A2 = Unai Farràs Chordjian** (Empresa, Economia i Màrqueting). *Confirmat pels autors el 17-11-2026.*
 - Objectiu de temps: **13:30 ± 0:30** (màxim 15:00). Càlcul a 130 paraules per minut.
 - Totes les xifres surten de `dades/dades.json`. La clau de cada dada és a la línia «Dades».
 - Estat de cada diapositiva: ✅ contingut complet al TR · 🟠 contingut parcial · 🔴 [PENDENT], l'apartat no existeix al TR pujat.

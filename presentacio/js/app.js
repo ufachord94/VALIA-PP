@@ -342,7 +342,7 @@
       plugins: [window.RevealNotes].filter(Boolean)
     });
     Reveal.on('ready', ev => {
-      $('.reveal .slides').append(Sender.el);
+      $('.reveal .slides').prepend(Sender.el); // al principi: reveal.js decideix que una diapositiva és l'última si no té cap element germà al darrere
       if (esImpressio) { $$('.reveal .slides > section').forEach(s => { const e = escena(s); mostra(s, e.def.passos.length - 1, false); }); return; }
       entra(ev.currentSlide, true);
     });
