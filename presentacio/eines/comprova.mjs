@@ -126,8 +126,8 @@ if (!nomesLlegir && nou !== guio) writeFileSync(fitxerGuio, nou);
 const fitxerHtml = join(ARREL, 'index.html');
 if (existsSync(fitxerHtml)) {
   const text = readFileSync(fitxerHtml, 'utf8')
-    .replace(/<!--[\s\S]*?-->/g, ' ').replace(/<(script|style)[\s\S]*?<\/\1>/gi, ' ')
-    .replace(/<[^>]+>/g, ' ').replace(/&[a-z]+;/g, ' ');
+    .replace(/<!--[\s\S]*?-->/g, ' ').replace(/<(script|style)[\s\S]*?<\/\1>/gi, ' ').replace(/<(\w+)[^>]*\sdata-nx[^>]*>[\s\S]*?<\/\1>/g, ' ')
+    .replace(/<[^>]+>/g, ' ').replace(/&[a-z]+;/g, ' ').replace(/\bKm ?0\b/g, ' '); // «Km0» és un terme, no una xifra
   const amb = text.split(/\s{2,}/).map(s => s.trim()).filter(s => /\d/.test(s));
   if (amb.length) errors.push(`index.html té xifres escrites a mà (han de sortir de dades.json): ${amb.map(s => `«${s.slice(0, 50)}»`).join(', ')}`);
   const djs = join(ARREL, 'dades', 'dades.js');

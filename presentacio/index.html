@@ -11,38 +11,37 @@
 </head>
 <body>
 <!--
-  Mostra F2: portada (D0), una diapositiva de dades (D1) i una de mapa (D4).
-  Regla: cap xifra escrita a mà. Els valors surten de dades/dades.json via data-d="clau"
-  (data-camp tria un camp que no sigui «valor»; data-compta fa un comptador).
+  F3 · 16 diapositives (D0–D15). Cap xifra escrita a mà: els valors surten de dades/dades.json
+  (data-d i data-camp; data-compta fa un comptador; data-peu construeix el peu de font).
+  Les notes de l'orador surten de GUIO.md (dades/notes.js).
 -->
 <div class="reveal">
   <div class="slides">
 
     <!-- D0 · Portada -->
-    <section class="portada" data-escena="portada" data-diapo="0">
-      <div class="marc">
-        <div class="esquerra">
-          <p class="avant">Treball de Recerca</p>
-          <h1 data-d="projecte.titol_tr"></h1>
-          <p class="subtitol" data-d="projecte.subtitol_tr"></p>
-          <p class="app"><span class="logo" aria-hidden="true"></span><span><b data-d="projecte.nom_app"></b><br><span data-d="projecte.eslogan"></span></span></p>
-          <div class="credits">
-            <div class="autors" data-d="projecte.autors"></div>
-            <div>Tutora: <span data-d="projecte.tutora"></span></div>
-            <div><span data-d="projecte.institut"></span> · Curs <span data-d="projecte.curs"></span></div>
-          </div>
+    <section class="portada" data-diapo="0">
+      <div class="text">
+        <p class="avant" data-a="apareix">Treball de Recerca</p>
+        <h1 data-a="puja" style="--d:.1s" data-d="projecte.titol_tr"></h1>
+        <p class="subtitol" data-a="puja" style="--d:.25s" data-d="projecte.subtitol_tr"></p>
+        <div class="app" data-a="puja" style="--d:.45s"><span class="logo" data-logo></span><span><b data-d="projecte.nom_app"></b><br><span data-d="projecte.eslogan"></span></span></div>
+        <div class="credits" data-a="apareix" style="--d:.7s">
+          <div class="autors" data-d="projecte.autors"></div>
+          <div>Tutora: <span data-d="projecte.tutora"></span></div>
+          <div><span data-d="projecte.institut"></span> · Curs <span data-d="projecte.curs"></span></div>
         </div>
-        <div class="mapa" aria-hidden="true"></div>
       </div>
-      <p class="peu" data-peu="mapa.base"></p>
+      <div class="foto" data-a="apareix" style="--d:.2s"><img src="media/img/ciclistes-tardor-platans.jpg" alt="Grup de ciclistes en un camí de plataners a la tardor"><div class="contorn" data-contorn></div></div>
+      <p class="peu" data-peu-extra="Foto: autors del TR."></p>
     </section>
 
     <!-- D1 · Ganxo -->
     <section class="ganxo" data-escena="ganxo" data-diapo="1">
       <p class="eslogan" data-d="projecte.eslogan"></p>
       <div class="dades">
+        <p class="avant">El problema</p>
         <h2 class="titular"><span data-d="ganxo.compliment_activitat_fisica" data-camp="invers"></span> joves no es mouen prou, i tenen el Vallès a tocar.</h2>
-        <div class="cos">
+        <div class="cos2">
           <div>
             <div class="xifra" data-d="ganxo.compliment_activitat_fisica" data-format="fraccio"></div>
             <p class="lectura" data-d="ganxo.compliment_activitat_fisica" data-camp="etiqueta"></p>
@@ -54,34 +53,189 @@
       <span class="fragment custom" data-pas="1"></span>
     </section>
 
+    <!-- D2 · Pregunta de recerca i hipòtesis -->
+    <section class="pregunta" data-diapo="2">
+      <p class="avant" data-a="apareix">Pregunta de recerca</p>
+      <h2 class="titular" data-a="puja" data-d="recerca.pregunta_pantalla" data-pendent-discret="pendent d'afegir al TR"></h2>
+      <div class="hipotesis" data-hipotesis="inici"></div>
+      <p class="peu" data-peu-extra="Hipòtesis: Treball de Recerca, apartat 1.3."></p>
+    </section>
+
+    <!-- D3 · Metodologia -->
+    <section class="metode" data-diapo="3">
+      <p class="avant" data-a="apareix">Metodologia</p>
+      <h2 class="titular" data-a="puja">El treball s'organitza en sis fases: de conèixer el territori a comprovar-ne la viabilitat.</h2>
+      <div class="linia">
+        <svg class="eix" viewBox="0 0 1680 12" preserveAspectRatio="none" aria-hidden="true"><line data-a="dibuixa" pathLength="1" style="--d:.3s" x1="140" y1="6" x2="1540" y2="6"/></svg>
+        <div class="fases" data-fases></div>
+      </div>
+      <p class="peu" data-peu-extra="Font: Treball de Recerca, apartat 1.5. Mostra (n) i dates del treball de camp: pendents."></p>
+    </section>
+
     <!-- D4 · El territori -->
     <section class="territori" data-escena="territori" data-diapo="4">
-      <div class="marc">
-        <h2 class="titular">En <span data-d="territori.municipis"></span> municipis hi cap tot: muntanya protegida, plana agrícola i aigua termal a <span data-d="territori.caldes_temperatura_c"></span>&nbsp;°C.</h2>
-        <div class="resum">
-          <div>
-            <div class="xifra" data-compta="territori.municipis"></div>
-            <div class="etiqueta">municipis</div>
-          </div>
-          <div class="km372">
-            <div class="xifra mitjana"><span data-compta="territori.xarxa_projectada_km"></span><small>km</small></div>
-            <div class="etiqueta" data-d="territori.xarxa_projectada_km" data-camp="etiqueta"></div>
-          </div>
-        </div>
-        <div class="mapa" role="img" aria-label="Mapa del Vallès Oriental amb els 39 municipis i els espais destacats">
-          <div class="lloc petit" data-punt="granollers" data-costat="esq" data-dx="-18" data-dy="-28"><b data-d="territori.capital"></b></div>
-          <div class="lloc esq" data-punt="montseny" data-pas="1" data-dx="-34" data-dy="0"><b>Montseny</b><span>Reserva de la Biosfera (<span data-d="territori.montseny_reserva_biosfera" data-format="any"></span>)</span></div>
-          <div class="lloc esq" data-punt="montnegre" data-pas="2" data-dx="140" data-dy="118"><b>Montnegre i<br>el Corredor</b><span data-d="territori.montnegre_corredor" data-camp="etiqueta"></span></div>
-          <div class="lloc esq" data-punt="gallecs" data-pas="3" data-dx="-34" data-dy="10"><b>Gallecs</b><span><span data-d="territori.gallecs_ha"></span> ha agrícoles</span></div>
-          <div class="lloc esq" data-punt="caldes" data-pas="4" data-dx="-34" data-dy="-4"><b>Caldes de Montbui</b><span>aigua termal a <span data-d="territori.caldes_temperatura_c"></span>&nbsp;°C</span></div>
+      <p class="avant" data-a="apareix">El territori</p>
+      <h2 class="titular" data-a="puja">En <span data-d="territori.municipis"></span> municipis hi cap tot: muntanya protegida, plana agrícola i aigua termal a <span data-d="territori.caldes_temperatura_c"></span>&nbsp;°C.</h2>
+      <div class="foto" data-a="apareix" style="--d:.3s"><img src="media/img/sant-miquel-del-fai.jpg" alt="Sant Miquel del Fai: el monestir sota els cingles i la cascada"></div>
+      <p class="peu-foto">Sant Miquel del Fai</p>
+      <div class="km372">
+        <div class="xifra"><span data-compta="territori.xarxa_projectada_km"></span><small>km</small></div>
+        <div class="etiqueta" data-d="territori.xarxa_projectada_km" data-camp="etiqueta"></div>
+      </div>
+      <div class="mapa" data-punts="granollers montseny montnegre gallecs caldes" role="img" aria-label="Mapa del Vallès Oriental amb els 39 municipis i els espais destacats">
+        <div class="lloc petit" data-punt="granollers" data-costat="esq" data-dx="-18" data-dy="-28"><b data-d="territori.capital"></b></div>
+        <div class="lloc" data-punt="montseny" data-pas="1" data-costat="esq" data-dx="-34" data-dy="0"><b>Montseny</b><span>Reserva de la Biosfera (<span data-d="territori.montseny_reserva_biosfera" data-format="any"></span>)</span></div>
+        <div class="lloc" data-punt="montnegre" data-pas="2" data-costat="esq" data-dx="140" data-dy="118"><b>Montnegre i<br>el Corredor</b><span data-d="territori.montnegre_corredor" data-camp="etiqueta"></span></div>
+        <div class="lloc" data-punt="gallecs" data-pas="3" data-costat="esq" data-dx="-34" data-dy="10"><b>Gallecs</b><span><span data-d="territori.gallecs_ha"></span> ha agrícoles</span></div>
+        <div class="lloc" data-punt="caldes" data-pas="4" data-costat="esq" data-dx="-34" data-dy="-4"><b>Caldes de Montbui</b><span>aigua termal a <span data-d="territori.caldes_temperatura_c"></span>&nbsp;°C</span></div>
+      </div>
+      <p class="peu" data-peu="territori.municipis territori.montseny_reserva_biosfera territori.montnegre_corredor territori.gallecs_ha territori.caldes_temperatura_c territori.xarxa_projectada_km mapa.base" data-peu-extra="Ubicacions indicatives. Foto: autors del TR."></p>
+      <span class="fragment custom" data-pas="1"></span><span class="fragment custom" data-pas="2"></span><span class="fragment custom" data-pas="3"></span><span class="fragment custom" data-pas="4"></span><span class="fragment custom" data-pas="5"></span>
+    </section>
+
+    <!-- D5 · El problema: tot està dispers -->
+    <section class="problema" data-diapo="5">
+      <p class="avant" data-a="apareix">El problema</p>
+      <h2 class="titular" data-a="puja">Rutes, patrimoni, comerç i transport existeixen, però cadascun viu en una aplicació diferent.</h2>
+      <div class="apps">
+        <div class="app-m" data-a="puja" style="--d:.3s"><svg viewBox="0 0 48 48" aria-hidden="true"><path class="ico" d="M10 40c10 0 6-12 14-12s6-14 14-14"/><circle class="ico" cx="10" cy="40" r="3"/><circle class="ico" cx="38" cy="14" r="3"/></svg><b>Rutes</b></div>
+        <div class="app-m" data-a="puja" style="--d:.42s"><svg viewBox="0 0 48 48" aria-hidden="true"><path class="ico" d="M6 18 24 7l18 11M9 18h30M11 22v16M19 22v16M29 22v16M37 22v16M7 41h34"/></svg><b>Patrimoni</b></div>
+        <div class="app-m" data-a="puja" style="--d:.54s"><svg viewBox="0 0 48 48" aria-hidden="true"><path class="ico" d="M7 18 10 8h28l3 10M7 18c0 3 2.5 5 5.5 5S18 21 18 18c0 3 2.5 5 5.5 5s5.5-2 5.5-5c0 3 2.5 5 5.5 5s5.5-2 5.5-5M10 23v17h28V23M20 40V30h8v10"/></svg><b>Comerços</b></div>
+        <div class="app-m" data-a="puja" style="--d:.66s"><svg viewBox="0 0 48 48" aria-hidden="true"><path class="ico" d="M14 6h20a6 6 0 0 1 6 6v20a6 6 0 0 1-6 6H14a6 6 0 0 1-6-6V12a6 6 0 0 1 6-6ZM8 22h32M16 30h.01M32 30h.01M14 44l4-6M34 44l-4-6"/></svg><b>Transport</b></div>
+      </div>
+      <svg class="fletxa" viewBox="0 0 120 60" aria-hidden="true" data-a="apareix" style="--d:.9s"><path d="M6 30h100M86 12l20 18-20 18"/></svg>
+      <div class="unica" data-a="creix" style="--d:1.1s"><span class="logo" data-logo></span><b data-d="projecte.nom_app"></b>
+        <div class="mini" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><path class="ico" d="M10 40c10 0 6-12 14-12s6-14 14-14"/></svg>
+          <svg viewBox="0 0 48 48"><path class="ico" d="M6 18 24 7l18 11M9 18h30M11 22v16M19 22v16M29 22v16M37 22v16M7 41h34"/></svg>
+          <svg viewBox="0 0 48 48"><path class="ico" d="M7 18 10 8h28l3 10M10 23v17h28V23M20 40V30h8v10"/></svg>
+          <svg viewBox="0 0 48 48"><path class="ico" d="M14 6h20a6 6 0 0 1 6 6v20a6 6 0 0 1-6 6H14a6 6 0 0 1-6-6V12a6 6 0 0 1 6-6ZM8 22h32"/></svg>
         </div>
       </div>
-      <p class="peu" data-peu="territori.municipis territori.montseny_reserva_biosfera territori.montnegre_corredor territori.gallecs_ha territori.caldes_temperatura_c territori.xarxa_projectada_km mapa.base" data-peu-extra="Ubicacions indicatives."></p>
-      <span class="fragment custom" data-pas="1"></span>
-      <span class="fragment custom" data-pas="2"></span>
-      <span class="fragment custom" data-pas="3"></span>
-      <span class="fragment custom" data-pas="4"></span>
-      <span class="fragment custom" data-pas="5"></span>
+      <p class="peu-unica" data-a="apareix" style="--d:1.3s">Una sola experiència</p>
+      <p class="peu" data-peu-extra="Font: elaboració pròpia a partir del Treball de Recerca, apartats 2 i 4."></p>
+    </section>
+
+    <!-- D6 · Benchmarking -->
+    <section class="dispers" data-diapo="6">
+      <p class="avant" data-a="apareix">Benchmarking</p>
+      <h2 class="titular" data-a="puja">Cap de les quatre plataformes analitzades ho integra tot en una sola experiència.</h2>
+      <div class="matriu" data-matriu="Descoberta de rutes|Patrimoni cultural integrat|Comerç de proximitat|Gamificació" role="table" aria-label="Comparació de plataformes"></div>
+      <div class="llegenda" data-a="apareix" style="--d:1.2s"></div>
+      <p class="peu" data-peu="benchmarking.matriu benchmarking.columna_valia"></p>
+    </section>
+
+    <!-- D7 · La solució: una microaventura -->
+    <section class="sortida" data-escena="sortida" data-diapo="7">
+      <p class="avant" data-a="apareix">La solució</p>
+      <h2 class="titular" data-a="puja">Una microaventura converteix una ruta en patrimoni, producte Km0, comerç de proximitat i punts.</h2>
+      <svg class="ruta-svg" viewBox="0 0 1680 560" aria-label="Ruta d'exemple amb quatre parades">
+        <path id="ruta-sortida" class="ruta" d="M40 300 C 150 300, 180 200, 300 200 S 560 340, 700 340 S 960 200, 1100 200 S 1360 340, 1500 340 S 1610 290, 1650 280"/>
+        <g class="parada" data-x="300" data-y="200"><circle cx="300" cy="200" r="34"/><text data-nx class="n" x="300" y="200">1</text><text class="t" x="300" y="112" text-anchor="middle">Termes romanes</text><text class="s" x="300" y="150" text-anchor="middle">patrimoni de Caldes de Montbui</text></g>
+        <g class="parada" data-x="700" data-y="340"><circle cx="700" cy="340" r="34"/><text data-nx class="n" x="700" y="340">2</text><text class="t" x="700" y="428" text-anchor="middle">Productor Km0</text><text class="s" x="700" y="466" text-anchor="middle">exemple</text></g>
+        <g class="parada" data-x="1100" data-y="200"><circle cx="1100" cy="200" r="34"/><text data-nx class="n" x="1100" y="200">3</text><text class="t" x="1100" y="112" text-anchor="middle">Comerç del poble</text><text class="s" x="1100" y="150" text-anchor="middle">exemple</text></g>
+        <g class="parada" data-x="1500" data-y="340"><circle cx="1500" cy="340" r="34"/><text data-nx class="n" x="1500" y="340">4</text><text class="t" x="1500" y="428" text-anchor="middle">Punts per a recompenses</text><text class="s" x="1500" y="466" text-anchor="middle">exemple</text></g>
+        <g class="mascota"></g>
+      </svg>
+      <p class="peu" data-peu-extra="Ruta d'exemple del prototip Valia: l'establiment, el comerç i els punts són d'exemple. Patrimoni: Treball de Recerca, apartat 3.2."></p>
+    </section>
+
+    <!-- D8 · Prototip -->
+    <section class="prototip" data-diapo="8">
+      <p class="avant" data-a="apareix">El prototip</p>
+      <h2 class="titular" data-a="puja">El prototip ja es pot provar: de la pregunta a la recompensa en tres passos.</h2>
+      <div class="mobils">
+        <div class="mobil" data-a="puja" style="--d:.3s"><div class="marc-mobil"><img src="media/img/app-xat.jpg" alt="Pantalla del xat: l'assistent proposa rutes amb tren"></div><p><span data-nx>1</span> · Pregunta</p></div>
+        <div class="mobil" data-a="puja" style="--d:.5s"><div class="marc-mobil"><img src="media/img/app-explorar.jpg" alt="Pantalla Explorar amb el catàleg de rutes"></div><p><span data-nx>2</span> · Tria</p></div>
+        <div class="mobil" data-a="puja" style="--d:.7s"><div class="marc-mobil"><img src="media/img/app-recompenses.jpg" alt="Pantalla Recompenses amb els punts d'energia"></div><p><span data-nx>3</span> · Suma punts</p></div>
+      </div>
+      <div class="qr" data-a="apareix" style="--d:.9s"><div data-qr></div><p class="url" data-nx>ufachord94.github.io/VALIA</p><p class="nota">Prototip visual v<span data-d="prototip.versio"></span> amb dades d'exemple. L'assistent encara no és una IA real.</p></div>
+      <p class="peu" data-peu-extra="Captures del prototip Valia (novembre de 2026). Font: document del prototip."></p>
+    </section>
+
+    <!-- D9 · Investigació de camp -->
+    <section class="validacio" data-diapo="9">
+      <p class="avant" data-a="apareix">Investigació de camp</p>
+      <h2 class="titular" data-a="puja">L'interès es demostra amb tres proves: enquesta, prova del prototip i comerços.</h2>
+      <div class="tiles">
+        <div class="tile" data-a="puja" style="--d:.3s"><h3>Enquesta</h3><p>n = <span class="pendent">[PENDENT]</span> · data: <span class="pendent">[PENDENT]</span> · la faria servir: <span class="pendent">[PENDENT]</span></p></div>
+        <div class="tile" data-a="puja" style="--d:.45s"><h3>Prova del prototip</h3><p>Persones que l'han provat: <span class="pendent">[PENDENT]</span></p></div>
+        <div class="tile" data-a="puja" style="--d:.6s"><h3>Comerços i productors</h3><p>Contactats i interessats: <span class="pendent">[PENDENT]</span></p></div>
+      </div>
+      <div class="foto" data-a="apareix" style="--d:.2s"><img src="media/img/familia-cistells.jpg" alt="Una mare i un nen caminen pel bosc amb cistells"></div>
+      <p class="peu" data-peu-extra="Mètode: Treball de Recerca, apartat 1.5. Resultats pendents. Foto: autors del TR."></p>
+    </section>
+
+    <!-- D10 · Model de negoci -->
+    <section class="canvas" data-diapo="10">
+      <p class="avant" data-a="apareix">Model de negoci</p>
+      <h2 class="titular" data-a="puja">El model de negoci es decideix en nou blocs; els clients i els ingressos en marquen la viabilitat.</h2>
+      <div class="canvas-g" data-a="apareix" style="--d:.3s">
+        <div class="socis">Socis clau</div><div class="activitats">Activitats clau</div><div class="recursos">Recursos clau</div>
+        <div class="proposta">Proposta de valor</div><div class="relacio">Relació amb els clients</div><div class="canals">Canals</div>
+        <div class="segments clau">Segments de clients <span class="pendent">[PENDENT]</span></div>
+        <div class="costos">Estructura de costos</div>
+        <div class="ingressos clau">Fonts d'ingressos <span class="pendent">[PENDENT]</span></div>
+      </div>
+      <p class="peu" data-peu-extra="Model Canvas (Osterwalder i Pigneur). Contingut dels nou blocs: pendent del pla d'empresa del Treball de Recerca."></p>
+    </section>
+
+    <!-- D11 · Viabilitat econòmica -->
+    <section class="numeros" data-diapo="11">
+      <p class="avant" data-a="apareix">Viabilitat econòmica</p>
+      <h2 class="titular" data-a="puja">Quatre xifres decidiran si és viable: ingressos, inversió, escenaris i punt d'equilibri.</h2>
+      <div class="tiles">
+        <div class="tile" data-a="puja" style="--d:.3s"><h3>Qui paga i quant</h3><p>Model d'ingressos: <span class="pendent">[PENDENT]</span></p></div>
+        <div class="tile" data-a="puja" style="--d:.42s"><h3>Inversió inicial</h3><p>Import i fonts de finançament: <span class="pendent">[PENDENT]</span></p></div>
+        <div class="tile" data-a="puja" style="--d:.54s"><h3>Tres escenaris a tres anys</h3><p>Pessimista, realista i optimista: <span class="pendent">[PENDENT]</span></p></div>
+        <div class="tile" data-a="puja" style="--d:.66s"><h3>Punt d'equilibri</h3><p>Usuaris o ingressos necessaris: <span class="pendent">[PENDENT]</span></p></div>
+      </div>
+      <p class="peu" data-peu-extra="Pendent del pla econòmic del Treball de Recerca."></p>
+    </section>
+
+    <!-- D12 · Màrqueting -->
+    <section class="marqueting" data-diapo="12">
+      <p class="avant" data-a="apareix">Màrqueting</p>
+      <h2 class="titular" data-a="puja">El pla de màrqueting ha de fixar el públic, els canals i el calendari de llançament.</h2>
+      <div class="embut">
+        <div data-a="puja" style="--d:.3s"><b>Atraure</b><span>Públic i canals: <span class="pendent">[PENDENT]</span></span></div>
+        <div data-a="puja" style="--d:.45s"><b>Activar</b><span>Primera sortida: <span class="pendent">[PENDENT]</span></span></div>
+        <div data-a="puja" style="--d:.6s"><b>Fidelitzar</b><span>Calendari i fites: <span class="pendent">[PENDENT]</span></span></div>
+      </div>
+      <p class="peu" data-peu-extra="Pendent del pla de màrqueting del Treball de Recerca."></p>
+    </section>
+
+    <!-- D13 · Sostenibilitat i IIT -->
+    <section class="impacte" data-diapo="13">
+      <p class="avant" data-a="apareix">Sostenibilitat</p>
+      <h2 class="titular" data-a="puja">Amb l'Índex d'Impacte Territorial mesurem cada sortida en tres dimensions: ambiental, social i econòmica.</h2>
+      <div class="dims">
+        <div class="targeta" data-a="puja" style="--d:.3s"><svg viewBox="0 0 48 48" aria-hidden="true"><path class="ico" d="M24 42C10 34 9 16 24 6c15 10 14 28 0 36ZM24 42V14"/></svg><h3>Ambiental</h3><p>CO₂ estalviat i quilòmetres sense cotxe</p></div>
+        <div class="targeta" data-a="puja" style="--d:.45s"><svg viewBox="0 0 48 48" aria-hidden="true"><path class="ico" d="M17 20a6 6 0 1 0 0-12 6 6 0 0 0 0 12ZM5 40c0-7 5-12 12-12s12 5 12 12M33 22a5 5 0 1 0 0-10M35 28c5 1 8 5 8 12"/></svg><h3>Social i cultural</h3><p>Llocs i patrimoni visitats</p></div>
+        <div class="targeta" data-a="puja" style="--d:.6s"><svg viewBox="0 0 48 48" aria-hidden="true"><path class="ico" d="M7 18 10 8h28l3 10M7 18c0 3 2.5 5 5.5 5S18 21 18 18c0 3 2.5 5 5.5 5s5.5-2 5.5-5c0 3 2.5 5 5.5 5s5.5-2 5.5-5M10 23v17h28V23M20 40V30h8v10"/></svg><h3>Econòmica</h3><p>Suport al comerç local</p></div>
+      </div>
+      <p class="formula" data-a="apareix" style="--d:.8s">Fórmula i exemple calculat: <span class="pendent">[PENDENT]</span></p>
+      <p class="compromis" data-a="puja" style="--d:1s" data-d="iit.reformulacio_contaminacio_zero"></p>
+      <p class="peu" data-peu-extra="Font: Treball de Recerca (apartats 1.3, 1.4 i 4.5) i document del prototip."></p>
+    </section>
+
+    <!-- D14 · Conclusions -->
+    <section class="conclusions" data-diapo="14">
+      <p class="avant" data-a="apareix">Conclusions</p>
+      <h2 class="titular" data-a="puja">Cada hipòtesi té el seu indicador; el veredicte arribarà amb els resultats.</h2>
+      <div class="hipotesis" data-hipotesis="final"></div>
+      <p class="peu" data-peu-extra="Hipòtesis i indicadors: Treball de Recerca, apartat 1.3. Resultats pendents."></p>
+    </section>
+
+    <!-- D15 · Tancament -->
+    <section class="tancament" data-diapo="15">
+      <div class="text">
+        <p class="crida" data-a="puja" data-tancament></p>
+        <p class="missatge" data-a="puja" style="--d:.4s" data-d="benchmarking.cita_buit"></p>
+        <div class="qr-linia" data-a="apareix" style="--d:.7s"><div data-qr></div><p>Prova Valia:<br><b data-nx>ufachord94.github.io/VALIA</b><br><span data-d="projecte.autors"></span><br>Gràcies a la nostra tutora, <span data-d="projecte.tutora"></span>.</p></div>
+      </div>
+      <div class="foto" data-a="apareix" style="--d:.2s"><img src="media/img/btt-torre-cim.jpg" alt="Ciclista de muntanya al costat d'una torre de pedra en un cim"></div>
+      <p class="peu" data-peu-extra="Foto: autors del TR."></p>
     </section>
 
   </div>
@@ -97,6 +251,7 @@
 <script src="dades/dades.js"></script>
 <script src="dades/notes.js"></script>
 <script src="media/mapa-valles.js"></script>
+<script src="media/qr.js"></script>
 <script src="js/valia-rig.js"></script>
 <script src="js/app.js"></script>
 </body>

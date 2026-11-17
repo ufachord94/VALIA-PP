@@ -144,7 +144,7 @@ Versió F1 · aprovada el 17-11-2026 · en revisió a la fase de millora (M0–M
 - **Qui parla:** A1 · **Temps:** 1:00
 - **Estat:** 🟠 falta decidir la superfície: el TR diu 727 km² i les altres fonts, 735 km²
 - **Titular:** «En 39 municipis hi cap tot: muntanya protegida, plana agrícola i aigua termal a 74 °C.»
-- **Evidència visual:** el mapa de la comarca es dibuixa: primer el contorn, després els 39 municipis. S'hi encenen, per ordre, el Montseny, el Montnegre i el Corredor, Gallecs i Caldes de Montbui, cadascun amb la seva xifra. Al final, una línia discontínua recorda la xarxa projectada de 372 km.
+- **Evidència visual:** foto de Sant Miquel del Fai i mapa de la comarca que es dibuixa (contorn i 39 municipis). S'hi encenen, per ordre, el Montseny, el Montnegre i el Corredor, Gallecs i Caldes de Montbui, cadascun amb la seva xifra. Al final apareix la xifra de 372 km d'itineraris projectats.
 - **Text visible:** titular + etiquetes del mapa: «39 municipis», «Montseny · Reserva de la Biosfera (1978)», «Montnegre i el Corredor», «Gallecs · 733 ha», «Caldes de Montbui · 74 °C», «372 km d'itineraris projectats»
 - **Dades:** `territori.municipis`, `territori.superficie_km2`, `territori.capital`, `territori.distancia_barcelona_km`, `territori.montseny_reserva_biosfera`, `territori.montnegre_corredor`, `territori.gallecs_ha`, `territori.caldes_temperatura_c`, `territori.xarxa_projectada_km`
 - **Peu de font:** Fonts: Consell Comarcal del Vallès Oriental; Diputació de Barcelona. Mapa: elaboració pròpia a partir de dades de l'Institut Cartogràfic i Geològic de Catalunya (ICGC), sota llicència CC BY 4.0.
@@ -267,8 +267,8 @@ Versió F1 · aprovada el 17-11-2026 · en revisió a la fase de millora (M0–M
 
 - **Qui parla:** A1 · **Temps:** 1:00
 - **Estat:** 🔴 [PENDENT] · l'apartat no existeix al TR pujat
-- **Titular:** «[PENDENT] El titular dirà el resultat principal de les enquestes i de les proves amb usuaris.»
-- **Evidència visual:** dos o tres gràfics de barres que creixen, un per a cada resultat clau, amb la mostra (n) i la data ben visibles. Al costat, una cita breu d'una entrevista.
+- **Titular:** «L'interès es demostra amb tres proves: enquesta, prova del prototip i comerços.» *(provisional: es reescriurà amb el resultat principal)*
+- **Evidència visual:** tres targetes (enquesta, prova del prototip, comerços) amb la mostra (n), la data i el resultat de cadascuna, i una foto pròpia. Quan hi hagi dades, les targetes passen a gràfics de barres.
 - **Text visible:** titular + etiquetes dels gràfics + «n = [PENDENT] · [PENDENT: data]»
 - **Dades:** `camp` (buit)
 - **Falta exactament:** mostra (n), dates i canal de l'enquesta · perfil dels enquestats · resultats de les preguntes clau (interès, valoració, intenció de repetir, disposició a pagar) · proves del prototip amb usuaris · agents del territori contactats i què van dir
@@ -291,7 +291,7 @@ Versió F1 · aprovada el 17-11-2026 · en revisió a la fase de millora (M0–M
 
 - **Qui parla:** A2 · **Temps:** 1:00
 - **Estat:** 🔴 [PENDENT] · l'apartat no existeix al TR pujat
-- **Titular:** «[PENDENT] El titular dirà qui paga i per què.»
+- **Titular:** «El model de negoci es decideix en nou blocs; els clients i els ingressos en marquen la viabilitat.» *(provisional)*
 - **Evidència visual:** Canvas de nou blocs que s'omple bloc a bloc. En acabar, es ressalten «Segments de clients» i «Fonts d'ingressos».
 - **Text visible:** titular + una o dues paraules per bloc
 - **Dades:** `model_negoci` (buit)
@@ -315,7 +315,7 @@ Versió F1 · aprovada el 17-11-2026 · en revisió a la fase de millora (M0–M
 
 - **Qui parla:** A2 · **Temps:** 1:20
 - **Estat:** 🔴 [PENDENT] · l'apartat no existeix al TR pujat
-- **Titular:** «[PENDENT] El titular dirà quan s'arriba al punt d'equilibri i quant finançament cal.»
+- **Titular:** «Quatre xifres decidiran si és viable: ingressos, inversió, escenaris i punt d'equilibri.» *(provisional)*
 - **Evidència visual:** gràfic de línies a tres anys amb tres escenaris (pessimista, realista i optimista). La línia del punt d'equilibri es dibuixa al final i marca on la creua cada escenari. A la dreta, la necessitat de finançament i d'on surt.
 - **Text visible:** titular + etiquetes del gràfic + una xifra clau en gran
 - **Dades:** `finances` (buit)
@@ -339,7 +339,7 @@ Versió F1 · aprovada el 17-11-2026 · en revisió a la fase de millora (M0–M
 
 - **Qui parla:** A2 · **Temps:** 0:30
 - **Estat:** 🔴 [PENDENT] · l'apartat no existeix al TR pujat
-- **Titular:** «[PENDENT] El titular dirà com s'aconsegueixen els primers usuaris.»
+- **Titular:** «El pla de màrqueting ha de fixar el públic, els canals i el calendari de llançament.» *(provisional)*
 - **Evidència visual:** embut de tres nivells o calendari de llançament amb tres fites.
 - **Text visible:** titular + tres etiquetes
 - **Dades:** `marqueting` (buit)
@@ -387,7 +387,7 @@ Versió F1 · aprovada el 17-11-2026 · en revisió a la fase de millora (M0–M
 
 - **Qui parla:** A2 · **Temps:** 1:10
 - **Estat:** 🔴 [PENDENT] · l'apartat no existeix al TR pujat
-- **Titular:** «[PENDENT] El titular respondrà la pregunta de recerca.»
+- **Titular:** «Cada hipòtesi té el seu indicador; el veredicte arribarà amb els resultats.» *(provisional: respondrà la pregunta de recerca)*
 - **Evidència visual:** les tres targetes de la diapositiva 2 tornen al mateix lloc. Cada una es gira i ensenya l'indicador i el resultat, i rep un segell: verificada, parcialment verificada o no verificada. Sense resultat no hi ha segell.
 - **Text visible:** titular + per a cada targeta: indicador (una línia) i veredicte
 - **Dades:** `recerca.hipotesis_secundaries[].indicador_curt`, `.resultat`, `.veredicte`, `conclusions`

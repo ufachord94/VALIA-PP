@@ -1,6 +1,6 @@
 # Presentació de la defensa · «Vallès Endins» (app Valia)
 
-Estat: **F2, sistema visual.** Hi ha 3 diapositives de mostra: la portada (D0), el ganxo (D1) i el territori (D4).
+Estat: **F3 feta.** Hi ha les 16 diapositives (D0–D15) amb el sistema visual nou: fotos pròpies, targetes, captures del prototip i la mascota al sender. L'annex (F6) i les animacions avançades (F4) encara no hi són.
 
 ## Com obrir-la
 
@@ -59,4 +59,12 @@ node eines/captura.mjs qa/f2 --fosc --video
 
 - Si la vista de l'orador (S) no s'obre, el navegador ha bloquejat la finestra emergent: permeteu-la o feu servir el guió imprès.
 - Si l'ordinador va lent, premeu **A**.
-- Si el navegador no obre l'HTML: la versió en PDF (`Valia_defensa_TR.pdf`) es genera a la fase F7.
+- Si el navegador no obre l'HTML: obriu `Valia_defensa_TR.pdf` (16 pàgines, sense animacions).
+
+## PDF de seguretat (DeckTape)
+
+`?decktape` fa que la presentació es mostri en l'estat final, sense animacions:
+
+```bash
+npx decktape reveal --chrome-path /ruta/al/chrome --size 1920x1080 --pause 300 "file:///…/presentacio/index.html?decktape" Valia_defensa_TR.pdf
+```

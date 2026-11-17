@@ -6,7 +6,7 @@
 //   js/valia-rig.js     ← referencia/pwa/app.js       (mascota articulada del prototip)
 //   js/vendor/, fonts/  ← node_modules                (llibreries i tipografies en local)
 // Ús (des de presentacio/): node eines/construeix.mjs
-import { readFileSync, writeFileSync, mkdirSync, copyFileSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, copyFileSync, existsSync, readdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -100,6 +100,18 @@ const app = llegeix(join(REF, 'pwa', 'app.js'));
 const tros = (de, fins) => { const i = app.indexOf(de), j = app.indexOf(fins, i + 1); if (i < 0 || j < 0) throw new Error('No trobo ' + de); return app.slice(i, j); };
 const rig = tros('/* ---- rig.js ---- */', '/* ---- qr.js ---- */') + tros('/* ---- mascot.js ---- */', '/* ---- app.js ---- */');
 escriu(join(ARREL, 'js', 'valia-rig.js'), capcalera('referencia/pwa/app.js (prototip Valia, seccions rig.js, anim.js i mascot.js)') + rig);
+
+// ---------- 4b. QR (generador del prototip) i fotos optimitzades ----------
+{
+  const i0 = app.indexOf('const QR = (function'), i1 = app.indexOf('/* ---- mascot.js ---- */');
+  const QR = new Function(app.slice(i0, i1) + '\nreturn QR;')();
+  const url = dades.projecte.url_app.valor;
+  const svg = QR.svg(url, { size: 300 }).replace('<svg ', `<svg role="img" aria-label="Codi QR cap a ${url}" `);
+  escriu(join(ARREL, 'media', 'qr.js'), capcalera('referencia/pwa/app.js (generador de QR) i dades.json (projecte.url_app)') + 'window.VALIA_QR = ' + JSON.stringify(svg) + ';\n');
+  const IMG = join(ARREL, 'autonoma', 'img');
+  if (existsSync(IMG)) for (const f of readdirSync(IMG)) if (/\.jpe?g$/i.test(f)) { mkdirSync(join(ARREL, 'media', 'img'), { recursive: true }); copyFileSync(join(IMG, f), join(ARREL, 'media', 'img', f)); }
+  console.log('  QR i fotos copiats a media/');
+}
 
 // ---------- 5. Llibreries i tipografies en local ----------
 if (!existsSync(NM)) { console.log('  (sense node_modules: no copio llibreries; feu «npm install» si cal actualitzar-les)'); process.exit(0); }

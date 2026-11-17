@@ -1,7 +1,7 @@
-/* Valia · defensa del TR · sistema visual
-   Concepte: «fitxa de camp». Paper menta, tinta de bosc i una sola senya verda, com les marques d'un sender.
-   Cada diapositiva: titular-frase a dalt, evidència al centre, font al peu i el sender (barra de progrés) a baix,
-   on camina la mascota. Base 1920 × 1080. Text ≥ 28 px, titulars ≥ 52 px, xifres clau ≥ 120 px. */
+/* Valia · defensa del TR · sistema visual F3
+   Concepte: «fitxa de camp» amb fotos reals. Paper menta, tinta de bosc, una sola senya verda, targetes blanques,
+   captures del prototip i el sender on camina la mascota. Base 1920 × 1080.
+   Mínims: text 28 px · titulars 60 px · xifres clau ≥ 120 px · contrast comprovat amb eines/contrast.mjs. */
 
 /* ---------- Tipografies (locals, OFL) ---------- */
 @font-face { font-family: 'Fraunces'; font-style: normal; font-display: block; font-weight: 100 900;
@@ -9,87 +9,68 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 @font-face { font-family: 'Fraunces'; font-style: normal; font-display: block; font-weight: 100 900;
   src: url('../fonts/fraunces-latin-ext-full-normal.woff2') format('woff2-variations');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
 @font-face { font-family: 'Inter'; font-style: normal; font-display: block; font-weight: 100 900;
   src: url('../fonts/inter-latin-wght-normal.woff2') format('woff2-variations');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 @font-face { font-family: 'Inter'; font-style: normal; font-display: block; font-weight: 100 900;
   src: url('../fonts/inter-latin-ext-wght-normal.woff2') format('woff2-variations');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
 
 /* ---------- Fitxes (tokens) ---------- */
 :root {
-  /* color · clar (per defecte: els projectors renten els fons foscos) */
-  --paper: #F1FBF6;      /* menta de la marca: fons */
-  --terra: #FFFFFF;      /* superfície del mapa i de les fitxes */
-  --tinta: #0B3D2A;      /* bosc: text principal */
-  --tinta-2: #3D5F50;    /* text secundari i peus (6,7:1 sobre paper) */
-  --senya: #006B47;      /* verd de text i marques actives (6,2:1) */
-  --maragda: #00A86B;    /* només com a fons, i sempre amb text negre */
-  --apagat: #7A9488;     /* marques inactives (3,1:1, mínim per a gràfics) */
-  --fil: #CFE3D8;        /* línies fines: sender pendent, fronteres */
-  --pendent-fons: #FFF1DC;
-  --pendent-text: #8A3B00;
-  --sobre-maragda: #000000;
-  --fil-mapa: #0B3D2A;
-
-  /* tipus */
+  --paper: #F1FBF6; --terra: #FFFFFF; --tinta: #0B3D2A; --tinta-2: #3D5F50; --senya: #006B47; --maragda: #00A86B;
+  --apagat: #7A9488; --fil: #CFE3D8; --pendent-fons: #FFF1DC; --pendent-text: #8A3B00; --sobre-maragda: #000000; --fil-mapa: #0B3D2A;
   --f-display: 'Fraunces', Georgia, 'Times New Roman', serif;
   --f-text: 'Inter', 'Segoe UI', Arial, sans-serif;
-  --fs-peu: 28px;
-  --fs-etiqueta: 32px;
-  --fs-cos: 40px;
-  --fs-titular: 64px;
-  --fs-xifra: 184px;
-  --fs-xifra-2: 128px;
-  --fs-eslogan: 120px;
-
-  /* espai */
-  --marge-x: 120px;
-  --marge-dalt: 84px;
-  --peu-baix: 116px;     /* distància del peu de font fins a baix (el sender és a y = 1044) */
+  --mx: 120px; --dalt: 84px; --peu-baix: 116px;
 }
 :root[data-tema="fosc"] {
-  --paper: #0B3D2A;
-  --terra: #114A34;
-  --tinta: #F1FBF6;
-  --tinta-2: #B9D9C9;
-  --senya: #3FCF92;
-  --apagat: #729C89;
-  --fil: #2C5E48;
-  --pendent-fons: #4A2A00;
-  --pendent-text: #FFD9A8;
-  --fil-mapa: #D3F4E4;
-  color-scheme: dark;
+  --paper: #0B3D2A; --terra: #114A34; --tinta: #F1FBF6; --tinta-2: #B9D9C9; --senya: #3FCF92; --apagat: #729C89;
+  --fil: #2C5E48; --pendent-fons: #4A2A00; --pendent-text: #FFD9A8; --fil-mapa: #D3F4E4; color-scheme: dark;
 }
 
 /* ---------- Base ---------- */
 html, body { background: var(--paper); }
 .reveal-viewport, .reveal { background: var(--paper); color: var(--tinta); font-family: var(--f-text); }
 .reveal .slides { text-align: left; }
-.reveal .slides > section { width: 1920px; height: 1080px; padding: 0; box-sizing: border-box; font-size: var(--fs-cos); line-height: 1.3; }
-.reveal .slides > section > .marc { position: absolute; inset: 0; padding: var(--marge-dalt) var(--marge-x) 0; box-sizing: border-box; }
+.reveal .slides > section { width: 1920px; height: 1080px; padding: var(--dalt) var(--mx) 0; box-sizing: border-box; font-size: 38px; line-height: 1.3; overflow: hidden; }
+.reveal .slides > section * { box-sizing: border-box; }
+.reveal img { display: block; max-width: 100%; margin: 0; }
+.reveal svg { overflow: visible; }
 .reveal ::selection { background: var(--maragda); color: var(--sobre-maragda); }
-.reveal :focus-visible { outline: 4px solid var(--senya); outline-offset: 4px; }
 
-.titular {
-  font-family: var(--f-display); font-weight: 600; font-size: var(--fs-titular); line-height: 1.1;
-  letter-spacing: -0.012em; font-optical-sizing: auto; margin: 0; max-width: 1560px; text-wrap: balance; color: var(--tinta);
-}
-.titular b, .titular .x { color: var(--senya); font-weight: 600; }
-.etiqueta { font-size: var(--fs-etiqueta); line-height: 1.25; color: var(--tinta-2); }
-.peu {
-  position: absolute; left: var(--marge-x); right: var(--marge-x); bottom: var(--peu-baix);
-  margin: 0; font-size: var(--fs-peu); line-height: 1.3; color: var(--tinta-2); text-wrap: pretty;
-}
-.xifra { font-family: var(--f-display); font-weight: 600; font-size: var(--fs-xifra); line-height: .9; letter-spacing: -0.03em; font-variant-numeric: lining-nums tabular-nums; color: var(--tinta); }
+.avant { font: 600 30px/1.2 var(--f-text); letter-spacing: .1em; text-transform: uppercase; color: var(--senya); margin: 0 0 14px; }
+.titular { font-family: var(--f-display); font-weight: 600; font-size: 60px; line-height: 1.1; letter-spacing: -0.012em; margin: 0; max-width: 1600px; text-wrap: balance; color: var(--tinta); }
+.titular em { font-style: normal; color: var(--senya); }
+.peu { position: absolute; left: var(--mx); right: var(--mx); bottom: var(--peu-baix); margin: 0; font-size: 28px; line-height: 1.3; color: var(--tinta-2); }
+.xifra { font-family: var(--f-display); font-weight: 600; line-height: .9; letter-spacing: -0.03em; font-variant-numeric: lining-nums; color: var(--tinta); }
+.xifra .u { color: var(--senya); }
+.xifra small { font-size: .55em; letter-spacing: -0.01em; }
+.etiqueta { font-size: 30px; line-height: 1.25; color: var(--tinta-2); }
+.pendent, .es-pendent { display: inline-block; font: 700 .8em/1.2 var(--f-text); letter-spacing: .02em; color: var(--pendent-text); background: var(--pendent-fons); border: 2px dashed currentColor; border-radius: 8px; padding: .12em .4em; white-space: nowrap; vertical-align: middle; }
+.marca-pendent { display: inline-block; font: 700 24px/1 var(--f-text); text-transform: uppercase; letter-spacing: .06em; color: var(--pendent-text); background: var(--pendent-fons); padding: 6px 10px; border-radius: 6px; vertical-align: middle; }
+.foto { position: absolute; border-radius: 24px; overflow: hidden; background: var(--fil); }
+.foto img { width: 100%; height: 100%; object-fit: cover; }
+.targeta, .tile { background: var(--terra); border-radius: 24px; padding: 28px 34px; }
+.tile h3 { margin: 0 0 12px; font: 700 32px/1.2 var(--f-text); color: var(--tinta); }
+.tile p { margin: 0; font-size: 32px; line-height: 1.3; color: var(--tinta-2); }
 
-/* Dada pendent: mai amagada */
-.es-pendent { background: var(--pendent-fons); color: var(--pendent-text); border-radius: 6px; padding: 0 .2em; }
-.marca-pendent {
-  display: inline-block; font: 600 var(--fs-peu)/1 var(--f-text); letter-spacing: .06em; text-transform: uppercase;
-  background: var(--pendent-fons); color: var(--pendent-text); padding: 6px 12px; border-radius: 6px; vertical-align: middle;
-}
+/* ---------- Animacions d'entrada (CSS) · 0,4–1,2 s · sense animació, tot és visible ---------- */
+@keyframes puja { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: none; } }
+@keyframes apareix { from { opacity: 0; } to { opacity: 1; } }
+@keyframes creix { from { opacity: 0; transform: scale(.4); } to { opacity: 1; transform: none; } }
+@keyframes dibuixa { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+.reveal .slides > section.present [data-a] { animation-duration: .6s; animation-fill-mode: both; animation-timing-function: cubic-bezier(.2, .7, .2, 1); animation-delay: var(--d, 0s); }
+.reveal .slides > section.present [data-a="puja"] { animation-name: puja; }
+.reveal .slides > section.present [data-a="apareix"] { animation-name: apareix; }
+.reveal .slides > section.present [data-a="creix"] { animation-name: creix; transform-box: fill-box; transform-origin: center; }
+[data-a="dibuixa"] { stroke-dasharray: 1; }
+.reveal .slides > section.present [data-a="dibuixa"] { animation-name: dibuixa; animation-duration: 1.2s; animation-timing-function: ease-in-out; }
+:root.sense-animacions .reveal [data-a] { animation: none !important; }
+:root.sense-animacions .reveal .slides section { transition: none !important; }
+@media (prefers-reduced-motion: reduce) { .reveal [data-a] { animation: none !important; } }
+.print-pdf .reveal [data-a] { animation: none !important; }
 
 /* ---------- Sender (barra de progrés amb la mascota) ---------- */
 .sender { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; pointer-events: none; z-index: 20; }
@@ -100,77 +81,184 @@ html, body { background: var(--paper); }
 .sender .fita.passada { stroke: var(--senya); }
 .sender .mascota { color: var(--senya); }
 .reveal.overview .sender, .print-pdf .sender { display: none; }
-
-/* ---------- D0 · Portada ---------- */
-.portada .marc { display: grid; grid-template-columns: 960px 1fr; column-gap: 0; align-items: start; }
-.portada .esquerra { display: flex; flex-direction: column; height: 780px; }
-.portada .logo { flex: none; width: 104px; height: 104px; margin-left: -8px; }
-.portada .logo svg { width: 104px; height: 104px; display: block; }
-.portada .avant { font: 600 var(--fs-etiqueta)/1.2 var(--f-text); letter-spacing: .12em; text-transform: uppercase; color: var(--senya); margin: 0 0 10px; }
-.portada h1 { font-family: var(--f-display); font-weight: 600; font-size: 176px; line-height: .95; letter-spacing: -0.03em; margin: 0; color: var(--tinta); font-optical-sizing: auto; }
-.portada .subtitol { font-size: 44px; line-height: 1.2; margin: 26px 0 0; color: var(--tinta); max-width: 900px; text-wrap: balance; }
-.portada .app { display: flex; align-items: center; gap: 20px; margin: 48px 0 0; font-size: var(--fs-cos); line-height: 1.2; color: var(--tinta-2); }
-.portada .app b { font-family: var(--f-display); font-weight: 600; color: var(--senya); font-size: 48px; }
-.portada .credits { margin-top: auto; font-size: var(--fs-etiqueta); line-height: 1.4; color: var(--tinta-2); }
-.portada .credits .autors { font-size: 38px; font-weight: 600; color: var(--tinta); }
-.portada .mapa { position: relative; margin-top: 70px; justify-self: end; }
-.portada .mapa svg { width: 700px; height: auto; display: block; }
+.avis { position: fixed; left: 50%; bottom: 32px; transform: translate(-50%, 12px); opacity: 0; z-index: 100; font: 600 20px/1 var(--f-text); color: var(--paper); background: var(--tinta); padding: 12px 18px; border-radius: 999px; transition: opacity .25s, transform .25s; pointer-events: none; }
+.avis.visible { opacity: 1; transform: translate(-50%, 0); }
 
 /* ---------- Mapa (comú) ---------- */
-.mapa svg .comarca { fill: var(--terra); stroke: var(--fil-mapa); stroke-width: 3; stroke-linejoin: round; }
-.mapa svg .muni { fill: var(--apagat); }
-.mapa svg .punt { fill: var(--senya); stroke: var(--terra); stroke-width: 5; }
-.mapa svg .halo { fill: var(--maragda); opacity: .16; }
+.mapa { position: absolute; }
+.mapa svg { width: 100%; height: auto; display: block; }
+.mapa .comarca { fill: var(--terra); stroke: var(--fil-mapa); stroke-width: 3; stroke-linejoin: round; }
+.mapa .muni { fill: var(--apagat); }
+.mapa .punt { fill: var(--senya); stroke: var(--terra); stroke-width: 5; }
+.mapa .halo { fill: var(--maragda); opacity: .16; }
 .mapa .lloc { position: absolute; white-space: nowrap; line-height: 1.15; background: var(--paper); padding: 6px 12px; border-radius: 12px; box-shadow: 0 0 0 2px var(--fil); }
 .mapa .lloc.esq { text-align: right; }
-.mapa .lloc > b { display: block; font: 700 34px/1.1 var(--f-text); color: var(--tinta); }
-.mapa .lloc > span { display: block; font-size: 30px; color: var(--tinta-2); }
-.mapa .lloc.petit b { font-size: 30px; font-weight: 600; color: var(--tinta-2); }
+.mapa .lloc > b { display: block; font: 700 32px/1.1 var(--f-text); color: var(--tinta); }
+.mapa .lloc > span { display: block; font-size: 28px; color: var(--tinta-2); }
+.mapa .lloc.petit > b { font-size: 28px; font-weight: 600; color: var(--tinta-2); }
+
+/* ---------- Símbols de la matriu ---------- */
+.simb .si { fill: var(--senya); } .simb .si-v { stroke: #FFFFFF; stroke-width: 7; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.simb .parc-f { fill: var(--senya); } .simb .parc-c { fill: none; stroke: var(--senya); stroke-width: 5; }
+.simb .no { stroke: var(--apagat); stroke-width: 7; stroke-linecap: round; fill: none; }
+.ico { fill: none; stroke: var(--senya); stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+
+/* ---------- D0 · Portada ---------- */
+.portada .text { position: absolute; left: var(--mx); top: var(--dalt); width: 900px; height: 830px; display: flex; flex-direction: column; }
+.portada h1 { font-family: var(--f-display); font-weight: 600; font-size: 168px; line-height: .95; letter-spacing: -0.03em; margin: 0; color: var(--tinta); }
+.portada .subtitol { font-size: 44px; line-height: 1.2; margin: 24px 0 0; text-wrap: balance; max-width: 860px; }
+.portada .app { display: flex; align-items: center; gap: 20px; margin-top: 48px; font-size: 38px; line-height: 1.2; color: var(--tinta-2); }
+.portada .app b { font-family: var(--f-display); font-weight: 600; color: var(--senya); font-size: 48px; }
+.portada .logo svg { width: 104px; height: 104px; display: block; }
+.portada .credits { margin-top: auto; font-size: 30px; line-height: 1.45; color: var(--tinta-2); }
+.portada .credits .autors { font-size: 36px; font-weight: 600; color: var(--tinta); }
+.portada .foto { left: 1080px; top: var(--dalt); width: 720px; height: 830px; }
+.portada .contorn { position: absolute; right: 28px; bottom: 28px; width: 260px; }
+.portada .contorn path { fill: rgba(255, 255, 255, .18); stroke: #FFFFFF; stroke-width: 6; stroke-linejoin: round; }
 
 /* ---------- D1 · Ganxo ---------- */
-.ganxo .eslogan {
-  position: absolute; left: var(--marge-x); top: 400px; margin: 0; max-width: 1600px;
-  font-family: var(--f-display); font-weight: 600; font-size: var(--fs-eslogan); line-height: 1.02; letter-spacing: -0.025em; color: var(--tinta);
-}
-.ganxo .eslogan em { font-style: normal; color: var(--senya); }
-.ganxo .dades { position: absolute; inset: var(--marge-dalt) var(--marge-x) 0; visibility: hidden; }
-.ganxo .cos { display: grid; grid-template-columns: 860px 1fr; column-gap: 60px; margin-top: 150px; align-items: end; }
-.ganxo .xifra { font-size: 168px; }
-.ganxo .xifra .u { color: var(--senya); }
-.ganxo .xifra small { font-size: .62em; letter-spacing: -0.02em; }
-.ganxo .lectura { font-size: var(--fs-cos); line-height: 1.3; color: var(--tinta); margin: 32px 0 0; max-width: 760px; }
-.ganxo .figures { display: flex; justify-content: flex-end; gap: 24px; align-items: flex-end; height: 360px; }
-.ganxo .figures svg { height: 290px; width: auto; overflow: visible; display: block; }
+.ganxo .eslogan { position: absolute; left: var(--mx); top: 400px; margin: 0; max-width: 1600px; font-family: var(--f-display); font-weight: 600; font-size: 120px; line-height: 1.02; letter-spacing: -0.025em; color: var(--tinta); }
+.ganxo .dades { position: absolute; inset: var(--dalt) var(--mx) 0; visibility: hidden; }
 .ganxo .dades .peu { left: 0; right: 0; }
-.ganxo .roca { fill: var(--fil); }
-.ganxo .fig-nom { display: block; text-align: center; font-size: 28px; color: var(--tinta-2); margin-top: 12px; }
-.ganxo .pila .fig-nom { color: var(--senya); font-weight: 600; }
+.ganxo .cos2 { position: absolute; left: 0; right: 0; top: 250px; display: grid; grid-template-columns: 820px 1fr; align-items: end; }
+.ganxo .xifra { font-size: 168px; }
+.ganxo .lectura { font-size: 38px; line-height: 1.3; margin: 28px 0 0; max-width: 760px; }
+.ganxo .figures { display: flex; justify-content: flex-end; align-items: flex-end; gap: 24px; }
+.ganxo .figures svg { height: 300px; width: auto; display: block; }
 .ganxo .fig { color: var(--apagat); }
 .ganxo .fig.activa { color: var(--senya); }
 .ganxo .pila { position: relative; }
 .ganxo .pila .activa { position: absolute; left: 0; top: 0; }
+.ganxo .roca { fill: var(--fil); }
+.ganxo .fig-nom { display: block; text-align: center; font-size: 28px; color: var(--tinta-2); margin-top: 12px; }
+.ganxo .pila .fig-nom { color: var(--senya); font-weight: 600; }
 
-/* ---------- Avís de tecles (D, A) ---------- */
-.avis {
-  position: fixed; left: 50%; bottom: 32px; transform: translate(-50%, 12px); opacity: 0; z-index: 100;
-  font: 600 20px/1 var(--f-text); color: var(--paper); background: var(--tinta); padding: 12px 18px; border-radius: 999px;
-  transition: opacity .25s, transform .25s; pointer-events: none;
-}
-.avis.visible { opacity: 1; transform: translate(-50%, 0); }
+/* ---------- D2 · Pregunta i hipòtesis · D14 · Conclusions ---------- */
+.pregunta .titular { font-size: 64px; max-width: 1640px; }
+.hipotesis { position: absolute; left: var(--mx); right: var(--mx); top: 470px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+.hipotesis .targeta { display: flex; flex-direction: column; gap: 14px; min-height: 330px; border-top: 8px solid var(--senya); }
+.hipotesis .codi { font: 700 28px/1 var(--f-text); color: var(--senya); letter-spacing: .06em; text-transform: uppercase; }
+.hipotesis .ambit { font: 600 28px/1.2 var(--f-text); color: var(--tinta-2); }
+.hipotesis .frase { font: 600 38px/1.15 var(--f-display); color: var(--tinta); margin: 0; }
+.hipotesis .indicador { margin-top: auto; font-size: 28px; line-height: 1.3; color: var(--tinta-2); }
+.hipotesis .indicador b { color: var(--tinta); }
+.conclusions .hipotesis { top: 300px; }
+.conclusions .hipotesis .targeta { min-height: 520px; }
+.conclusions .veredicte { display: flex; align-items: center; gap: 12px; font-size: 28px; color: var(--tinta-2); border-top: 2px solid var(--fil); padding-top: 14px; }
+
+/* ---------- D3 · Metodologia ---------- */
+.metode .linia { position: absolute; left: var(--mx); right: var(--mx); top: 330px; }
+.metode .linia svg.eix { position: absolute; left: 0; top: 46px; width: 1680px; height: 12px; }
+.metode .linia svg.eix line { stroke: var(--senya); stroke-width: 6; stroke-linecap: round; }
+.metode .fases { display: grid; grid-template-columns: repeat(6, 1fr); gap: 20px; position: relative; }
+.metode .fase { text-align: center; }
+.metode .fase .n { width: 104px; height: 104px; margin: 0 auto 20px; border-radius: 50%; background: var(--terra); border: 5px solid var(--senya); display: grid; place-items: center; font: 700 40px/1 var(--f-text); color: var(--senya); }
+.metode .fase.pendent-f .n { border-style: dashed; color: var(--tinta-2); border-color: var(--apagat); }
+.metode .fase b { display: block; font-size: 32px; line-height: 1.2; }
+.metode .fase span { display: block; font-size: 28px; color: var(--tinta-2); margin-top: 8px; line-height: 1.25; }
 
 /* ---------- D4 · Territori ---------- */
-/* columna esquerra: xifres; dreta: mapa (720 × 603); el peu ocupa tota l'amplada per sota */
-.territori .resum { position: absolute; left: var(--marge-x); top: 300px; width: 620px; display: flex; flex-direction: column; gap: 52px; }
-.territori .resum .xifra { font-size: var(--fs-xifra); }
-.territori .resum .xifra.mitjana { font-size: var(--fs-xifra-2); }
-.territori .resum .xifra small { font-size: .4em; letter-spacing: 0; margin-left: .12em; }
-.territori .resum .etiqueta { margin-top: 10px; max-width: 520px; }
-.territori .km372 { visibility: hidden; }
-.territori .mapa { position: absolute; left: 1080px; top: 236px; width: 720px; }
-.territori .mapa svg { width: 720px; height: auto; display: block; overflow: visible; }
+.territori .foto { left: var(--mx); top: 290px; width: 360px; height: 360px; }
+.territori .peu-foto { position: absolute; left: var(--mx); top: 664px; width: 360px; font-size: 28px; color: var(--tinta-2); margin: 0; }
+.territori .mapa { left: 1060px; top: 270px; width: 700px; }
+.territori .km372 { position: absolute; left: var(--mx); top: 718px; width: 640px; display: flex; align-items: center; gap: 20px; }
+.territori .km372 .etiqueta { max-width: 300px; }
+.territori .km372 .xifra { font-size: 120px; }
+.territori .km372 .xifra small { font-size: .4em; margin-left: .1em; }
 
-/* ---------- Mode sense animacions (tecla A) i mode d'impressió ---------- */
-:root.sense-animacions .reveal .slides section { transition: none !important; }
+/* ---------- D5 · Problema: tot està dispers ---------- */
+.problema .apps { position: absolute; left: var(--mx); top: 330px; display: grid; grid-template-columns: repeat(4, 220px); gap: 28px; }
+.problema .app-m { height: 440px; border: 8px solid var(--apagat); border-radius: 36px; background: var(--terra); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 22px; }
+.problema .app-m svg { width: 96px; height: 96px; }
+.problema .app-m .ico { stroke: var(--apagat); }
+.problema .app-m b { font-size: 32px; color: var(--tinta-2); }
+.problema .fletxa { position: absolute; left: 1140px; top: 520px; width: 120px; height: 60px; }
+.problema .fletxa path { stroke: var(--senya); stroke-width: 6; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.problema .unica { position: absolute; left: 1320px; top: 300px; width: 300px; height: 500px; border: 10px solid var(--tinta); border-radius: 44px; background: var(--terra); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; padding: 24px; }
+.problema .unica .logo svg { width: 120px; height: 120px; }
+.problema .unica b { font: 600 48px/1 var(--f-display); color: var(--senya); }
+.problema .unica .mini { display: grid; grid-template-columns: repeat(2, 64px); gap: 14px; }
+.problema .unica .mini svg { width: 64px; height: 64px; }
+.problema .peu-unica { position: absolute; left: 1290px; top: 820px; width: 400px; text-align: center; font-size: 28px; color: var(--tinta-2); margin: 0; }
+
+/* ---------- D6 · Benchmarking ---------- */
+.matriu { position: absolute; left: var(--mx); top: 290px; display: grid; grid-template-columns: 520px repeat(5, 232px); }
+.matriu > div { display: flex; align-items: center; min-height: 100px; border-bottom: 2px solid var(--fil); font-size: 32px; }
+.matriu .cap { font-weight: 700; font-size: 30px; justify-content: center; min-height: 72px; color: var(--tinta); }
+.matriu .cap:first-child { justify-content: flex-start; color: var(--tinta-2); font-weight: 600; }
+.matriu .cel { justify-content: center; }
+.matriu .valia { background: var(--terra); }
+.matriu .cap.valia { color: var(--senya); border-radius: 16px 16px 0 0; }
+.matriu svg { width: 52px; height: 52px; }
+.llegenda { position: absolute; left: var(--mx); top: 836px; display: flex; gap: 40px; font-size: 28px; color: var(--tinta-2); align-items: center; }
+.llegenda span { display: inline-flex; align-items: center; gap: 12px; }
+.llegenda svg { width: 36px; height: 36px; }
+
+/* ---------- D7 · La solució: una microaventura ---------- */
+.sortida .ruta-svg { position: absolute; left: var(--mx); top: 300px; width: 1680px; height: 560px; }
+.sortida .ruta { fill: none; stroke: var(--senya); stroke-width: 6; stroke-linecap: round; stroke-dasharray: 2 14; }
+.sortida .parada circle { fill: var(--terra); stroke: var(--senya); stroke-width: 5; }
+.sortida .parada text.n { font: 700 30px var(--f-text); fill: var(--senya); text-anchor: middle; dominant-baseline: central; }
+.sortida .parada text.t { font: 700 32px var(--f-text); fill: var(--tinta); }
+.sortida .parada text.s { font: italic 400 28px var(--f-text); fill: var(--tinta-2); }
+.sortida .mascota { color: var(--senya); }
+.sortida .parada { transition: opacity .4s ease; }
+.sortida.caminant .parada:not(.vista) { opacity: 0; }
+
+/* ---------- D8 · Prototip ---------- */
+.prototip .mobils { position: absolute; left: var(--mx); top: 290px; display: flex; gap: 40px; }
+.prototip .mobil { width: 258px; }
+.prototip .marc-mobil { width: 258px; height: 560px; border: 9px solid var(--tinta); border-radius: 40px; overflow: hidden; background: var(--terra); }
+.prototip .marc-mobil img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.prototip .mobil p { margin: 14px 0 0; font-size: 30px; line-height: 1.2; font-weight: 600; white-space: nowrap; }
+.prototip .mobil p span { color: var(--senya); }
+.prototip .qr { position: absolute; left: 1100px; top: 300px; width: 700px; }
+.prototip .qr svg { width: 300px; height: 300px; display: block; }
+.prototip .qr .url { font-size: 30px; font-weight: 600; margin: 20px 0 0; color: var(--senya); }
+.prototip .qr .nota { font-size: 28px; line-height: 1.3; color: var(--tinta-2); margin: 24px 0 0; }
+
+/* ---------- D9 · Camp · D11 · Viabilitat ---------- */
+.validacio .tiles, .numeros .tiles { position: absolute; left: var(--mx); top: 290px; display: grid; gap: 28px; }
+.validacio .tiles { width: 1060px; grid-template-columns: 1fr; }
+.validacio .foto { left: 1260px; top: 290px; width: 540px; height: 560px; }
+.numeros .tiles { right: var(--mx); grid-template-columns: repeat(2, 1fr); }
+.numeros .tile { min-height: 230px; }
+
+/* ---------- D10 · Model de negoci (Canvas) ---------- */
+.canvas-g { position: absolute; left: var(--mx); right: var(--mx); top: 290px; display: grid; grid-template-columns: repeat(5, 1fr); grid-template-rows: 220px 220px 110px; gap: 16px; }
+.canvas-g > div { background: var(--terra); border-radius: 18px; padding: 18px 22px; font: 600 28px/1.2 var(--f-text); color: var(--tinta-2); }
+.canvas-g .clau { border: 4px solid var(--senya); color: var(--tinta); }
+.canvas-g .clau .pendent { display: block; width: max-content; margin-top: 12px; }
+.canvas-g .socis { grid-row: 1 / 3; } .canvas-g .activitats { grid-column: 2; } .canvas-g .recursos { grid-column: 2; grid-row: 2; }
+.canvas-g .proposta { grid-column: 3; grid-row: 1 / 3; } .canvas-g .relacio { grid-column: 4; } .canvas-g .canals { grid-column: 4; grid-row: 2; }
+.canvas-g .segments { grid-column: 5; grid-row: 1 / 3; } .canvas-g .costos { grid-column: 1 / 3; grid-row: 3; } .canvas-g .ingressos { grid-column: 3 / 6; grid-row: 3; }
+
+/* ---------- D12 · Màrqueting ---------- */
+.embut { position: absolute; left: var(--mx); top: 300px; display: grid; gap: 22px; width: 1680px; }
+.embut > div { margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 24px; background: var(--terra); border-radius: 20px; padding: 26px 36px; font-size: 32px; }
+.embut > div:nth-child(1) { width: 100%; } .embut > div:nth-child(2) { width: 80%; } .embut > div:nth-child(3) { width: 60%; }
+.embut b { font: 600 40px/1.1 var(--f-display); color: var(--senya); }
+
+/* ---------- D13 · Impacte (IIT) ---------- */
+.impacte .dims { position: absolute; left: var(--mx); right: var(--mx); top: 290px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+.impacte .targeta { min-height: 300px; }
+.impacte .targeta svg { width: 72px; height: 72px; }
+.impacte .targeta h3 { font-family: var(--f-display); font-weight: 600; font-size: 44px; margin: 18px 0 10px; }
+.impacte .targeta p { font-size: 32px; line-height: 1.3; margin: 0; color: var(--tinta-2); }
+.impacte .formula { position: absolute; left: var(--mx); top: 660px; font-size: 32px; margin: 0; }
+.impacte .compromis { position: absolute; left: var(--mx); right: var(--mx); top: 740px; margin: 0; font-family: var(--f-display); font-weight: 600; font-size: 46px; line-height: 1.15; color: var(--senya); max-width: 1500px; }
+
+/* ---------- D15 · Tancament ---------- */
+.tancament .text { position: absolute; left: var(--mx); top: 140px; width: 980px; }
+.tancament .crida { font-family: var(--f-display); font-weight: 600; font-size: 128px; line-height: 1; letter-spacing: -0.02em; margin: 0; }
+.tancament .crida span { display: block; }
+.tancament .crida span:nth-child(2) { color: var(--senya); }
+.tancament .missatge { font-size: 40px; line-height: 1.25; margin: 36px 0 0; max-width: 900px; }
+.tancament .qr-linia { display: flex; align-items: center; gap: 28px; margin-top: 36px; }
+.tancament .qr-linia svg { width: 200px; height: 200px; }
+.tancament .qr-linia p { margin: 0; font-size: 30px; line-height: 1.35; color: var(--tinta-2); }
+.tancament .qr-linia b { color: var(--senya); }
+.tancament .foto { left: 1180px; top: var(--dalt); width: 620px; height: 830px; }
 
 /* ---------- Notes de l'orador (vista S) ---------- */
 .notes .n-cap { font-weight: 700; }
