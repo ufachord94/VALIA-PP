@@ -95,10 +95,10 @@
     for (const k in tr) if (pp[k]) pp[k].setAttribute('transform', tr[k]);
     if (pp.head) pp.head.setAttribute('transform', `rotate(${(p.head || 0).toFixed(2)} ${NECK[0]} ${NECK[1]})`);
   }
-  function figuraSVG(postura, cls) {
+  function figuraSVG(postura, cls, roca) {
     const svg = document.createElementNS(NS, 'svg');
-    svg.setAttribute('viewBox', '-18 -66 44 70'); svg.setAttribute('class', cls || '');
-    svg.innerHTML = `<g>${FIG.figureMarkup('currentColor')}</g>`;
+    svg.setAttribute('viewBox', '-28 -66 56 70'); svg.setAttribute('class', cls || '');
+    svg.innerHTML = (roca ? '<path class="roca" d="M-12 0C-13 -6 -9 -13.2 0 -13.6C9 -14 13 -7 12.4 0Z"/>' : '') + `<g>${FIG.figureMarkup('currentColor')}</g>`;
     aplicaPostura(parts(svg), postura);
     return svg;
   }
@@ -217,12 +217,14 @@
 
     ganxo: {
       munta(sec) {
-        // Tres joves: un camina (fa l'activitat física recomanada) i dos estan quiets.
+        // Tres joves: un camina (fa l'activitat física recomanada) i dos estan asseguts.
         // La postura codifica la dada, no només el color. La figura verda es posa damunt de la grisa i apareix al pas 1.
+        const nom = t => { const s = document.createElement('span'); s.className = 'fig-nom'; s.textContent = t; return s; };
         const pila = document.createElement('div'); pila.className = 'pila';
         const actiu = figuraSVG(MASC.B.logo, 'fig activa');
-        pila.append(figuraSVG(MASC.B.logo, 'fig'), actiu);
-        $('.figures', sec).append(pila, figuraSVG(MASC.B.stand, 'fig'), figuraSVG(MASC.B.stand, 'fig'));
+        pila.append(figuraSVG(MASC.B.logo, 'fig'), actiu, nom('es mou prou'));
+        const assegut = () => { const w = document.createElement('div'); w.append(figuraSVG(MASC.B.sit, 'fig', true), nom('no prou')); return w; };
+        $('.figures', sec).append(pila, assegut(), assegut());
         this.actiu = actiu;
       },
       passos: [

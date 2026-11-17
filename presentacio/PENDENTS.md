@@ -131,3 +131,14 @@ Amb aquest fitxer canvio el mapa per l'oficial (contorn i límits dels 39 munici
 | «372 km» (D4) | L'etiqueta diu «d'itineraris projectats per anar a peu i en bici» | La font diu que és una xarxa projectada per accedir als polígons. A les notes de l'orador ho recordo |
 
 **Comprovat el 17-11-2026, obrint `index.html` amb `file://`:** 0 peticions externes · 0 errors de consola · cap text fora del llenç a 1920×1080, 1366×768 i 1024×768 · tots els contrastos per sobre del mínim, en mode clar i fosc (`eines/contrast.mjs`) · cap xifra escrita a mà a l'HTML (`eines/comprova.mjs`). Captures i vídeo a `qa/f2/`.
+
+---
+
+## H. Revisió del 17-11-2026 (tornada al prompt mestre)
+
+| # | Què | Estat |
+|---|---|---|
+| H1 | 🟠 **5 imatges de `referencia/pwa/img/` semblen il·lustracions, no fotos:** `fageda`, `gallecs`, `termes` i `smfai` (verticals i amb aspecte pintat). `excursionista-muntanya` mostra pics alpins que no són del Vallès Oriental | Excloses de les diapositives fins que confirmeu que són fotos vostres (el punt 4.9 prohibeix les imatges generades per IA) |
+| H2 | ✅ Correccions de F2 trobades per la revisió independent: peu de la D1 amb doble marge, figures «inactives» amb bastó (ara assegudes, amb etiqueta directa), etiquetes del mapa de la D4 solapades (ara amb fons) | Fet |
+| H3 | ✅ Coherència del guió amb el TR: etiquetes literals de les hipòtesis (H2 «Sostenibilitat i impacte ambiental», H3 «Economia i màrqueting»), «poden augmentar» i «pot generar» (com al §1.3), i titular de la metodologia sense donar fases per fetes (el §1.5 és en futur) | Fet |
+| H4 | 🟡 Versió autònoma de 13 diapositives (públic no tècnic, un sol fitxer HTML + PDF): codi a `autonoma/`, previsualització generada però no publicada | Aparcada mentre el pla de referència sigui el prompt mestre. Pot servir de versió per llegir o enviar |

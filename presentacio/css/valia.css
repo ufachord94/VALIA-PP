@@ -121,7 +121,7 @@ html, body { background: var(--paper); }
 .mapa svg .muni { fill: var(--apagat); }
 .mapa svg .punt { fill: var(--senya); stroke: var(--terra); stroke-width: 5; }
 .mapa svg .halo { fill: var(--maragda); opacity: .16; }
-.mapa .lloc { position: absolute; white-space: nowrap; line-height: 1.15; text-shadow: 0 0 6px var(--paper), 0 0 2px var(--paper), 0 0 10px var(--paper); }
+.mapa .lloc { position: absolute; white-space: nowrap; line-height: 1.15; background: var(--paper); padding: 6px 12px; border-radius: 12px; box-shadow: 0 0 0 2px var(--fil); }
 .mapa .lloc.esq { text-align: right; }
 .mapa .lloc > b { display: block; font: 700 34px/1.1 var(--f-text); color: var(--tinta); }
 .mapa .lloc > span { display: block; font-size: 30px; color: var(--tinta-2); }
@@ -139,8 +139,12 @@ html, body { background: var(--paper); }
 .ganxo .xifra .u { color: var(--senya); }
 .ganxo .xifra small { font-size: .62em; letter-spacing: -0.02em; }
 .ganxo .lectura { font-size: var(--fs-cos); line-height: 1.3; color: var(--tinta); margin: 32px 0 0; max-width: 760px; }
-.ganxo .figures { display: flex; justify-content: flex-end; gap: 40px; align-items: flex-end; height: 360px; }
-.ganxo .figures svg { height: 340px; width: auto; overflow: visible; display: block; }
+.ganxo .figures { display: flex; justify-content: flex-end; gap: 24px; align-items: flex-end; height: 360px; }
+.ganxo .figures svg { height: 290px; width: auto; overflow: visible; display: block; }
+.ganxo .dades .peu { left: 0; right: 0; }
+.ganxo .roca { fill: var(--fil); }
+.ganxo .fig-nom { display: block; text-align: center; font-size: 28px; color: var(--tinta-2); margin-top: 12px; }
+.ganxo .pila .fig-nom { color: var(--senya); font-weight: 600; }
 .ganxo .fig { color: var(--apagat); }
 .ganxo .fig.activa { color: var(--senya); }
 .ganxo .pila { position: relative; }

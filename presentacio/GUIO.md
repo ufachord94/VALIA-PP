@@ -14,8 +14,8 @@ Versió F1 · aprovada el 17-11-2026 · en revisió a la fase de millora (M0–M
 |---|---|---|---|---|---|---|
 | 0 | Portada | — | 0:00 | — | — | 🟠 |
 | 1 | Ganxo | A1 | 0:40 | 74 | 0:34 | ✅ |
-| 2 | Pregunta de recerca i hipòtesis | A2 | 0:50 | 102 | 0:47 | 🟠 |
-| 3 | Metodologia | A2 | 0:40 | 41 | 0:19 + [PENDENT] | 🟠 |
+| 2 | Pregunta de recerca i hipòtesis | A2 | 0:50 | 104 | 0:48 | 🟠 |
+| 3 | Metodologia | A2 | 0:40 | 42 | 0:19 + [PENDENT] | 🟠 |
 | 4 | El territori | A1 | 1:00 | 110 | 0:51 | 🟠 |
 | 5 | El problema: tot està dispers | A1 | 0:50 | 85 | 0:39 | ✅ |
 | 6 | Benchmarking | A2 | 0:50 | 88 | 0:41 | 🟠 |
@@ -94,7 +94,7 @@ Versió F1 · aprovada el 17-11-2026 · en revisió a la fase de millora (M0–M
 - **Qui parla:** A2 · **Temps:** 0:50
 - **Estat:** 🟠 la pregunta de recerca no és escrita al TR; les hipòtesis sí (literals)
 - **Titular:** «És viable una plataforma digital que uneixi turisme sostenible, activitat física i comerç local al Vallès Oriental?»
-- **Evidència visual:** la pregunta en gran. A sota apareixen, una a una, tres targetes: H1 · Innovació i turisme actiu, H2 · Sostenibilitat, H3 · Economia local. Són les mateixes targetes que tornaran a la diapositiva 14.
+- **Evidència visual:** la pregunta en gran. A sota apareixen, una a una, tres targetes: H1 · Innovació i turisme actiu, H2 · Sostenibilitat i impacte ambiental, H3 · Economia i màrqueting. Són les mateixes targetes que tornaran a la diapositiva 14.
 - **Text visible:** la pregunta (17 paraules) + el nom de les tres targetes
 - **Dades:** `recerca.pregunta`, `recerca.pregunta_pantalla`, `recerca.hipotesi_principal`, `recerca.hipotesis_secundaries[].ambit`
 - **Peu de font:** Hipòtesis: Treball de Recerca, apartat 1.3.
@@ -103,9 +103,9 @@ Versió F1 · aprovada el 17-11-2026 · en revisió a la fase de millora (M0–M
 > La nostra pregunta és si és viable crear una empresa basada en una plataforma digital que promogui el turisme sostenible, l'activitat física i el comerç local al Vallès Oriental.
 > La hipòtesi principal és que sí: es pot dissenyar un model de negoci viable i amb impacte positiu sobre el territori.
 > L'hem dividida en tres.
-> Primera: la intel·ligència artificial i la gamificació augmenten l'interès dels usuaris.
+> Primera: la intel·ligència artificial i la gamificació poden augmentar l'interès dels usuaris.
 > Segona: el model pot minimitzar l'impacte ambiental.
-> Tercera: donar visibilitat al comerç local genera interès i col·laboracions.
+> Tercera: donar visibilitat al comerç local pot generar interès i col·laboracions.
 > Recordeu aquestes tres targetes: tornaran al final amb el seu veredicte.
 
 **Transició**
@@ -119,14 +119,14 @@ Versió F1 · aprovada el 17-11-2026 · en revisió a la fase de millora (M0–M
 
 - **Qui parla:** A2 · **Temps:** 0:40
 - **Estat:** 🟠 les fases 1, 2 i 3 són al TR; les fases 4, 5 i 6 estan anunciades però no tenen apartat
-- **Titular:** «Hem seguit sis fases: de conèixer el territori a comprovar la viabilitat del projecte.»
+- **Titular:** «El treball s'organitza en sis fases: de conèixer el territori a comprovar-ne la viabilitat.»
 - **Evidència visual:** línia del temps horitzontal que es dibuixa d'esquerra a dreta amb sis fites: 1 Territori · 2 Benchmarking · 3 Proposta i prototip · 4 Rutes pilot · 5 Proves amb usuaris · 6 Viabilitat i impacte. La mascota avança d'una fita a l'altra.
 - **Text visible:** titular + els sis noms de fase (etiquetes del gràfic)
 - **Dades:** `recerca.metodologia_fases`
 - **Peu de font:** Font: Treball de Recerca, apartat 1.5.
 
 **Guió**
-> Hem treballat en sis fases.
+> El treball s'organitza en sis fases.
 > Primer hem estudiat el territori i després hem comparat les plataformes que ja existeixen.
 > Amb això hem definit la proposta i n'hem fet un prototip.
 > [PENDENT: una frase per a cada fase 4, 5 i 6 —rutes pilot, proves amb usuaris, viabilitat i impacte— amb el que s'hagi fet realment.]
